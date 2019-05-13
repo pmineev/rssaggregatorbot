@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+     xmlns:content="http://purl.org/rss/1.0/modules/content/"
+     xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:atom="http://www.w3.org/2005/Atom"
+     xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+     xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+>
+
+    <channel>
+        <title>ПостНаука</title>
+        <atom:link href="https://postnauka.ru/feed" rel="self" type="application/rss+xml"/>
+        <link>https://postnauka.ru</link>
+        <description>все, что вы хотели знать о науке, но не знали, у кого спросить</description>
+        <lastBuildDate>Tue, 26 Mar 2019 11:44:51 +0000</lastBuildDate>
+        <language>ru-RU</language>
+        <sy:updatePeriod>hourly</sy:updatePeriod>
+        <sy:updateFrequency>1</sy:updateFrequency>
+
+        <item>
+            <title>Интервью с биологом Алексеем Ердяковым: зрение и устройство глаза // Live</title>
+            <link>https://postnauka.ru/tv/97047</link>
+            <comments>https://postnauka.ru/tv/97047#respond</comments>
+            <pubDate>Tue, 26 Mar 2019 11:44:51 +0000</pubDate>
+            <dc:creator><![CDATA[ПостНаука]]></dc:creator>
+            <category><![CDATA[tv]]></category>
+            <category><![CDATA[биология]]></category>
+            <category><![CDATA[глаз]]></category>
+            <category><![CDATA[зрение]]></category>
+            <category><![CDATA[Радиорубка]]></category>
+
+            <guid isPermaLink="false">http://postnauka.ru?p=97047&#038;preview_id=97047</guid>
+            <description>
+                <![CDATA[<img src="https://postnauka.ru/img/2019/03/victorien-ameline-506535-unsplash.jpg"><div>Портится ли зрение из-за смартфонов и почему возникает дальтонизм</div>]]></description>
+            <wfw:commentRss>https://postnauka.ru/tv/97047/feed</wfw:commentRss>
+            <slash:comments>0</slash:comments>
+        </item>
+        <item>
+            <title>Главы &#124; Сценарии аннексий</title>
+            <link>https://postnauka.ru/longreads/96358</link>
+            <comments>https://postnauka.ru/longreads/96358#respond</comments>
+            <pubDate>Tue, 26 Mar 2019 11:26:55 +0000</pubDate>
+            <dc:creator><![CDATA[Новое литературное обозрение]]></dc:creator>
+            <category><![CDATA[журнал]]></category>
+            <category><![CDATA[Вторая мировая война]]></category>
+            <category><![CDATA[история]]></category>
+            <category><![CDATA[история XX века]]></category>
+            <category><![CDATA[Молотов Вячеслав]]></category>
+            <category><![CDATA[Польша]]></category>
+            <category><![CDATA[СССР]]></category>
+
+            <guid isPermaLink="false">http://postnauka.ru?p=96358&#038;preview_id=96358</guid>
+            <description>
+                <![CDATA[<img src="https://postnauka.ru/img/2019/03/obloska.jpg"><div>Отрывок из книги Сабин Дюллен «Уплотнение границ», посвященной аннексии Польши и политическому влиянию СССР в балтийских странах</div>]]></description>
+            <wfw:commentRss>https://postnauka.ru/longreads/96358/feed</wfw:commentRss>
+            <slash:comments>0</slash:comments>
+        </item>
+        <item>
+            <title>Дальтонизм: как устроена цветовая слепота?</title>
+            <link>https://postnauka.ru/faq/96984</link>
+            <comments>https://postnauka.ru/faq/96984#respond</comments>
+            <pubDate>Mon, 25 Mar 2019 11:16:22 +0000</pubDate>
+            <dc:creator><![CDATA[Алексей Ердяков]]></dc:creator>
+            <category><![CDATA[FAQ]]></category>
+            <category><![CDATA[анатомия]]></category>
+            <category><![CDATA[биология]]></category>
+            <category><![CDATA[глаз]]></category>
+            <category><![CDATA[дальтонизм]]></category>
+            <category><![CDATA[зрение]]></category>
+            <category><![CDATA[физиология]]></category>
+
+            <guid isPermaLink="false">http://postnauka.ru?p=96984&#038;preview_id=96984</guid>
+            <description>
+                <![CDATA[<img src="https://postnauka.ru/img/2019/03/color-1.jpg"><div>Биолог Алексей Ердяков о том, почему возникает дальтонизм, бывает ли у людей черно-белое зрение и как видят мир животные</div>]]></description>
+            <wfw:commentRss>https://postnauka.ru/faq/96984/feed</wfw:commentRss>
+            <slash:comments>0</slash:comments>
+        </item>
+        <item>
+            <title>Творчество по назначению врача</title>
+            <link>https://postnauka.ru/video/96585</link>
+            <comments>https://postnauka.ru/video/96585#respond</comments>
+            <pubDate>Mon, 25 Mar 2019 10:56:20 +0000</pubDate>
+            <dc:creator><![CDATA[Дэйзи Фанкурт]]></dc:creator>
+            <category><![CDATA[видео]]></category>
+            <category><![CDATA[Великобритания]]></category>
+            <category><![CDATA[здоровье]]></category>
+            <category><![CDATA[медицина]]></category>
+            <category><![CDATA[музыка]]></category>
+            <category><![CDATA[творчество]]></category>
+
+            <guid isPermaLink="false">http://postnauka.ru?p=96585&#038;preview_id=96585</guid>
+            <description>
+                <![CDATA[<img src="https://postnauka.ru/img/2019/03/fankurt-mini.jpg"><div>Нейроученый Дэйзи Фанкурт о социальных назначениях, сокращении расходов на медицину и программе «творчество по рецепту»</div>]]></description>
+            <wfw:commentRss>https://postnauka.ru/video/96585/feed</wfw:commentRss>
+            <slash:comments>0</slash:comments>
+        </item>
+        <item>
+            <title>Кресты Эйнштейна</title>
+            <link>https://postnauka.ru/lists/97257</link>
+            <comments>https://postnauka.ru/lists/97257#respond</comments>
+            <pubDate>Sun, 24 Mar 2019 21:00:00 +0000</pubDate>
+            <dc:creator><![CDATA[ПостНаука]]></dc:creator>
+            <category><![CDATA[От редакции]]></category>
+            <category><![CDATA[астрономия]]></category>
+            <category><![CDATA[галактика]]></category>
+            <category><![CDATA[гравитация]]></category>
+            <category><![CDATA[иллюзии]]></category>
+            <category><![CDATA[квазар]]></category>
+            <category><![CDATA[космос]]></category>
+            <category><![CDATA[случайный космический объект]]></category>
+
+            <guid isPermaLink="false">http://postnauka.ru?p=97257&#038;preview_id=97257</guid>
+            <description>
+                <![CDATA[<img src="https://postnauka.ru/img/2019/03/Einstein_cross.jpg"><div>Два космических миража, вызванных гравитационной линзой</div>]]></description>
+            <wfw:commentRss>https://postnauka.ru/lists/97257/feed</wfw:commentRss>
+            <slash:comments>0</slash:comments>
+        </item>
+        <item>
+            <title>Духи предков: что вы знаете об истории цивилизации?</title>
+            <link>https://postnauka.ru/tests/96997</link>
+            <comments>https://postnauka.ru/tests/96997#respond</comments>
+            <pubDate>Sun, 24 Mar 2019 08:36:22 +0000</pubDate>
+            <dc:creator><![CDATA[ПостНаука]]></dc:creator>
+            <category><![CDATA[тесты]]></category>
+            <category><![CDATA[антропология]]></category>
+            <category><![CDATA[археология]]></category>
+            <category><![CDATA[история]]></category>
+            <category><![CDATA[неандерталец]]></category>
+            <category><![CDATA[происхождение человека]]></category>
+            <category><![CDATA[цивилизация]]></category>
+            <category><![CDATA[эволюция]]></category>
+
+            <guid isPermaLink="false">http://postnauka.ru?p=96997&#038;preview_id=96997</guid>
+            <description>
+                <![CDATA[<img src="https://postnauka.ru/img/2019/03/KIV-chelovek.jpg"><div>Что вы знаете о жизни древних людей? Проверьте себя!</div>]]></description>
+            <wfw:commentRss>https://postnauka.ru/tests/96997/feed</wfw:commentRss>
+            <slash:comments>0</slash:comments>
+        </item>
+        <item>
+            <title>Палеолитическое искусство: как появились первые украшения, пещерная живопись и музыка</title>
+            <link>https://postnauka.ru/longreads/88818</link>
+            <comments>https://postnauka.ru/longreads/88818#respond</comments>
+            <pubDate>Fri, 22 Mar 2019 15:50:48 +0000</pubDate>
+            <dc:creator><![CDATA[Владислав Житенёв]]></dc:creator>
+            <category><![CDATA[журнал]]></category>
+            <category><![CDATA[археология]]></category>
+            <category><![CDATA[живопись]]></category>
+            <category><![CDATA[искусство]]></category>
+            <category><![CDATA[история]]></category>
+            <category><![CDATA[неандерталец]]></category>
+            <category><![CDATA[палеолит]]></category>
+
+            <guid isPermaLink="false">http://postnauka.ru?p=88818&#038;preview_id=88818</guid>
+            <description>
+                <![CDATA[<img src="https://postnauka.ru/img/2019/03/Scene_110.jpg"><div>Как древние люди занимались пещерной живописью и что значило для них искусство </div>]]></description>
+            <wfw:commentRss>https://postnauka.ru/longreads/88818/feed</wfw:commentRss>
+            <slash:comments>0</slash:comments>
+        </item>
+        <item>
+            <title>Музыка и эмоции</title>
+            <link>https://postnauka.ru/video/96587</link>
+            <comments>https://postnauka.ru/video/96587#respond</comments>
+            <pubDate>Fri, 22 Mar 2019 09:37:52 +0000</pubDate>
+            <dc:creator><![CDATA[Диана Омиджи]]></dc:creator>
+            <category><![CDATA[видео]]></category>
+            <category><![CDATA[музыка]]></category>
+            <category><![CDATA[нейропсихология]]></category>
+            <category><![CDATA[психология]]></category>
+            <category><![CDATA[эмоции]]></category>
+            <category><![CDATA[эмпатия]]></category>
+
+            <guid isPermaLink="false">http://postnauka.ru?p=96587&#038;preview_id=96587</guid>
+            <description>
+                <![CDATA[<img src="https://postnauka.ru/img/2019/03/omidzhi-min.jpg"><div>Нейропсихолог Диана Омиджи о различиях утилитарных и неутилитарных эмоций, эмпатии в повседневной жизни и грустной музыке</div>]]></description>
+            <wfw:commentRss>https://postnauka.ru/video/96587/feed</wfw:commentRss>
+            <slash:comments>0</slash:comments>
+        </item>
+        <item>
+            <title>Что такое квантовая когерентность?</title>
+            <link>https://postnauka.ru/faq/92455</link>
+            <comments>https://postnauka.ru/faq/92455#respond</comments>
+            <pubDate>Thu, 21 Mar 2019 21:00:00 +0000</pubDate>
+            <dc:creator><![CDATA[Сергей Филиппов]]></dc:creator>
+            <category><![CDATA[FAQ]]></category>
+            <category><![CDATA[квантовая когерентность]]></category>
+            <category><![CDATA[квантовая физика]]></category>
+            <category><![CDATA[суперпозиция]]></category>
+            <category><![CDATA[физика]]></category>
+
+            <guid isPermaLink="false">http://postnauka.ru?p=92455&#038;preview_id=92455</guid>
+            <description>
+                <![CDATA[<img src="https://postnauka.ru/img/2019/03/giphy-3-1.gif"><div>Физик Сергей Филиппов о квантовой когерентности и ее практической значимости</div>]]></description>
+            <wfw:commentRss>https://postnauka.ru/faq/92455/feed</wfw:commentRss>
+            <slash:comments>0</slash:comments>
+        </item>
+        <item>
+            <title>Кембриджская школа политической мысли</title>
+            <link>https://postnauka.ru/video/97122</link>
+            <comments>https://postnauka.ru/video/97122#respond</comments>
+            <pubDate>Thu, 21 Mar 2019 15:00:29 +0000</pubDate>
+            <dc:creator><![CDATA[Александр Павлов]]></dc:creator>
+            <category><![CDATA[видео]]></category>
+            <category><![CDATA[Локк Джон]]></category>
+            <category><![CDATA[Макиавелли Никколо]]></category>
+            <category><![CDATA[политическая теория]]></category>
+            <category><![CDATA[политическая философия]]></category>
+            <category><![CDATA[философия]]></category>
+
+            <guid isPermaLink="false">http://postnauka.ru?p=97122&#038;preview_id=97122</guid>
+            <description>
+                <![CDATA[<img src="https://postnauka.ru/img/2019/03/kembr-mini.jpg"><div>Философ Александр Павлов о важности исторического контекста, споре Локка и Филмера и подходах в изучении политической философии</div>]]></description>
+            <wfw:commentRss>https://postnauka.ru/video/97122/feed</wfw:commentRss>
+            <slash:comments>0</slash:comments>
+        </item>
+    </channel>
+</rss>

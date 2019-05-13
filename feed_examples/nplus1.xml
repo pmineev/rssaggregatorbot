@@ -1,0 +1,1428 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/"
+     version="2.0"
+>
+    <channel>
+        <title>N+1: научные статьи, новости, открытия</title>
+        <description/>
+        <link>https://nplus1.ru</link>
+        <language>ru</language>
+
+
+        <image>
+            <url>https://nplus1.ru/i/logo.png</url>
+            <title>N+1: научные статьи, новости, открытия</title>
+            <link>https://nplus1.ru</link>
+
+        </image>
+        <item>
+            <title><![CDATA[Физики увидели новый пентакварк и «раздвоение» старого]]></title>
+            <description>
+                <![CDATA[
+                    Были получены данные, что один из ранее известных пентакварков может быть на самом деле двумя разными, хотя и близкими по массе частицами
+                    ]]>
+            </description>
+            <media:content url="https://nplus1.ru/images/2019/03/26/66dc48d6b54b265db30511343c59b57f.jpg"
+                           type="image/jpeg"/>
+            <guid>https://nplus1.ru/news/2019/03/26/five</guid>
+            <link>https://nplus1.ru/news/2019/03/26/five</link>
+            <dc:creator>Тимур Кешелава</dc:creator>
+            <pubDate>Tue, 26 Mar 2019 23:31:25 +0300</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Казахский метеорит указал на грандиозную вспышку древнего Солнца]]></title>
+            <description>
+                <![CDATA[
+                    Результаты анализа найденного в Казахстане метеорита наилучшим образом удалось объяснить длительной и яркой вспышкой на Солнце на заре существования нашей планетной системы.
+                    ]]>
+            </description>
+            <media:content url="https://nplus1.ru/images/2019/03/26/f0b4cd7f94fe2464a39d0ab1ff20650f.jpg"
+                           type="image/jpeg"/>
+            <guid>https://nplus1.ru/news/2019/03/26/efremovka-ancient-solar-flare</guid>
+            <link>https://nplus1.ru/news/2019/03/26/efremovka-ancient-solar-flare</link>
+            <dc:creator>Тимур Кешелава</dc:creator>
+            <pubDate>Tue, 26 Mar 2019 20:15:58 +0300</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Mitsubishi разработала пару автономных пожарных роботов]]></title>
+            <description>
+                <![CDATA[
+                    Один из них тушит пожар, а второй разматывает пожарный рукав
+                    ]]>
+            </description>
+            <media:content url="https://nplus1.ru/images/2019/03/26/5359064872e51bc39dc57c131fd950ec.jpg"
+                           type="image/jpeg"/>
+            <guid>https://nplus1.ru/news/2019/03/26/firefighters</guid>
+            <link>https://nplus1.ru/news/2019/03/26/firefighters</link>
+            <dc:creator>Григорий Копиев</dc:creator>
+            <pubDate>Tue, 26 Mar 2019 18:13:23 +0300</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Скорость уменьшения самого быстротающего ледника Гренландии временно снизилась]]></title>
+            <description>
+                <![CDATA[
+                    По мнению ученых, это вызвано аномальным похолоданием океанической воды, которую приносит к леднику течение, и когда температура воды снова вырастет, Якобсхавн продолжит таять.
+                    ]]>
+            </description>
+            <media:content url="https://nplus1.ru/images/2019/03/26/3956cc2556fbecb36045e4ee3540a945.jpg"
+                           type="image/jpeg"/>
+            <guid>https://nplus1.ru/news/2019/03/26/slow-melt</guid>
+            <link>https://nplus1.ru/news/2019/03/26/slow-melt</link>
+            <dc:creator>Екатерина Русакова</dc:creator>
+            <pubDate>Tue, 26 Mar 2019 17:27:05 +0300</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Раскраска галактик добровольцами поможет разобраться в их эволюции]]></title>
+            <description>
+                <![CDATA[
+                    Стартовал один из крупнейших астрономических проектов AstroQuest в области гражданской науки
+                    ]]>
+            </description>
+            <media:content url="https://nplus1.ru/images/2019/03/25/889a1d7cf0317d16f46963d0c6c2c1f3.jpg"
+                           type="image/jpeg"/>
+            <guid>https://nplus1.ru/news/2019/03/26/AstroQuest</guid>
+            <link>https://nplus1.ru/news/2019/03/26/AstroQuest</link>
+            <dc:creator>Александр Войтюк</dc:creator>
+            <pubDate>Tue, 26 Mar 2019 17:05:34 +0300</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Российские разработчики испытали летающий дробовик]]></title>
+            <description>
+                <![CDATA[
+                    Во время летных испытаний аппарат сбил модель самолета
+                    ]]>
+            </description>
+            <media:content url="https://nplus1.ru/images/2019/03/26/905f4af90463fdf3ef4ddd090ffd3cf3.gif"
+                           type="image/jpeg"/>
+            <guid>https://nplus1.ru/news/2019/03/26/shotgun</guid>
+            <link>https://nplus1.ru/news/2019/03/26/shotgun</link>
+            <dc:creator>Василий Сычев</dc:creator>
+            <pubDate>Tue, 26 Mar 2019 16:11:23 +0300</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Мозг угадал возраст и пол еще до идентификации человека]]></title>
+            <description>
+                <![CDATA[
+                    А вот узнал человека мозг позже всего
+                    ]]>
+            </description>
+            <media:content url="https://nplus1.ru/images/2019/03/26/9debc6b574a4e60f27ec926c06611e99.jpg"
+                           type="image/jpeg"/>
+            <guid>https://nplus1.ru/news/2019/03/26/face-perception-over-time</guid>
+            <link>https://nplus1.ru/news/2019/03/26/face-perception-over-time</link>
+            <dc:creator>Елизавета Ивтушок</dc:creator>
+            <pubDate>Tue, 26 Mar 2019 15:56:55 +0300</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Сервер обновлений ASUS полгода рассылал троян]]></title>
+            <description>
+                <![CDATA[
+                    Программа была подписана настоящим сертификатом, который, кстати, до сих пор не аннулирован
+                    ]]>
+            </description>
+            <media:content url="https://nplus1.ru/images/2019/03/26/372346632fbfe685124a8469c5d8d63d.jpg"
+                           type="image/jpeg"/>
+            <guid>https://nplus1.ru/news/2019/03/26/asus</guid>
+            <link>https://nplus1.ru/news/2019/03/26/asus</link>
+            <dc:creator>Григорий Копиев</dc:creator>
+            <pubDate>Tue, 26 Mar 2019 14:48:13 +0300</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Квантовый шум гравитационных антенн воспроизвели при комнатной температуре]]></title>
+            <description>
+                <![CDATA[
+                    Физики создали систему, в которой можно регистрировать и изучать квантовый шум, ограничивающий точность приемников гравитационных волн следующего поколения.
+                    ]]>
+            </description>
+            <media:content url="https://nplus1.ru/images/2019/03/26/f03e37a07f253e14fb8ed5a600318c9b.jpg"
+                           type="image/jpeg"/>
+            <guid>https://nplus1.ru/news/2019/03/26/quantum-radiation-pressure-noise</guid>
+            <link>https://nplus1.ru/news/2019/03/26/quantum-radiation-pressure-noise</link>
+            <dc:creator>Тимур Кешелава</dc:creator>
+            <pubDate>Tue, 26 Mar 2019 14:23:42 +0300</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Кинетические противоракеты впервые испытали залповым запуском]]></title>
+            <description>
+                <![CDATA[
+                    Во время испытаний по ракете-мишени были запущены два перехватчика
+                    ]]>
+            </description>
+            <media:content url="https://nplus1.ru/images/2019/03/26/2ba6bdb076e66628e399285a6df2b851.jpg"
+                           type="image/jpeg"/>
+            <guid>https://nplus1.ru/news/2019/03/26/salvo</guid>
+            <link>https://nplus1.ru/news/2019/03/26/salvo</link>
+            <dc:creator>Василий Сычев</dc:creator>
+            <pubDate>Tue, 26 Mar 2019 13:35:25 +0300</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[В центре Мехико нашли жертвоприношение ягуара и ребенка]]></title>
+            <description>
+                <![CDATA[
+                    Археологи рассчитывают обнаружить неподалеку захоронение верховного правителя ацтеков
+                    ]]>
+            </description>
+            <media:content url="https://nplus1.ru/images/2019/03/26/b6dbe4d85ce7656ae55c58ed8a9ff684.jpg"
+                           type="image/jpeg"/>
+            <guid>https://nplus1.ru/news/2019/03/26/templo-mayor-child-jaguar</guid>
+            <link>https://nplus1.ru/news/2019/03/26/templo-mayor-child-jaguar</link>
+            <dc:creator>Дмитрий Иванов</dc:creator>
+            <pubDate>Tue, 26 Mar 2019 12:45:48 +0300</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[На юге Норвегии нашли еще одно возможное корабельное погребение эпохи викингов]]></title>
+            <description>
+                <![CDATA[
+                    Ученые исследовали участок с помощью радара и на снимках увидели очертания корабля.
+                    ]]>
+            </description>
+            <media:content url="https://nplus1.ru/images/2019/03/26/af47907bdb71e41016c3707282ec0e76.jpg"
+                           type="image/jpeg"/>
+            <guid>https://nplus1.ru/news/2019/03/26/may-be-burial-ship</guid>
+            <link>https://nplus1.ru/news/2019/03/26/may-be-burial-ship</link>
+            <dc:creator>Екатерина Русакова</dc:creator>
+            <pubDate>Tue, 26 Mar 2019 11:33:51 +0300</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Работа в ночную смену повысила риск выкидыша]]></title>
+            <description>
+                <![CDATA[
+                    Связь наблюдалась начиная с 8 недели беременности
+                    ]]>
+            </description>
+            <media:content url="https://nplus1.ru/images/2019/03/26/dfb846cd25b0bff6e159a2960ed7212d.jpg"
+                           type="image/jpeg"/>
+            <guid>https://nplus1.ru/news/2019/03/26/night-shift-miscarriage</guid>
+            <link>https://nplus1.ru/news/2019/03/26/night-shift-miscarriage</link>
+            <dc:creator>Елизавета Ивтушок</dc:creator>
+            <pubDate>Tue, 26 Mar 2019 10:51:20 +0300</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Румыны занялись разработкой сверхзвуковой «летающей тарелки»]]></title>
+            <description>
+                <![CDATA[
+                    Прототип летательного аппарата на сверхзвуковой полет не способен
+                    ]]>
+            </description>
+            <media:content url="https://nplus1.ru/images/2019/03/26/2fb2c8617289a247d9d77825286cb251.jpg"
+                           type="image/jpeg"/>
+            <guid>https://nplus1.ru/news/2019/03/26/saucer</guid>
+            <link>https://nplus1.ru/news/2019/03/26/saucer</link>
+            <dc:creator>Василий Сычев</dc:creator>
+            <pubDate>Tue, 26 Mar 2019 10:33:39 +0300</pubDate>
+        </item>
+        <item>
+            <title>
+                <![CDATA[Ухудшение выработки спермы у мышей связали с загрязнением воздуха мелкими частицами]]></title>
+            <description>
+                <![CDATA[
+                    Загрязнение меняет уровень экспрессии генов, связанных с работой тестикул
+                    ]]>
+            </description>
+            <media:content url="https://nplus1.ru/images/2019/03/24/1c2eeb2f3785d08a630198897102f24d.jpg"
+                           type="image/jpeg"/>
+            <guid>https://nplus1.ru/news/2019/03/26/Pollution</guid>
+            <link>https://nplus1.ru/news/2019/03/26/Pollution</link>
+            <dc:creator>Екатерина Русакова</dc:creator>
+            <pubDate>Tue, 26 Mar 2019 09:54:54 +0300</pubDate>
+        </item>
+        <item>
+            <title>
+                <![CDATA[Квантовое состояние темной системы предложили измерять с помощью «пробника» и π-импульсов]]></title>
+            <description>
+                <![CDATA[
+                    В ходе такого эксперимента ученые будут взаимодействовать только с пробной системой, что заметно отличает новый способ от всех предыдущих
+                    ]]>
+            </description>
+            <media:content url="https://nplus1.ru/images/2019/03/25/c12056c349fa7254bb7a51003e0fe122.png"
+                           type="image/jpeg"/>
+            <guid>https://nplus1.ru/news/2019/03/26/dark-system</guid>
+            <link>https://nplus1.ru/news/2019/03/26/dark-system</link>
+            <dc:creator>Дмитрий Трунин</dc:creator>
+            <pubDate>Tue, 26 Mar 2019 09:24:48 +0300</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Франсия Хосе Гаспар (Диктатор Парагвая)]]></title>
+            <description>
+                <![CDATA[
+                    Диктатор Парагвая Франсия, его политические решения, биография и способы управления страной напоминают нам множество других печальных примеров диктатур: здесь вам и всякое импортозамещение, и изоляционизм, и видение в странах-соседях предателей и врагов, однако кое в чем Франсия Хосе Гаспар Родригес отличался от других известных нам диктаторов.
+                    ]]>
+            </description>
+            <media:content url="" type="image/jpeg"/>
+            <guid>https://nplus1.ru/blog/2019/03/26/limb-183</guid>
+            <link>https://nplus1.ru/blog/2019/03/26/limb-183</link>
+            <dc:creator>Алена Пашко</dc:creator>
+            <pubDate>Tue, 26 Mar 2019 09:23:21 +0300</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Эффект Бенджамина Франклина]]></title>
+            <description>
+                <![CDATA[
+                    Почему мы скорее сделаем приятно еще раз, а не в ответ
+                    ]]>
+            </description>
+            <media:content url="https://nplus1.ru/images/2019/03/25/20707caa858a3fef7226ed0c24af53b3.jpg"
+                           type="image/jpeg"/>
+            <guid>https://nplus1.ru/blog/2019/03/25/ben-franklin-effect</guid>
+            <link>https://nplus1.ru/blog/2019/03/25/ben-franklin-effect</link>
+            <dc:creator>Елизавета Ивтушок</dc:creator>
+            <pubDate>Mon, 25 Mar 2019 21:53:33 +0300</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Асимметрия троянских астероидов указала на миграцию Юпитера издалека]]></title>
+            <description>
+                <![CDATA[
+                    Компьютерное моделирование влияния миграции планет на орбиты малых тел позволило оценить перемещение Юпитера в ранней Солнечной системе.
+                    ]]>
+            </description>
+            <media:content url="https://nplus1.ru/images/2019/03/25/e19a4bc59d7fa8fbf867684859772d9d.jpg"
+                           type="image/jpeg"/>
+            <guid>https://nplus1.ru/news/2019/03/25/trojans-asymmetry-jupiter-migration</guid>
+            <link>https://nplus1.ru/news/2019/03/25/trojans-asymmetry-jupiter-migration</link>
+            <dc:creator>Тимур Кешелава</dc:creator>
+            <pubDate>Mon, 25 Mar 2019 19:36:28 +0300</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Сверхтяжелые шаги в неизвестное]]></title>
+            <description>
+                <![CDATA[
+                    В Дубне запустили новую установку для синтеза новых элементов таблицы Менделеева
+                    ]]>
+            </description>
+            <media:content url="https://nplus1.ru/images/2019/03/25/58e337cd5abb6d0bfe1a2c4ae08aa26d.jpg"
+                           type="image/jpeg"/>
+            <guid>https://nplus1.ru/material/2019/03/25/120-element</guid>
+            <link>https://nplus1.ru/material/2019/03/25/120-element</link>
+            <dc:creator>Дмитрий Иванов</dc:creator>
+            <pubDate>Mon, 25 Mar 2019 19:29:40 +0300</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Мужчины хорошо перенесли прием экспериментальной противозачаточной таблетки]]></title>
+            <description>
+                <![CDATA[
+                    Ее эффективность должны подтвердить другие исследования
+                    ]]>
+            </description>
+            <media:content url="https://nplus1.ru/images/2019/03/25/ec757a2c46c02c25ada51569547acbec.jpg"
+                           type="image/jpeg"/>
+            <guid>https://nplus1.ru/news/2019/03/25/male-contraceprtion</guid>
+            <link>https://nplus1.ru/news/2019/03/25/male-contraceprtion</link>
+            <dc:creator>Андрей Украинский</dc:creator>
+            <pubDate>Mon, 25 Mar 2019 19:20:50 +0300</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[ОИЯИ запустил «фабрику сверхтяжелых элементов»]]></title>
+            <description>
+                <![CDATA[
+                    Первые эксперименты на ДЦ-280 начнутся уже во втором квартале 2019 года
+                    ]]>
+            </description>
+            <media:content url="https://nplus1.ru/images/2019/03/25/97144003ca52dcac64473c20bb58c73a.png"
+                           type="image/jpeg"/>
+            <guid>https://nplus1.ru/news/2019/03/25/jinr-launch</guid>
+            <link>https://nplus1.ru/news/2019/03/25/jinr-launch</link>
+            <dc:creator>Ольга Добровидова</dc:creator>
+            <pubDate>Mon, 25 Mar 2019 19:16:05 +0300</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Физики построили первый универсальный генератор запутанных фотонов]]></title>
+            <description>
+                <![CDATA[
+                    Генератор работает только «по требованию», излучает фотоны высокой степени запутанности и неразличимости, а также позволяет эффективно их извлекать
+                    ]]>
+            </description>
+            <media:content url="https://nplus1.ru/images/2019/03/25/93aec144dcda97450a40a5b84d7a47e2.jpg"
+                           type="image/jpeg"/>
+            <guid>https://nplus1.ru/news/2019/03/25/entangled-universality</guid>
+            <link>https://nplus1.ru/news/2019/03/25/entangled-universality</link>
+            <dc:creator>Дмитрий Трунин</dc:creator>
+            <pubDate>Mon, 25 Mar 2019 18:36:56 +0300</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[На панорамах Google Street View появился остров с «марсианскими» условиями]]></title>
+            <description>
+                <![CDATA[
+                    На острове Девон располагается база для имитации марсианских экспедиций
+                    ]]>
+            </description>
+            <media:content url="https://nplus1.ru/images/2019/03/25/54285034ee425442019064d8dc49c3f8.png"
+                           type="image/jpeg"/>
+            <guid>https://nplus1.ru/news/2019/03/25/devon-on-street-view</guid>
+            <link>https://nplus1.ru/news/2019/03/25/devon-on-street-view</link>
+            <dc:creator>Григорий Копиев</dc:creator>
+            <pubDate>Mon, 25 Mar 2019 18:15:05 +0300</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Американские военные заинтересовались беспилотными летающими танкерами]]></title>
+            <description>
+                <![CDATA[
+                    В 2020 году военные испытают модели подвесных контейнеров с заправочными штангами
+                    ]]>
+            </description>
+            <media:content url="https://nplus1.ru/images/2019/03/25/3807b75a3d9f10bce1545157173cc55e.jpg"
+                           type="image/jpeg"/>
+            <guid>https://nplus1.ru/news/2019/03/25/kcz</guid>
+            <link>https://nplus1.ru/news/2019/03/25/kcz</link>
+            <dc:creator>Василий Сычев</dc:creator>
+            <pubDate>Mon, 25 Mar 2019 15:36:07 +0300</pubDate>
+        </item>
+        <item>
+            <title>
+                <![CDATA[Самоорганизация в экстремально холодной пылевой плазме привела к формированию волокон]]></title>
+            <description>
+                <![CDATA[
+                    Физики впервые изучили среду из плазмы и взвешенных частиц при температуре сверхтекучего гелия. Оказалось, что в таких условиях возможно самопроизвольное формирование структур, что может стать основой новых методов синтеза веществ.
+                    ]]>
+            </description>
+            <media:content url="https://nplus1.ru/images/2019/03/25/c522f54883d4d5f7f14cd845f2e3b6c2.gif"
+                           type="image/jpeg"/>
+            <guid>https://nplus1.ru/news/2019/03/25/self-organization-dusty-plasma</guid>
+            <link>https://nplus1.ru/news/2019/03/25/self-organization-dusty-plasma</link>
+            <dc:creator>Тимур Кешелава</dc:creator>
+            <pubDate>Mon, 25 Mar 2019 15:18:57 +0300</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Рой роботов научили двигаться благодаря расширению]]></title>
+            <description>
+                <![CDATA[
+                    Такие роботы могут помочь в изучении механизмов коллективного движения
+                    ]]>
+            </description>
+            <media:content url="https://nplus1.ru/images/2019/03/25/0df9e8ec560394c2e0de5ddc12432920.gif"
+                           type="image/jpeg"/>
+            <guid>https://nplus1.ru/news/2019/03/25/particle-robots</guid>
+            <link>https://nplus1.ru/news/2019/03/25/particle-robots</link>
+            <dc:creator>Григорий Копиев</dc:creator>
+            <pubDate>Mon, 25 Mar 2019 14:53:37 +0300</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Гидродинамика объяснила форму меланомы]]></title>
+            <description>
+                <![CDATA[
+                    Физики численно смоделировали образование раковой опухоли кожи с учетом гидродинамических эффектов
+                    ]]>
+            </description>
+            <media:content url="https://nplus1.ru/images/2019/03/25/b03dc52368d788f940bba5ad18589660.jpg"
+                           type="image/jpeg"/>
+            <guid>https://nplus1.ru/news/2019/03/25/cancer-hydro</guid>
+            <link>https://nplus1.ru/news/2019/03/25/cancer-hydro</link>
+            <dc:creator>Дмитрий Трунин</dc:creator>
+            <pubDate>Mon, 25 Mar 2019 14:33:31 +0300</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Астрономы показали панораму окрестностей черной дыры в центре Млечного Пути]]></title>
+            <description>
+                <![CDATA[
+                    Они создали панорамную модель ее окрестностей в пределах нескольких световых лет
+                    ]]>
+            </description>
+            <media:content url="https://nplus1.ru/images/2019/03/25/e3072d8899b4258a59bdac0b157237c5.jpg"
+                           type="image/jpeg"/>
+            <guid>https://nplus1.ru/news/2019/03/25/SgrA-and-stars</guid>
+            <link>https://nplus1.ru/news/2019/03/25/SgrA-and-stars</link>
+            <dc:creator>Александр Войтюк</dc:creator>
+            <pubDate>Mon, 25 Mar 2019 14:22:10 +0300</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Два месяца в кровати помогут изучить влияние искусственной гравитации на организм]]></title>
+            <description>
+                <![CDATA[
+                    Раз в день часть из них будут перекладывать в центрифугу
+                    ]]>
+            </description>
+            <media:content url="https://nplus1.ru/images/2019/03/25/ca63723be56efdb7f9c1d56a2cb43de4.jpg"
+                           type="image/jpeg"/>
+            <guid>https://nplus1.ru/news/2019/03/25/artificial-gravity</guid>
+            <link>https://nplus1.ru/news/2019/03/25/artificial-gravity</link>
+            <dc:creator>Елизавета Ивтушок</dc:creator>
+            <pubDate>Mon, 25 Mar 2019 13:48:23 +0300</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Проект британского сверхзвукового автомобиля сменил название и штаб-квартиру]]></title>
+            <description>
+                <![CDATA[
+                    Проект сверхзвукового автомобиля теперь носит название Bloodhound LSR
+                    ]]>
+            </description>
+            <media:content url="https://nplus1.ru/images/2019/03/25/306943719bd28287e43ad7b2d6b6c68d.jpg"
+                           type="image/jpeg"/>
+            <guid>https://nplus1.ru/news/2019/03/25/changes</guid>
+            <link>https://nplus1.ru/news/2019/03/25/changes</link>
+            <dc:creator>Василий Сычев</dc:creator>
+            <pubDate>Mon, 25 Mar 2019 12:30:37 +0300</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Сейсмограф миссии InSight поможет понять состояние бура]]></title>
+            <description>
+                <![CDATA[
+                    Он должен определить двигается ли вообще буровое устройство в грунте
+                    ]]>
+            </description>
+            <media:content url="https://nplus1.ru/images/2019/03/25/001ca65632e3fda541c5c68f38b15ba8.png"
+                           type="image/jpeg"/>
+            <guid>https://nplus1.ru/news/2019/03/25/SEIS-and-HP3</guid>
+            <link>https://nplus1.ru/news/2019/03/25/SEIS-and-HP3</link>
+            <dc:creator>Александр Войтюк</dc:creator>
+            <pubDate>Mon, 25 Mar 2019 12:08:58 +0300</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[«Хаябуса-2» осмотрела место для будущего рукотворного кратера на Рюгу]]></title>
+            <description>
+                <![CDATA[
+                    Он будет создан уже через неделю
+                    ]]>
+            </description>
+            <media:content url="https://nplus1.ru/images/2019/03/25/e1891ea9ed5ee587af7edd0e24cf1e58.png"
+                           type="image/jpeg"/>
+            <guid>https://nplus1.ru/news/2019/03/25/PreSCI-operation</guid>
+            <link>https://nplus1.ru/news/2019/03/25/PreSCI-operation</link>
+            <dc:creator>Александр Войтюк</dc:creator>
+            <pubDate>Mon, 25 Mar 2019 11:36:51 +0300</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Израильский лунный зонд показал восход Солнца над Землей]]></title>
+            <description>
+                <![CDATA[
+                    Выход на окололунную орбиту состоится уже 4 апреля
+                    ]]>
+            </description>
+            <media:content url="https://nplus1.ru/images/2019/03/25/119bf104e99fd17055500553c430e31e.gif"
+                           type="image/jpeg"/>
+            <guid>https://nplus1.ru/news/2019/03/25/Beresheet-photos</guid>
+            <link>https://nplus1.ru/news/2019/03/25/Beresheet-photos</link>
+            <dc:creator>Александр Войтюк</dc:creator>
+            <pubDate>Mon, 25 Mar 2019 11:29:37 +0300</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Китайцы испытали модель водородного пассажирского самолета]]></title>
+            <description>
+                <![CDATA[
+                    Модель самолета совершила десять полетов
+                    ]]>
+            </description>
+            <media:content url="https://nplus1.ru/images/2019/03/25/71b13fdb310d690e1448db8ec0ce9bca.jpg"
+                           type="image/jpeg"/>
+            <guid>https://nplus1.ru/news/2019/03/25/hydrogen</guid>
+            <link>https://nplus1.ru/news/2019/03/25/hydrogen</link>
+            <dc:creator>Василий Сычев</dc:creator>
+            <pubDate>Mon, 25 Mar 2019 09:55:48 +0300</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Сербия стала полноправным членом ЦЕРНа]]></title>
+            <description>
+                <![CDATA[
+                    Сербские предприятия смогут получить заказы на производство оборудования для нового коллайдера
+                    ]]>
+            </description>
+            <media:content url="https://nplus1.ru/images/2019/03/25/6162bfe0221f1683af176e03804d67b8.jpg"
+                           type="image/jpeg"/>
+            <guid>https://nplus1.ru/news/2019/03/25/brotherstocern</guid>
+            <link>https://nplus1.ru/news/2019/03/25/brotherstocern</link>
+            <dc:creator>Илья Ферапонтов</dc:creator>
+            <pubDate>Mon, 25 Mar 2019 09:44:31 +0300</pubDate>
+        </item>
+        <item>
+            <title>
+                <![CDATA[Курение будущих отцов связали с риском развития врожденных пороков сердца у их детей]]></title>
+            <description>
+                <![CDATA[
+                    Он оказался еще выше, чем при активном курении матери
+                    ]]>
+            </description>
+            <media:content url="https://nplus1.ru/images/2019/03/24/2d14f7475d5d17c6e28bfd261bba88fa.gif"
+                           type="image/jpeg"/>
+            <guid>https://nplus1.ru/news/2019/03/25/Quit</guid>
+            <link>https://nplus1.ru/news/2019/03/25/Quit</link>
+            <dc:creator>Екатерина Русакова</dc:creator>
+            <pubDate>Mon, 25 Mar 2019 09:27:01 +0300</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Экзоскелет для лодыжки спрятали под штанину]]></title>
+            <description>
+                <![CDATA[
+                    Конструкция легкая, незаметная, тихая и не нуждается в моторе и батарейках, дешева в производстве и адаптируется под разную скорость ходьбы, помогая мускулам лодыжки.
+                    ]]>
+            </description>
+            <media:content url="https://nplus1.ru/images/2019/03/23/bea7ce46b8c45863026436e8ccfd9955.png"
+                           type="image/jpeg"/>
+            <guid>https://nplus1.ru/news/2019/03/23/under-clothes</guid>
+            <link>https://nplus1.ru/news/2019/03/23/under-clothes</link>
+            <dc:creator>Николай Воронцов</dc:creator>
+            <pubDate>Sat, 23 Mar 2019 18:50:29 +0300</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[В имплантируемых дефибрилляторах Medtronic нашли критическую уязвимость]]></title>
+            <description>
+                <![CDATA[
+                    Злоумышленник может изменить настройки прибора или выполнить произвольную команду, которая приведет к нарушению сердечного ритма пациента.
+                    ]]>
+            </description>
+            <media:content url="https://nplus1.ru/images/2019/03/23/e2a1a505d63b47592f0c84386ecc81c0.jpg"
+                           type="image/jpeg"/>
+            <guid>https://nplus1.ru/news/2019/03/23/critical-flaws</guid>
+            <link>https://nplus1.ru/news/2019/03/23/critical-flaws</link>
+            <dc:creator>Николай Воронцов</dc:creator>
+            <pubDate>Sat, 23 Mar 2019 13:12:47 +0300</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Американцы сделали робощенка для поглаживаний]]></title>
+            <description>
+                <![CDATA[
+                    В ответ на поглаживания робощенок двигает головой и машет хвостом. 
+                    ]]>
+            </description>
+            <media:content url="https://nplus1.ru/images/2019/03/23/e79c6cc028291933a4a10f2281d03d73.gif"
+                           type="image/jpeg"/>
+            <guid>https://nplus1.ru/news/2019/03/23/tombot</guid>
+            <link>https://nplus1.ru/news/2019/03/23/tombot</link>
+            <dc:creator>Николай Воронцов</dc:creator>
+            <pubDate>Sat, 23 Mar 2019 11:58:39 +0300</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Палеонтологи описали крупнейшего тираннозавра]]></title>
+            <description>
+                <![CDATA[
+                    Он весил почти девять тонн, а его длина была около 13 метров
+                    ]]>
+            </description>
+            <media:content url="https://nplus1.ru/images/2019/03/23/282b05c1b31eb325659ca49892d017d5.jpg"
+                           type="image/jpeg"/>
+            <guid>https://nplus1.ru/news/2019/03/23/the-biggest-one</guid>
+            <link>https://nplus1.ru/news/2019/03/23/the-biggest-one</link>
+            <dc:creator>Екатерина Русакова</dc:creator>
+            <pubDate>Sat, 23 Mar 2019 11:05:33 +0300</pubDate>
+        </item>
+        <item>
+            <title>
+                <![CDATA[КПД квантового теплового двигателя впервые превысил максимальный КПД классического двигателя]]></title>
+            <description>
+                <![CDATA[
+                    Выигрыш достигался за счет того, что двигатель работал в режиме малого действия, а его рабочее тело представляло собой суперпозицию когерентных состояний
+                    ]]>
+            </description>
+            <media:content url="https://nplus1.ru/images/2019/03/22/480efc3abed567aecadda3eeed895eee.png"
+                           type="image/jpeg"/>
+            <guid>https://nplus1.ru/news/2019/03/23/coherent-engine</guid>
+            <link>https://nplus1.ru/news/2019/03/23/coherent-engine</link>
+            <dc:creator>Дмитрий Трунин</dc:creator>
+            <pubDate>Sat, 23 Mar 2019 09:34:39 +0300</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Помощь «няни» замедлила старение сейшельских камышовок]]></title>
+            <description>
+                <![CDATA[
+                    И снизила скорость укорачивания их теломер
+                    ]]>
+            </description>
+            <media:content url="https://nplus1.ru/images/2019/03/22/69f4a98163eedaf6e77ed89ff9c0faa8.jpg"
+                           type="image/jpeg"/>
+            <guid>https://nplus1.ru/news/2019/03/22/warbler-nanny</guid>
+            <link>https://nplus1.ru/news/2019/03/22/warbler-nanny</link>
+            <dc:creator>Елизавета Ивтушок</dc:creator>
+            <pubDate>Fri, 22 Mar 2019 19:38:58 +0300</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[«История частной жизни. Том 5: От I Мировой войны до конца XX века»]]></title>
+            <description>
+                <![CDATA[
+                    Как частная жизнь изменилась в XX веке
+                    ]]>
+            </description>
+            <media:content url="https://nplus1.ru/images/2019/03/22/804316e71d373f5140b10e829774a969.jpg"
+                           type="image/jpeg"/>
+            <guid>https://nplus1.ru/blog/2019/03/22/a-history-of-private-life</guid>
+            <link>https://nplus1.ru/blog/2019/03/22/a-history-of-private-life</link>
+            <dc:creator>НЛО</dc:creator>
+            <pubDate>Fri, 22 Mar 2019 19:26:24 +0300</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Полимер с памятью формы превратили в метаматериал с управляемой жесткостью]]></title>
+            <description>
+                <![CDATA[
+                    Возможность обратимой перестройки наделила новый метаматериал настраиваемыми свойствам. В частности, он может менять жесткость в 100 раз в зависимости от температуры.
+                    ]]>
+            </description>
+            <media:content url="https://nplus1.ru/images/2019/03/22/20decdedb6aa4de2d10027742ed812b2.gif"
+                           type="image/jpeg"/>
+            <guid>https://nplus1.ru/news/2019/03/22/tunable-stiffness-metamaterial</guid>
+            <link>https://nplus1.ru/news/2019/03/22/tunable-stiffness-metamaterial</link>
+            <dc:creator>Тимур Кешелава</dc:creator>
+            <pubDate>Fri, 22 Mar 2019 19:05:02 +0300</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Пластмассовая пластинка в жидком азоте отличила поддельные лекарства от настоящих]]></title>
+            <description>
+                <![CDATA[
+                    Американские ученые предложили дешевый, быстрый и простой способ качественного анализа сложных смесей веществ, таких как лекарства и пищевые продукты. 
+                    ]]>
+            </description>
+            <media:content url="https://nplus1.ru/images/2019/03/22/0990cdb94e89e2c09a18f1fba2db81fe.jpg"
+                           type="image/jpeg"/>
+            <guid>https://nplus1.ru/news/2019/03/22/cheap-way-to-identify-fake-drugs-or-food</guid>
+            <link>https://nplus1.ru/news/2019/03/22/cheap-way-to-identify-fake-drugs-or-food</link>
+            <dc:creator>Алина Кротова</dc:creator>
+            <pubDate>Fri, 22 Mar 2019 18:18:51 +0300</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Детская травма сделала мозг уязвимее перед депрессией]]></title>
+            <description>
+                <![CDATA[
+                    А депрессию — более способной к рецидиву
+                    ]]>
+            </description>
+            <media:content url="https://nplus1.ru/images/2019/03/22/40d8dae2703f62a403847019e9e2c765.gif"
+                           type="image/jpeg"/>
+            <guid>https://nplus1.ru/news/2019/03/22/childhood-trauma-on-depression</guid>
+            <link>https://nplus1.ru/news/2019/03/22/childhood-trauma-on-depression</link>
+            <dc:creator>Елизавета Ивтушок</dc:creator>
+            <pubDate>Fri, 22 Mar 2019 17:51:23 +0300</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Физики рассчитали плотность состояний магнитных квазимонополей в спиновом льду]]></title>
+            <description>
+                <![CDATA[
+                    Для этого ученые численно диагонализовали гамильтониан возбуждений системы, а потом воспроизвели результат аналитически с помощью качественной модели
+                    ]]>
+            </description>
+            <media:content url="https://nplus1.ru/images/2019/03/22/1403a40ad9d9391788ecf20137c38f08.jpg"
+                           type="image/jpeg"/>
+            <guid>https://nplus1.ru/news/2019/03/22/monopole-ice</guid>
+            <link>https://nplus1.ru/news/2019/03/22/monopole-ice</link>
+            <dc:creator>Дмитрий Трунин</dc:creator>
+            <pubDate>Fri, 22 Mar 2019 16:21:12 +0300</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Квантовый симулятор реализовали на квазикристаллической решетке]]></title>
+            <description>
+                <![CDATA[
+                    Физикам впервые удалось создать контролируемую систему с аналогичными квазикристаллу свойствами, позволяющую исследовать разнообразные явления, в том числе характерные для высоких размерностей пространства.
+                    ]]>
+            </description>
+            <media:content url="https://nplus1.ru/images/2019/03/22/5aaafe539bed944601446b6eafc1c3b8.jpg"
+                           type="image/jpeg"/>
+            <guid>https://nplus1.ru/news/2019/03/22/quantum-quasicrystal</guid>
+            <link>https://nplus1.ru/news/2019/03/22/quantum-quasicrystal</link>
+            <dc:creator>Тимур Кешелава</dc:creator>
+            <pubDate>Fri, 22 Mar 2019 15:40:26 +0300</pubDate>
+        </item>
+        <item>
+            <title>
+                <![CDATA[Секвенирование ДНК отдельных мышиных сперматозоидов указало на «предпочтения» кроссинговера]]></title>
+            <description>
+                <![CDATA[
+                    Еще одним важным критерием оказалось то, какой из вариантов белка PRDM9 участвует в формировании «горячей точки» и на какой из гомологичных хромосом она расположена.
+                    ]]>
+            </description>
+            <media:content url="https://nplus1.ru/images/2019/03/21/4fee9ffcd25cf2cceaec302174ddadca.jpg"
+                           type="image/jpeg"/>
+            <guid>https://nplus1.ru/news/2019/03/22/singlecellrecomb</guid>
+            <link>https://nplus1.ru/news/2019/03/22/singlecellrecomb</link>
+            <dc:creator>Вера Мухина</dc:creator>
+            <pubDate>Fri, 22 Mar 2019 14:59:37 +0300</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Медведи скорчили друг другу рожи]]></title>
+            <description>
+                <![CDATA[
+                    Судя по всему, медведи так договариваются во время игры
+                    ]]>
+            </description>
+            <media:content url="https://nplus1.ru/images/2019/03/22/d445f7fb5d382d077f26a4a889502dcb.gif"
+                           type="image/jpeg"/>
+            <guid>https://nplus1.ru/news/2019/03/22/facial-mimicry-in-bears</guid>
+            <link>https://nplus1.ru/news/2019/03/22/facial-mimicry-in-bears</link>
+            <dc:creator>Елизавета Ивтушок</dc:creator>
+            <pubDate>Fri, 22 Mar 2019 13:54:54 +0300</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Принцесса из Ла Альмолойи]]></title>
+            <description>
+                <![CDATA[
+                    В Испании разгорается музейный скандал из-за останков бронзового века
+                    ]]>
+            </description>
+            <media:content url="https://nplus1.ru/images/2019/03/22/5cd21b9ad21cba3e2ee8e4f589912366.jpg"
+                           type="image/jpeg"/>
+            <guid>https://nplus1.ru/blog/2019/03/22/spanish-princess</guid>
+            <link>https://nplus1.ru/blog/2019/03/22/spanish-princess</link>
+            <dc:creator>Юлли Улетова</dc:creator>
+            <pubDate>Fri, 22 Mar 2019 13:43:30 +0300</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Американский многоцелевой скоростной вертолет SB>1 Defiant совершил первый полет]]></title>
+            <description>
+                <![CDATA[
+                    Пилоты отработали несколько маневров на низких скорости и высоте
+                    ]]>
+            </description>
+            <media:content url="https://nplus1.ru/images/2019/03/22/5fdfaa05dd29f14a8f831cbc8b7736a7.gif"
+                           type="image/jpeg"/>
+            <guid>https://nplus1.ru/news/2019/03/22/defiant</guid>
+            <link>https://nplus1.ru/news/2019/03/22/defiant</link>
+            <dc:creator>Григорий Копиев</dc:creator>
+            <pubDate>Fri, 22 Mar 2019 13:32:34 +0300</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Только бы не убить]]></title>
+            <description>
+                <![CDATA[
+                    Обзор современных разработок оружия несмертельного действия
+                    ]]>
+            </description>
+            <media:content url="https://nplus1.ru/images/2019/03/20/34449f58193a8583cc1a89296b461303.gif"
+                           type="image/jpeg"/>
+            <guid>https://nplus1.ru/material/2019/03/22/nonlethal</guid>
+            <link>https://nplus1.ru/material/2019/03/22/nonlethal</link>
+            <dc:creator>Василий Сычев</dc:creator>
+            <pubDate>Fri, 22 Mar 2019 13:20:02 +0300</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Facebook признала хранение паролей сотен миллионов пользователей в открытом виде]]></title>
+            <description>
+                <![CDATA[
+                    Сотрудники компании имели доступ к этим данным
+                    ]]>
+            </description>
+            <media:content url="https://nplus1.ru/images/2019/03/21/edcf8b4e3c695fa3d4f05864664ff6e3.png"
+                           type="image/jpeg"/>
+            <guid>https://nplus1.ru/news/2019/03/21/facebook</guid>
+            <link>https://nplus1.ru/news/2019/03/21/facebook</link>
+            <dc:creator>Григорий Копиев</dc:creator>
+            <pubDate>Thu, 21 Mar 2019 22:32:41 +0300</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Замороженные образцы ткани тестикул макаки позволили получить здоровое потомство]]></title>
+            <description>
+                <![CDATA[
+                    Авторы исследования считают, что такая методика поможет восстанавливать фертильность мужчинам, которые утратили ее в детстве во время лечения рака.
+                    ]]>
+            </description>
+            <media:content url="https://nplus1.ru/images/2019/03/21/c7af2b20279e59bb5190642cd2b1abb3.jpg"
+                           type="image/jpeg"/>
+            <guid>https://nplus1.ru/news/2019/03/21/possible-infertility-treatment</guid>
+            <link>https://nplus1.ru/news/2019/03/21/possible-infertility-treatment</link>
+            <dc:creator>Екатерина Русакова</dc:creator>
+            <pubDate>Thu, 21 Mar 2019 22:00:26 +0300</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Асимметрию между материей и антиматерией впервые заметили в распадах D-мезонов]]></title>
+            <description>
+                <![CDATA[
+                    Данные Большого адронного коллайдера позволили обнаружить нарушение CP-инвариантности в принципиально новом случае
+                    ]]>
+            </description>
+            <media:content url="https://nplus1.ru/images/2019/03/21/f1605eccb38cfaf7eaa20f659fd19936.jpg"
+                           type="image/jpeg"/>
+            <guid>https://nplus1.ru/news/2019/03/21/d0-meson-cp-violation</guid>
+            <link>https://nplus1.ru/news/2019/03/21/d0-meson-cp-violation</link>
+            <dc:creator>Тимур Кешелава</dc:creator>
+            <pubDate>Thu, 21 Mar 2019 21:36:14 +0300</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Умная лампа от Dyson продублирует натуральное освещение]]></title>
+            <description>
+                <![CDATA[
+                    Всего за 600 долларов
+                    ]]>
+            </description>
+            <media:content url="https://nplus1.ru/images/2019/03/21/b5c3e326f34b6c5161b6a7131efb7f14.gif"
+                           type="image/jpeg"/>
+            <guid>https://nplus1.ru/news/2019/03/21/dyson-lamp</guid>
+            <link>https://nplus1.ru/news/2019/03/21/dyson-lamp</link>
+            <dc:creator>Елизавета Ивтушок</dc:creator>
+            <pubDate>Thu, 21 Mar 2019 19:18:32 +0300</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Рассвет мертвецов]]></title>
+            <description>
+                <![CDATA[
+                    Таяние ледников из-за изменения климата обнажает трупы на Эвересте
+                    ]]>
+            </description>
+            <media:content url="https://nplus1.ru/images/2019/03/21/7a7e90030c25c275aebb5e7463df0328.jpg"
+                           type="image/jpeg"/>
+            <guid>https://nplus1.ru/blog/2019/03/21/climate-change-of-the-dead</guid>
+            <link>https://nplus1.ru/blog/2019/03/21/climate-change-of-the-dead</link>
+            <dc:creator>Ольга Добровидова</dc:creator>
+            <pubDate>Thu, 21 Mar 2019 18:29:47 +0300</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Американцы займутся разработкой ядерного ракетного двигателя]]></title>
+            <description>
+                <![CDATA[
+                    Проект разработки двигателя планируется открыть в 2020 году
+                    ]]>
+            </description>
+            <media:content url="https://nplus1.ru/images/2019/03/21/62ec89545a36711f0c62b444209a6aa6.jpg"
+                           type="image/jpeg"/>
+            <guid>https://nplus1.ru/news/2019/03/21/nuclear</guid>
+            <link>https://nplus1.ru/news/2019/03/21/nuclear</link>
+            <dc:creator>Василий Сычев</dc:creator>
+            <pubDate>Thu, 21 Mar 2019 16:58:57 +0300</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Анестетик помог стереть негативные воспоминания]]></title>
+            <description>
+                <![CDATA[
+                    Но только в том случае, если перед этим человек о них вспомнит
+                    ]]>
+            </description>
+            <media:content url="https://nplus1.ru/images/2019/03/21/e4c9d4a6451ec6998b098eee1cf404e5.jpg"
+                           type="image/jpeg"/>
+            <guid>https://nplus1.ru/news/2019/03/21/propofol-erases-memories</guid>
+            <link>https://nplus1.ru/news/2019/03/21/propofol-erases-memories</link>
+            <dc:creator>Елизавета Ивтушок</dc:creator>
+            <pubDate>Thu, 21 Mar 2019 16:43:16 +0300</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Ученые нашли «дымоходы» между центром Млечного Пути и пузырями Ферми]]></title>
+            <description>
+                <![CDATA[
+                    Рентгеновские наблюдения позволили выявить связующе звено между самым центром Млечного Пути и гигантскими облаками горячего газа рядом с ним.
+                    ]]>
+            </description>
+            <media:content url="https://nplus1.ru/images/2019/03/21/06880bf8aeb046ef5583bb9171267e2c.png"
+                           type="image/jpeg"/>
+            <guid>https://nplus1.ru/news/2019/03/21/galactic-chimneys</guid>
+            <link>https://nplus1.ru/news/2019/03/21/galactic-chimneys</link>
+            <dc:creator>Тимур Кешелава</dc:creator>
+            <pubDate>Thu, 21 Mar 2019 15:53:09 +0300</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Наполовину отцы]]></title>
+            <description>
+                <![CDATA[
+                    О кооперативном размножении и химеризме среди приматов
+                    ]]>
+            </description>
+            <media:content url="https://nplus1.ru/images/2019/03/20/327cac754ba41be4d254380c6af9ed9f.jpg"
+                           type="image/jpeg"/>
+            <guid>https://nplus1.ru/blog/2019/03/21/half-fathers</guid>
+            <link>https://nplus1.ru/blog/2019/03/21/half-fathers</link>
+            <dc:creator>Соня Долотовская</dc:creator>
+            <pubDate>Thu, 21 Mar 2019 14:25:20 +0300</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Роботы и интернет помогли пчелам и рыбам в принятии коллективных решений]]></title>
+            <description>
+                <![CDATA[
+                    В естественной среде эти животные не могут взаимодействовать друг с другом
+                    ]]>
+            </description>
+            <media:content url="https://nplus1.ru/images/2019/03/19/90af6049feeee7de22b5bd58129a3c71.jpg"
+                           type="image/jpeg"/>
+            <guid>https://nplus1.ru/news/2019/03/21/interspecies-robot</guid>
+            <link>https://nplus1.ru/news/2019/03/21/interspecies-robot</link>
+            <dc:creator>Григорий Копиев</dc:creator>
+            <pubDate>Thu, 21 Mar 2019 14:13:44 +0300</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Поляки испытают очень легкий реактивный самолет]]></title>
+            <description>
+                <![CDATA[
+                    Первый полет LAR01 намечен на апрель 2019 года
+                    ]]>
+            </description>
+            <media:content url="https://nplus1.ru/images/2019/03/21/d2b2ba474d7ef8bfe266199233d865cd.jpg"
+                           type="image/jpeg"/>
+            <guid>https://nplus1.ru/news/2019/03/21/lar01</guid>
+            <link>https://nplus1.ru/news/2019/03/21/lar01</link>
+            <dc:creator>Василий Сычев</dc:creator>
+            <pubDate>Thu, 21 Mar 2019 13:11:17 +0300</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[850 ученых и один журнал высказались против статистической значимости]]></title>
+            <description>
+                <![CDATA[
+                    Ученые предлагают отказаться от жесткой интерпретации этого понятия
+                    ]]>
+            </description>
+            <media:content url="https://nplus1.ru/images/2019/03/21/fd582b21ba92df959191dbd74a0cae6c.jpg"
+                           type="image/jpeg"/>
+            <guid>https://nplus1.ru/news/2019/03/21/p-value-protest</guid>
+            <link>https://nplus1.ru/news/2019/03/21/p-value-protest</link>
+            <dc:creator>Ольга Добровидова</dc:creator>
+            <pubDate>Thu, 21 Mar 2019 12:53:17 +0300</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Воздушную мишень пятого поколения соберут из списанных самолетов]]></title>
+            <description>
+                <![CDATA[
+                    Новая мишень совершит первый полет летом 2019 года
+                    ]]>
+            </description>
+            <media:content url="https://nplus1.ru/images/2019/03/21/e6ae3009ff53089775c86e13c822eb93.jpg"
+                           type="image/jpeg"/>
+            <guid>https://nplus1.ru/news/2019/03/21/5gat</guid>
+            <link>https://nplus1.ru/news/2019/03/21/5gat</link>
+            <dc:creator>Василий Сычев</dc:creator>
+            <pubDate>Thu, 21 Mar 2019 09:41:43 +0300</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Ученые описали скопления тау-белка при «деменции боксеров»]]></title>
+            <description>
+                <![CDATA[
+                    Оказалось, что ХТЭ структурно отличается, например, от болезни Альцгеймера
+                    ]]>
+            </description>
+            <media:content url="https://nplus1.ru/images/2019/03/20/b26a767091d2336af7a2192de7484fbb.jpg"
+                           type="image/jpeg"/>
+            <guid>https://nplus1.ru/news/2019/03/20/cte-tau-protein</guid>
+            <link>https://nplus1.ru/news/2019/03/20/cte-tau-protein</link>
+            <dc:creator>Ольга Добровидова</dc:creator>
+            <pubDate>Wed, 20 Mar 2019 21:01:36 +0300</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Усложнение социальной структуры сообществ привело к появлению богов-морализаторов]]></title>
+            <description>
+                <![CDATA[
+                    Понятие наказания за моральные проступки появилось в сообществах, где жили более миллиона человек
+                    ]]>
+            </description>
+            <media:content url="https://nplus1.ru/images/2019/03/20/b673818cf5a54c5217700d6f20ea445b.jpg"
+                           type="image/jpeg"/>
+            <guid>https://nplus1.ru/news/2019/03/20/appearance</guid>
+            <link>https://nplus1.ru/news/2019/03/20/appearance</link>
+            <dc:creator>Екатерина Русакова</dc:creator>
+            <pubDate>Wed, 20 Mar 2019 21:00:25 +0300</pubDate>
+        </item>
+        <item>
+            <title>
+                <![CDATA[Метаанализ не доказал влияния детской тревожности на развитие алкогольной зависимости]]></title>
+            <description>
+                <![CDATA[
+                    Но о точной взаимосвязи пока что ничего сказать нельзя
+                    ]]>
+            </description>
+            <media:content url="https://nplus1.ru/images/2019/03/20/e490b5fa57debc02fc0d1b93c53c8bbf.jpg"
+                           type="image/jpeg"/>
+            <guid>https://nplus1.ru/news/2019/03/20/anxiety-to-addiction</guid>
+            <link>https://nplus1.ru/news/2019/03/20/anxiety-to-addiction</link>
+            <dc:creator>Елизавета Ивтушок</dc:creator>
+            <pubDate>Wed, 20 Mar 2019 20:10:08 +0300</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Монетные дворы в России и Англии XVII века ]]></title>
+            <description>
+                <![CDATA[
+                    Чем ручное производство денег отличалось от машинного
+                    ]]>
+            </description>
+            <media:content url="https://nplus1.ru/images/2019/03/20/bc83c07e26c86e3d0a03cfe665cbc642.jpg"
+                           type="image/jpeg"/>
+            <guid>https://nplus1.ru/blog/2019/03/20/coins-manufactering</guid>
+            <link>https://nplus1.ru/blog/2019/03/20/coins-manufactering</link>
+            <dc:creator>Артем Ефимов</dc:creator>
+            <pubDate>Wed, 20 Mar 2019 18:01:09 +0300</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Темную материю предложили ловить сверхпроводящими нанопроводами]]></title>
+            <description>
+                <![CDATA[
+                    Физики придумали новый метод поиска гипотетических частиц темной материи. Он обладает рядом преимуществ по сравнению с уже опробованными и может быть реализован в ближайшем будущем.
+                    ]]>
+            </description>
+            <media:content url="https://nplus1.ru/images/2019/03/20/57ba7d7b87dc89bf57415882c1ca9127.jpg"
+                           type="image/jpeg"/>
+            <guid>https://nplus1.ru/news/2019/03/20/dark-matter-superconducting-nanowire</guid>
+            <link>https://nplus1.ru/news/2019/03/20/dark-matter-superconducting-nanowire</link>
+            <dc:creator>Тимур Кешелава</dc:creator>
+            <pubDate>Wed, 20 Mar 2019 18:00:48 +0300</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Новый дудл Google превратит пару нот в хорал Баха]]></title>
+            <description>
+                <![CDATA[
+                    Дудл посвящен дню рождения композитора
+                    ]]>
+            </description>
+            <media:content url="https://nplus1.ru/images/2019/03/20/6f3b1ba39d7bb7ded95b666c36284481.gif"
+                           type="image/jpeg"/>
+            <guid>https://nplus1.ru/news/2019/03/20/happy-b-day-johann</guid>
+            <link>https://nplus1.ru/news/2019/03/20/happy-b-day-johann</link>
+            <dc:creator>Елизавета Ивтушок</dc:creator>
+            <pubDate>Wed, 20 Mar 2019 17:19:03 +0300</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Посадочная платформа миссии «ЭкзоМарс-2020» доставлена в Турин]]></title>
+            <description>
+                <![CDATA[
+                    В Италии пройдет сборка аппарата
+                    ]]>
+            </description>
+            <media:content url="https://nplus1.ru/images/2019/03/20/917a1a6735db3a86b344eb713168060e.jpg"
+                           type="image/jpeg"/>
+            <guid>https://nplus1.ru/news/2019/03/20/landing-kazachok</guid>
+            <link>https://nplus1.ru/news/2019/03/20/landing-kazachok</link>
+            <dc:creator>Ольга Добровидова</dc:creator>
+            <pubDate>Wed, 20 Mar 2019 17:10:19 +0300</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Небесное тело алмазной формы]]></title>
+            <description>
+                <![CDATA[
+                    Межпланетная станция OSIRIS-REx узнала характеристики астероида Бенну
+                    ]]>
+            </description>
+            <media:content url="https://nplus1.ru/images/2019/03/19/0c63c0ce1b460862d4d9303d475adc82.jpg"
+                           type="image/jpeg"/>
+            <guid>https://nplus1.ru/material/2019/03/20/about-Bennu</guid>
+            <link>https://nplus1.ru/material/2019/03/20/about-Bennu</link>
+            <dc:creator>Александр Войтюк</dc:creator>
+            <pubDate>Wed, 20 Mar 2019 17:03:21 +0300</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Миграцию в Австралию проследили по следам вируса гепатита В]]></title>
+            <description>
+                <![CDATA[
+                    Судя по распространению вируса, люди появились на континенте более 51 тысячи лет назад с острова Тимор, а возникла уникальная разновидность вируса в Сундаланде, на территории Юго-Восточной Азии.
+                    ]]>
+            </description>
+            <media:content url="https://nplus1.ru/images/2019/03/20/07565fae389bf1f865808f8ee2fc5d7a.jpg"
+                           type="image/jpeg"/>
+            <guid>https://nplus1.ru/news/2019/03/20/HBV-C4</guid>
+            <link>https://nplus1.ru/news/2019/03/20/HBV-C4</link>
+            <dc:creator>Екатерина Русакова</dc:creator>
+            <pubDate>Wed, 20 Mar 2019 15:26:37 +0300</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Глубокая стимуляция медиального пучка помогла при резистентной депрессии]]></title>
+            <description>
+                <![CDATA[
+                    Улучшение симптомов наблюдалось у всех участников исследования, а половине удалось достигнуть ремиссии.
+                    ]]>
+            </description>
+            <media:content url="https://nplus1.ru/images/2019/03/20/02e5c47abd3cfd7aee8f41e7c6134102.jpg"
+                           type="image/jpeg"/>
+            <guid>https://nplus1.ru/news/2019/03/20/dbs-v-depression</guid>
+            <link>https://nplus1.ru/news/2019/03/20/dbs-v-depression</link>
+            <dc:creator>Елизавета Ивтушок</dc:creator>
+            <pubDate>Wed, 20 Mar 2019 15:01:26 +0300</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[OSIRIS-REx зарегистрировал потоки пыли с поверхности астероида Бенну]]></title>
+            <description>
+                <![CDATA[
+                    Астероид Бенну удивил ученых своей активностью. Оказалось, что он периодически выпускает в окружающее пространство частицы собственного материала.
+                    ]]>
+            </description>
+            <media:content url="https://nplus1.ru/images/2019/03/20/e04377a55b41152d51ea28724c3ed327.jpg"
+                           type="image/jpeg"/>
+            <guid>https://nplus1.ru/news/2019/03/20/dusty-bennu</guid>
+            <link>https://nplus1.ru/news/2019/03/20/dusty-bennu</link>
+            <dc:creator>Тимур Кешелава</dc:creator>
+            <pubDate>Wed, 20 Mar 2019 13:41:06 +0300</pubDate>
+        </item>
+        <item>
+            <title>
+                <![CDATA[Астероид Рюгу назвали остатками более крупного небесного тела с радиоактивным ядром]]></title>
+            <description>
+                <![CDATA[
+                    Астероид Рюгу представляет собой «скопление» фрагментов более крупного небесного тела, которое некогда могло содержать водяной лед и органические молекулы
+                    ]]>
+            </description>
+            <media:content url="https://nplus1.ru/images/2019/03/20/f6bdb98b493408fd230ee64720894ee4.jpg"
+                           type="image/jpeg"/>
+            <guid>https://nplus1.ru/news/2019/03/20/Ryugu-summary</guid>
+            <link>https://nplus1.ru/news/2019/03/20/Ryugu-summary</link>
+            <dc:creator>Кристина Уласович</dc:creator>
+            <pubDate>Wed, 20 Mar 2019 13:03:33 +0300</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Японские ученые признали генетически отредактированные продукты безопасными]]></title>
+            <description>
+                <![CDATA[
+                    Рекомендации должно утвердить японское министерство труда и здравоохранения
+                    ]]>
+            </description>
+            <media:content url="https://nplus1.ru/images/2019/03/20/6ef8701a0c5448f18dc31a14c2f4dbe9.jpg"
+                           type="image/jpeg"/>
+            <guid>https://nplus1.ru/news/2019/03/20/ge-food-is-safe</guid>
+            <link>https://nplus1.ru/news/2019/03/20/ge-food-is-safe</link>
+            <dc:creator>Ольга Добровидова</dc:creator>
+            <pubDate>Wed, 20 Mar 2019 12:20:42 +0300</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[ВОЗ предложила создать глобальный реестр экспериментов по редактированию людей]]></title>
+            <description>
+                <![CDATA[
+                    Эксперты не поддержали идею моратория на такие эксперименты
+                    ]]>
+            </description>
+            <media:content url="https://nplus1.ru/images/2019/03/20/d8f82111654147ff983fda5b6a571ab3.jpg"
+                           type="image/jpeg"/>
+            <guid>https://nplus1.ru/news/2019/03/20/mum-he-counted-me</guid>
+            <link>https://nplus1.ru/news/2019/03/20/mum-he-counted-me</link>
+            <dc:creator>Ольга Добровидова</dc:creator>
+            <pubDate>Wed, 20 Mar 2019 11:50:16 +0300</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[FDA впервые одобрило препарат для лечения послеродовой депрессии]]></title>
+            <description>
+                <![CDATA[
+                    Препарат зульрессо (Zulresso) начинает действовать в течение нескольких дней, после 60-часовой капельницы.
+                    ]]>
+            </description>
+            <media:content url="https://nplus1.ru/images/2019/03/20/fa62509fddd2d52ad1af7318215f4067.jpg"
+                           type="image/jpeg"/>
+            <guid>https://nplus1.ru/news/2019/03/20/Postpartum-depression-treatment</guid>
+            <link>https://nplus1.ru/news/2019/03/20/Postpartum-depression-treatment</link>
+            <dc:creator>Екатерина Русакова</dc:creator>
+            <pubDate>Wed, 20 Mar 2019 11:33:33 +0300</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Американцы испытали одноразовые грузовые беспилотники]]></title>
+            <description>
+                <![CDATA[
+                    Всего были запущены 12 аппаратов, которые провели в воздухе в общей сложности 54 минуты
+                    ]]>
+            </description>
+            <media:content url="https://nplus1.ru/images/2019/03/20/23850327b95cd641b6048655991a1bf7.jpg"
+                           type="image/jpeg"/>
+            <guid>https://nplus1.ru/news/2019/03/20/gliders</guid>
+            <link>https://nplus1.ru/news/2019/03/20/gliders</link>
+            <dc:creator>Василий Сычев</dc:creator>
+            <pubDate>Wed, 20 Mar 2019 09:51:00 +0300</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Рюгу оказался наполовину полой «кучей щебня»]]></title>
+            <description>
+                <![CDATA[
+                    Астрономы оценили плотность астероида Рюгу, которая оказалась близка к плотности воды. Так как это околоземный астероид, значительно нагреваемый Солнцем, то много льда в нем быть не может. Следовательно, он обладает высокой пористостью.
+                    ]]>
+            </description>
+            <media:content url="https://nplus1.ru/images/2019/03/19/6345f9a23c42addebbec3b5c956e24aa.jpg"
+                           type="image/jpeg"/>
+            <guid>https://nplus1.ru/news/2019/03/19/porous-rubble-pile</guid>
+            <link>https://nplus1.ru/news/2019/03/19/porous-rubble-pile</link>
+            <dc:creator>Тимур Кешелава</dc:creator>
+            <pubDate>Tue, 19 Mar 2019 21:19:34 +0300</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Google представил облачный игровой сервис Stadia]]></title>
+            <description>
+                <![CDATA[
+                    Он сам производит расчеты на серверах и транслирует кадры на любое устройство
+                    ]]>
+            </description>
+            <media:content url="https://nplus1.ru/images/2019/03/19/ab8aac09c17063b2b76a73f909c03514.png"
+                           type="image/jpeg"/>
+            <guid>https://nplus1.ru/news/2019/03/19/google</guid>
+            <link>https://nplus1.ru/news/2019/03/19/google</link>
+            <dc:creator>Григорий Копиев</dc:creator>
+            <pubDate>Tue, 19 Mar 2019 21:02:20 +0300</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Астрономы нашли на Ультиме Туле метанол]]></title>
+            <description>
+                <![CDATA[
+                    А также толины и водяной лед
+                    ]]>
+            </description>
+            <media:content url="https://nplus1.ru/images/2019/03/19/34f24fed9f1741774d003b62c64090f0.jpg"
+                           type="image/jpeg"/>
+            <guid>https://nplus1.ru/news/2019/03/19/metanol-on-mu69</guid>
+            <link>https://nplus1.ru/news/2019/03/19/metanol-on-mu69</link>
+            <dc:creator>Александр Войтюк</dc:creator>
+            <pubDate>Tue, 19 Mar 2019 21:00:15 +0300</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Аллигаторы в наушниках помогли сроднить слуховые системы современных архозавров]]></title>
+            <description>
+                <![CDATA[
+                    Промежуток времени между обработкой звукового сигнала одним и вторым ухом у аллигаторов оказался схожим с птичьим
+                    ]]>
+            </description>
+            <media:content url="https://nplus1.ru/images/2019/03/19/763fcf709a95b23613b127b186f5e954.jpg"
+                           type="image/jpeg"/>
+            <guid>https://nplus1.ru/news/2019/03/19/gator-headphones</guid>
+            <link>https://nplus1.ru/news/2019/03/19/gator-headphones</link>
+            <dc:creator>Елизавета Ивтушок</dc:creator>
+            <pubDate>Tue, 19 Mar 2019 20:00:36 +0300</pubDate>
+        </item>
+        <item>
+            <title>
+                <![CDATA[Рюгу оказался самым темным из всех посещенных космическими аппаратами небесных тел]]></title>
+            <description>
+                <![CDATA[
+                    Ученые представили анализ отраженного астероидом Рюгу света, что позволило уточнить состав его поверхности.
+                    ]]>
+            </description>
+            <media:content url="https://nplus1.ru/images/2019/03/19/7cdbc8a8a7aa6fa24abc3a77792e6949.jpg"
+                           type="image/jpeg"/>
+            <guid>https://nplus1.ru/news/2019/03/19/Ryugu-the-dark</guid>
+            <link>https://nplus1.ru/news/2019/03/19/Ryugu-the-dark</link>
+            <dc:creator>Тимур Кешелава</dc:creator>
+            <pubDate>Tue, 19 Mar 2019 19:49:54 +0300</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Древнейшие фермеры Центральной Анатолии оказались местными]]></title>
+            <description>
+                <![CDATA[
+                    Местные жители развили сельское хозяйство сами, а не переняли у фермеров-переселенцев
+                    ]]>
+            </description>
+            <media:content url="https://nplus1.ru/images/2019/03/19/93d7053e1aeb243873cf29be7cb1f500.jpg"
+                           type="image/jpeg"/>
+            <guid>https://nplus1.ru/news/2019/03/19/oldest-locals</guid>
+            <link>https://nplus1.ru/news/2019/03/19/oldest-locals</link>
+            <dc:creator>Екатерина Русакова</dc:creator>
+            <pubDate>Tue, 19 Mar 2019 19:07:09 +0300</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Тяжелый фотон]]></title>
+            <description>
+                <![CDATA[
+                    Зачем физики пытаются пересмотреть фундаментальные представления о Вселенной
+                    ]]>
+            </description>
+            <media:content url="https://nplus1.ru/images/2019/03/19/21ed3e2d6f69f03dd403cb55f5422fb7.gif"
+                           type="image/jpeg"/>
+            <guid>https://nplus1.ru/material/2019/03/19/massive-photon</guid>
+            <link>https://nplus1.ru/material/2019/03/19/massive-photon</link>
+            <dc:creator>Тимур Кешелава</dc:creator>
+            <pubDate>Tue, 19 Mar 2019 17:23:13 +0300</pubDate>
+        </item>
+        <item>
+            <title>
+                <![CDATA[Быстродействующий психоделик облегчил симптомы депрессии и тревожного расстройства]]></title>
+            <description>
+                <![CDATA[
+                    Но эффективность еще нужно доказать клиническими исследованиями
+                    ]]>
+            </description>
+            <media:content url="https://nplus1.ru/images/2019/03/19/a0e5d6b2b7444ececa59421fe1c5323e.jpg"
+                           type="image/jpeg"/>
+            <guid>https://nplus1.ru/news/2019/03/19/5-meo-dmt</guid>
+            <link>https://nplus1.ru/news/2019/03/19/5-meo-dmt</link>
+            <dc:creator>Елизавета Ивтушок</dc:creator>
+            <pubDate>Tue, 19 Mar 2019 17:15:08 +0300</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Великобритания испытает полноразмерный беспилотный автобус]]></title>
+            <description>
+                <![CDATA[
+                    В 2020 году такие автобусы будут тестировать уже с пассажирами
+                    ]]>
+            </description>
+            <media:content url="https://nplus1.ru/images/2019/03/19/7bbbf149546264a9ed6a001e172faace.jpg"
+                           type="image/jpeg"/>
+            <guid>https://nplus1.ru/news/2019/03/19/UK-full-sized</guid>
+            <link>https://nplus1.ru/news/2019/03/19/UK-full-sized</link>
+            <dc:creator>Екатерина Русакова</dc:creator>
+            <pubDate>Tue, 19 Mar 2019 16:37:46 +0300</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Премию Абеля впервые присудили женщине]]></title>
+            <description>
+                <![CDATA[
+                    Карен Уленбек получит награду, в частности, за работы в области калибровочной теории поля
+                    ]]>
+            </description>
+            <media:content url="https://nplus1.ru/images/2019/03/19/8057961234bdf6e8e6a95f4f5fa62308.jpg"
+                           type="image/jpeg"/>
+            <guid>https://nplus1.ru/news/2019/03/19/first-woman-abel-prize</guid>
+            <link>https://nplus1.ru/news/2019/03/19/first-woman-abel-prize</link>
+            <dc:creator>Ольга Добровидова</dc:creator>
+            <pubDate>Tue, 19 Mar 2019 15:54:32 +0300</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Роборуку научили выполнять простые действия с незнакомыми предметами]]></title>
+            <description>
+                <![CDATA[
+                    Алгоритм, к примеру, позволяет роботу распознать кружку и повесить ее на сушилку
+                    ]]>
+            </description>
+            <media:content url="https://nplus1.ru/images/2019/03/18/c24c6711da7c763f79b190b93a789730.gif"
+                           type="image/jpeg"/>
+            <guid>https://nplus1.ru/news/2019/03/19/robotic-hand</guid>
+            <link>https://nplus1.ru/news/2019/03/19/robotic-hand</link>
+            <dc:creator>Григорий Копиев</dc:creator>
+            <pubDate>Tue, 19 Mar 2019 14:45:57 +0300</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[В Москве стартовал второй эксперимент имитации полета на Луну SIRIUS]]></title>
+            <description>
+                <![CDATA[
+                    Экипаж проведет в изоляции четыре месяца
+                    ]]>
+            </description>
+            <media:content url="https://nplus1.ru/images/2019/03/19/752c643e8be51d95426c65b0550c0b3d.jpeg"
+                           type="image/jpeg"/>
+            <guid>https://nplus1.ru/news/2019/03/19/second-sirius</guid>
+            <link>https://nplus1.ru/news/2019/03/19/second-sirius</link>
+            <dc:creator>Ольга Добровидова</dc:creator>
+            <pubDate>Tue, 19 Mar 2019 14:20:40 +0300</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Археологи описали конструкцию древнейшего новгородского моста ]]></title>
+            <description>
+                <![CDATA[
+                    Мост X века был построен на ряжевых срубах с длиной пролетов 17 метров
+                    ]]>
+            </description>
+            <media:content url="https://nplus1.ru/images/2019/03/19/f49374599d18145fa21a90003245fa45.jpg"
+                           type="image/jpeg"/>
+            <guid>https://nplus1.ru/news/2019/03/19/oldest-bridge</guid>
+            <link>https://nplus1.ru/news/2019/03/19/oldest-bridge</link>
+            <dc:creator>Екатерина Русакова</dc:creator>
+            <pubDate>Tue, 19 Mar 2019 14:18:42 +0300</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Нейросети NVIDIA превратили набросок в фотореалистичное изображение]]></title>
+            <description>
+                <![CDATA[
+                    Пока что интерфейс программы позволяет создавать только пейзажи
+                    ]]>
+            </description>
+            <media:content url="https://nplus1.ru/images/2019/03/19/672ac905bd308b75815ce10a89e48390.gif"
+                           type="image/jpeg"/>
+            <guid>https://nplus1.ru/news/2019/03/19/gaugan</guid>
+            <link>https://nplus1.ru/news/2019/03/19/gaugan</link>
+            <dc:creator>Елизавета Ивтушок</dc:creator>
+            <pubDate>Tue, 19 Mar 2019 13:56:56 +0300</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Квантовые точки догнали монокристаллы по эффективности свечения]]></title>
+            <description>
+                <![CDATA[
+                    Физикам удалось синтезировать дешевым методом квантовые точки, которые по оптическим параметрам очень близки к идеальным. Потенциально они могут заменить более дорогие крупные монокристаллы, используемые сегодня.
+                    ]]>
+            </description>
+            <media:content url="https://nplus1.ru/images/2019/03/19/f243eebae128d0e2cf90f8037fb7edad.jpg"
+                           type="image/jpeg"/>
+            <guid>https://nplus1.ru/news/2019/03/19/quantum-dot-photoluminescence-yield</guid>
+            <link>https://nplus1.ru/news/2019/03/19/quantum-dot-photoluminescence-yield</link>
+            <dc:creator>Тимур Кешелава</dc:creator>
+            <pubDate>Tue, 19 Mar 2019 13:47:14 +0300</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Яндекс и Hyundai займутся совместной разработкой беспилотного автомобиля]]></title>
+            <description>
+                <![CDATA[
+                    Программно-аппаратный комплекс смогут применять и другие компании
+                    ]]>
+            </description>
+            <media:content url="https://nplus1.ru/images/2019/03/19/fe5e2a821eb51f6a64279eae87c71604.jpeg"
+                           type="image/jpeg"/>
+            <guid>https://nplus1.ru/news/2019/03/19/yandex</guid>
+            <link>https://nplus1.ru/news/2019/03/19/yandex</link>
+            <dc:creator>Григорий Копиев</dc:creator>
+            <pubDate>Tue, 19 Mar 2019 12:51:08 +0300</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Директор института генетики РАН выступил против приравнивания CRISPR к ГМО]]></title>
+            <description>
+                <![CDATA[
+                    По его словам, это может привести к безнадежному отставанию российской селекции
+                    ]]>
+            </description>
+            <media:content url="https://nplus1.ru/images/2019/03/19/2619cf457bce5479bb0490e29168a259.jpg"
+                           type="image/jpeg"/>
+            <guid>https://nplus1.ru/news/2019/03/19/crispr-gmo-russia</guid>
+            <link>https://nplus1.ru/news/2019/03/19/crispr-gmo-russia</link>
+            <dc:creator>Ольга Добровидова</dc:creator>
+            <pubDate>Tue, 19 Mar 2019 11:27:17 +0300</pubDate>
+        </item>
+    </channel>
+</rss>

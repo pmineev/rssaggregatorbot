@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Meduza.io</title>
+        <link>https://meduza.io</link>
+        <language>ru</language>
+        <description>&#1052;&#1099; &#1074;&#1099;&#1073;&#1080;&#1088;&#1072;&#1077;&#1084; &#1076;&#1083;&#1103;
+            &#1074;&#1072;&#1089; &#1089;&#1072;&#1084;&#1099;&#1077; &#1074;&#1072;&#1078;&#1085;&#1099;&#1077; &#1085;&#1086;&#1074;&#1086;&#1089;&#1090;&#1080;
+            &#1080; &#1075;&#1086;&#1090;&#1086;&#1074;&#1080;&#1084; &#1083;&#1091;&#1095;&#1096;&#1080;&#1077; &#1090;&#1077;&#1082;&#1089;&#1090;&#1099;
+            &#1086; &#1090;&#1086;&#1084;, &#1095;&#1090;&#1086; &#1087;&#1088;&#1086;&#1080;&#1089;&#1093;&#1086;&#1076;&#1080;&#1090;
+            &#1074; &#1056;&#1086;&#1089;&#1089;&#1080;&#1080; &#1080; &#1084;&#1080;&#1088;&#1077;.
+        </description>
+        <image>
+            <url>https://meduza.io/images/rss-logo.png</url>
+            <title>Meduza.io</title>
+            <link>https://meduza.io</link>
+        </image>
+        <atom:link href="https://meduza.io/rss/all" rel="self" type="application/rss+xml"/>
+        <item>
+            <title><![CDATA[Boeing 737 MAX совершил экстренную посадку во Флориде из-за проблем с двигателем]]></title>
+            <link>
+                https://meduza.io/news/2019/03/27/boeing-737-max-sovershil-ekstrennuyu-posadku-vo-floride-iz-za-problem-s-dvigatelem
+            </link>
+            <guid>
+                https://meduza.io/news/2019/03/27/boeing-737-max-sovershil-ekstrennuyu-posadku-vo-floride-iz-za-problem-s-dvigatelem
+            </guid>
+            <enclosure
+                    url="http://meduza.io/imgly/share/1553636216/news/2019/03/27/boeing-737-max-sovershil-ekstrennuyu-posadku-vo-floride-iz-za-problem-s-dvigatelem"
+                    length="82644" type="image/png"/>
+            <description>
+                <![CDATA[Самолет Boeing 737 MAX авиакомпании Southwest Airlines совершил экстренную посадку в аэропорту Орландо во Флориде. ]]></description>
+            <pubDate>Wed, 27 Mar 2019 00:36:56 +0300</pubDate>
+        </item>
+        <item>
+            <title>
+                <![CDATA[Протестующие в Ингушетии остались на площади на ночь. Они потребовали отставки главы республики]]></title>
+            <link>
+                https://meduza.io/news/2019/03/27/protestuyuschie-v-ingushetii-ostalis-na-ploschadi-na-noch-oni-potrebovali-otstavki-glavy-respubliki
+            </link>
+            <guid>
+                https://meduza.io/news/2019/03/27/protestuyuschie-v-ingushetii-ostalis-na-ploschadi-na-noch-oni-potrebovali-otstavki-glavy-respubliki
+            </guid>
+            <enclosure
+                    url="http://meduza.io/imgly/share/1553635380/news/2019/03/27/protestuyuschie-v-ingushetii-ostalis-na-ploschadi-na-noch-oni-potrebovali-otstavki-glavy-respubliki"
+                    length="82094" type="image/png"/>
+            <description>
+                <![CDATA[Около двух тысяч участников акции протеста против изменений правил проведения референдума в Магасе отказались расходиться после ее завершения и остались на площади на ночь.]]></description>
+            <pubDate>Wed, 27 Mar 2019 00:23:00 +0300</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Доклад спецпрокурора Роберта Мюллера опубликуют в течение нескольких недель]]></title>
+            <link>
+                https://meduza.io/news/2019/03/26/doklad-spetsprokurora-roberta-myullera-opublikuyut-v-techenie-neskolkih-nedel
+            </link>
+            <guid>
+                https://meduza.io/news/2019/03/26/doklad-spetsprokurora-roberta-myullera-opublikuyut-v-techenie-neskolkih-nedel
+            </guid>
+            <enclosure
+                    url="http://meduza.io/imgly/share/1553633503/news/2019/03/26/doklad-spetsprokurora-roberta-myullera-opublikuyut-v-techenie-neskolkih-nedel"
+                    length="73220" type="image/png"/>
+            <description>
+                <![CDATA[Министерство юстиции в ближайшее время опубликует основную часть доклада спецпрокурора Роберта Мюллера. Как сообщает Reuters со ссылкой на представителя ведомства, это займет «недели, а не месяцы». ]]></description>
+            <pubDate>Tue, 26 Mar 2019 23:51:43 +0300</pubDate>
+        </item>
+        <item>
+            <title>
+                <![CDATA[The New York Times: против Конора Макгрегора ведется уголовное расследование о сексуальном насилии]]></title>
+            <link>
+                https://meduza.io/news/2019/03/26/the-new-york-times-protiv-konora-makgregora-vedetsya-ugolovnoe-rassledovanie-o-seksualnom-nasilii
+            </link>
+            <guid>
+                https://meduza.io/news/2019/03/26/the-new-york-times-protiv-konora-makgregora-vedetsya-ugolovnoe-rassledovanie-o-seksualnom-nasilii
+            </guid>
+            <enclosure
+                    url="http://meduza.io/imgly/share/1553629015/news/2019/03/26/the-new-york-times-protiv-konora-makgregora-vedetsya-ugolovnoe-rassledovanie-o-seksualnom-nasilii"
+                    length="84698" type="image/png"/>
+            <description>
+                <![CDATA[Полиция Ирландии ведет уголовное расследование против бойца ММА Конора Макгрегора по обвинениям в насильственных действиях сексуального характера, пишет The New York Times.]]></description>
+            <pubDate>Tue, 26 Mar 2019 22:26:39 +0300</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Абызову предъявили обвинения в мошенничестве и создании преступного сообщества]]></title>
+            <link>
+                https://meduza.io/news/2019/03/26/abyzovu-pred-yavili-obvineniya-v-moshennichestve-i-sozdanii-prestupnogo-soobschestva
+            </link>
+            <guid>
+                https://meduza.io/news/2019/03/26/abyzovu-pred-yavili-obvineniya-v-moshennichestve-i-sozdanii-prestupnogo-soobschestva
+            </guid>
+            <enclosure
+                    url="http://meduza.io/imgly/share/1553629624/news/2019/03/26/abyzovu-pred-yavili-obvineniya-v-moshennichestve-i-sozdanii-prestupnogo-soobschestva"
+                    length="75081" type="image/png"/>
+            <description>
+                <![CDATA[Бывшему министру по делам «Открытого правительства» Михаилу Абызову предъявлены официальные обвинения в создании преступного сообщества и мошенничестве, сообщил Следственный комитет.]]></description>
+            <pubDate>Tue, 26 Mar 2019 21:53:45 +0300</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Госпитализирован режиссер Сергей Соловьев]]></title>
+            <link>https://meduza.io/news/2019/03/26/gospitalizirovan-rezhisser-sergey-soloviev</link>
+            <guid>https://meduza.io/news/2019/03/26/gospitalizirovan-rezhisser-sergey-soloviev</guid>
+            <enclosure
+                    url="http://meduza.io/imgly/share/1553633616/news/2019/03/26/gospitalizirovan-rezhisser-sergey-soloviev"
+                    length="47828" type="image/png"/>
+            <description>
+                <![CDATA[Режиссер Сергей Соловьев, создатель фильмов «Асса» и «Черная роза — эмблема печали, красная роза — эмблема любви», экстренно госпитализирован в Москве.]]></description>
+            <pubDate>Tue, 26 Mar 2019 21:48:08 +0300</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Минобороны создаст киностудию для съемок фильмов об армии]]></title>
+            <link>https://meduza.io/news/2019/03/26/minoborony-sozdast-kinostudiyu-dlya-s-emok-filmov-ob-armii</link>
+            <guid>https://meduza.io/news/2019/03/26/minoborony-sozdast-kinostudiyu-dlya-s-emok-filmov-ob-armii</guid>
+            <enclosure
+                    url="http://meduza.io/imgly/share/1553624799/news/2019/03/26/minoborony-sozdast-kinostudiyu-dlya-s-emok-filmov-ob-armii"
+                    length="61357" type="image/png"/>
+            <description>
+                <![CDATA[Министерство обороны в ближайшее время создаст киностудию для съемок художественных фильмов про российскую армию, сообщает ТАСС.]]></description>
+            <pubDate>Tue, 26 Mar 2019 21:26:39 +0300</pubDate>
+        </item>
+        <item>
+            <title>
+                <![CDATA[Задержан бывший министр по делам «Открытого правительства» Михаил Абызов. Его подозревают в хищении четырех миллиардов рублей]]></title>
+            <link>
+                https://meduza.io/feature/2019/03/26/zaderzhan-byvshiy-ministr-po-delam-otkrytogo-pravitelstva-mihail-abyzov-ego-podozrevayut-v-vyvode-deneg-iz-energeticheskih-kompaniy
+            </link>
+            <guid>
+                https://meduza.io/feature/2019/03/26/zaderzhan-byvshiy-ministr-po-delam-otkrytogo-pravitelstva-mihail-abyzov-ego-podozrevayut-v-vyvode-deneg-iz-energeticheskih-kompaniy
+            </guid>
+            <enclosure url="http://meduza.io/image/attachments/images/003/926/141/small/AauQOaCRjAQ8gN9dL_wk0w.jpg"
+                       length="33860" type="image/jpeg"/>
+            <description>
+                <![CDATA[Против бывшего министра открытого правительства России Михаила Абызова возбуждено дело о создании преступного сообщества и мошенничестве. По версии Следственного комитета, в 2011-2014 годах Абызов и пятеро его предполагаемых сообщников похитили четыре миллиарда рублей у двух компаний из Новосибирской области — «Региональные электрические сети» и «Сибирская энергетическая компания». Полученные деньги подозреваемые якобы вывели за границу. СК заявил, что с Абызовым проводятся следственные действия. Часть 3 статьи о создании преступного сообщества, по которой возбуждено дело против Абызова, предусматривает наказание до 20 лет лишения свободы.]]></description>
+            <pubDate>Tue, 26 Mar 2019 21:05:37 +0300</pubDate>
+        </item>
+        <item>
+            <title>
+                <![CDATA[«Фокус с источником был нужен, чтобы акция имела резонанс». Журналист «Московского комсомольца» — о фальшивом экспонате в Историческом музее и фейковых новостях]]></title>
+            <link>https://meduza.io/feature/2019/03/26/fokus-s-istochnikom-byl-nuzhen-chtoby-aktsiya-imela-rezonans
+            </link>
+            <guid>https://meduza.io/feature/2019/03/26/fokus-s-istochnikom-byl-nuzhen-chtoby-aktsiya-imela-rezonans
+            </guid>
+            <enclosure url="http://meduza.io/image/attachments/images/003/925/056/small/Cu-ogtCciT5zsOAa1ImScQ.jpg"
+                       length="23056" type="image/jpeg"/>
+            <description>
+                <![CDATA[24 марта «Московский комсомолец» сообщил, что в Государственном историческом музее появился фальшивый экспонат: неизвестные разместили на выставке «Николай II. Семья и престол» фотоколлаж, на котором императрица Александра держит в руках «тревожную кнопку» — с какой часто сходят смотрители музеев. В сообщении «МК» утверждалось, что фальшивый экспонат повесили посетители, однако вскоре газета сообщила, что акцию организовали сами журналисты, «чтобы проверить систему безопасности музея». Всего в акции участвовали восемь сотрудников «МК», организатором была корреспондент Мария Москвичева. «Медуза» поговорила с ней о том, чего хотели добиться журналисты, устраивая акцию в музее и публикуя фейковое сообщение на своем сайте.]]></description>
+            <pubDate>Tue, 26 Mar 2019 20:56:34 +0300</pubDate>
+        </item>
+        <item>
+            <title>
+                <![CDATA[Европарламент поддержал директиву об авторском праве. Германию (возможно) убедили согласиться с ней в обмен на «Северный поток-2»]]></title>
+            <link>
+                https://meduza.io/feature/2019/03/26/evroparlament-podderzhal-direktivu-ob-avtorskom-prave-germaniyu-vozmozhno-ubedili-soglasitsya-s-ney-v-obmen-na-severnyy-potok-2
+            </link>
+            <guid>
+                https://meduza.io/feature/2019/03/26/evroparlament-podderzhal-direktivu-ob-avtorskom-prave-germaniyu-vozmozhno-ubedili-soglasitsya-s-ney-v-obmen-na-severnyy-potok-2
+            </guid>
+            <enclosure url="http://meduza.io/image/attachments/images/003/924/685/small/VhU6sArnI_2maO2lH1gfgg.jpg"
+                       length="80833" type="image/jpeg"/>
+            <description>
+                <![CDATA[Европарламент 26 марта одобрил финальный вариант директивы об авторском праве. За нее проголосовали 348 депутатов, против — 274. Первоначальный проект был принят в сентябре 2018 года, но он вызвал недовольство со стороны Германии, которая до последнего поддерживала более мягкий вариант реформы. После нескольких месяцев переговоров она неожиданно согласилась с позицией Франции, выступающей за более жесткое регулирование.]]></description>
+            <pubDate>Tue, 26 Mar 2019 20:30:16 +0300</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Почему кредитная карта от Apple — настоящий прорыв для Америки]]></title>
+            <link>
+                https://meduza.io/feature/2019/03/26/pochemu-kreditnaya-karta-ot-apple-eto-krutaya-novost-dlya-ameriki
+            </link>
+            <guid>
+                https://meduza.io/feature/2019/03/26/pochemu-kreditnaya-karta-ot-apple-eto-krutaya-novost-dlya-ameriki
+            </guid>
+            <enclosure url="http://meduza.io/image/attachments/images/003/925/385/small/Z_4xq4JbhEx0QRsI5ew2iA.jpg"
+                       length="36453" type="image/jpeg"/>
+            <description>
+                <![CDATA[Apple показала на мероприятии 25 марта не только три подписочных сервиса — на кино, игры и журналы — но и анонсировала собственную кредитную карту Apple Card. Компания обещает удобные отчеты о тратах, кешбэк, который выплачивается ежедневно, и полную приватность данных о покупках пользователей. Алекс Пацай, который живет в США и в своем блоге много и подробно пишет о продуктах Apple, рассказал, почему Apple Card — важный шаг для американского рынка. С разрешения автора «Медуза» приводит его материал целиком.]]></description>
+            <pubDate>Tue, 26 Mar 2019 19:32:53 +0300</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[10 удивительных фактов про японские дороги и водителей. В одной картинке]]></title>
+            <link>
+                https://meduza.io/short/2019/03/26/10-udivitelnyh-faktov-pro-yaponskie-dorogi-i-voditeley-v-odnoy-kartinke
+            </link>
+            <guid>
+                https://meduza.io/short/2019/03/26/10-udivitelnyh-faktov-pro-yaponskie-dorogi-i-voditeley-v-odnoy-kartinke
+            </guid>
+            <enclosure url="http://meduza.io/image/attachments/images/003/925/315/small/oaKZ4A7UzEqj06O9sXsYBg.jpg"
+                       length="48039" type="image/jpeg"/>
+            <description>
+                <![CDATA[Японских водителей объединяет то, что они уже более 100 лет пользуются шинами YOKOHAMA. В этом году у компании вышли новые летние модели. Серия Geolandar подходит для внедорожников: у них повышенная износостойкость и улучшенное сцепление. Шины из серии BluEarth есть как для легковушек, так и для кроссоверов: они отличаются тихим ходом, асимметричным протектором и развитыми водоотводящими канавками. А еще линейка BluEarth производится с помощью eco-friendly-технологий. Узнать больше о шинах YOKOHAMA вы можете на сайте компании.]]></description>
+            <pubDate>Tue, 26 Mar 2019 19:20:43 +0300</pubDate>
+        </item>
+        <item>
+            <title>
+                <![CDATA[Против бывшего министра по делам «Открытого правительства» Михаила Абызова возбудили дело о хищении четырех миллиардов рублей]]></title>
+            <link>
+                https://meduza.io/news/2019/03/26/protiv-byvshego-ministra-otkrytogo-pravitelstva-mihaila-abyzova-vozbudili-delo-o-hischenii-chetyreh-milliardov-rubley
+            </link>
+            <guid>
+                https://meduza.io/news/2019/03/26/protiv-byvshego-ministra-otkrytogo-pravitelstva-mihaila-abyzova-vozbudili-delo-o-hischenii-chetyreh-milliardov-rubley
+            </guid>
+            <enclosure
+                    url="http://meduza.io/imgly/share/1553622209/news/2019/03/26/protiv-byvshego-ministra-otkrytogo-pravitelstva-mihaila-abyzova-vozbudili-delo-o-hischenii-chetyreh-milliardov-rubley"
+                    length="109163" type="image/png"/>
+            <description>
+                <![CDATA[Следственный комитет возбудил уголовное дело против бывшего министра по делам «Открытого правительства» Михаила Абызова. Его подозревают в хищении четырех миллиардов рублей.]]></description>
+            <pubDate>Tue, 26 Mar 2019 19:11:55 +0300</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Европарламент проголосовал за отмену перевода часов весной и осенью]]></title>
+            <link>
+                https://meduza.io/news/2019/03/26/evroparlament-progolosoval-za-otmenu-perevoda-chasov-vesnoy-i-osenyu
+            </link>
+            <guid>
+                https://meduza.io/news/2019/03/26/evroparlament-progolosoval-za-otmenu-perevoda-chasov-vesnoy-i-osenyu
+            </guid>
+            <enclosure
+                    url="http://meduza.io/imgly/share/1553616283/news/2019/03/26/evroparlament-progolosoval-za-otmenu-perevoda-chasov-vesnoy-i-osenyu"
+                    length="65061" type="image/png"/>
+            <description>
+                <![CDATA[Европарламент поддержал предложение отменить обязательный перевод часов в странах ЕС весной и осенью.]]></description>
+            <pubDate>Tue, 26 Mar 2019 19:04:43 +0300</pubDate>
+        </item>
+        <item>
+            <title>
+                <![CDATA[Сколько вы готовы платить за фильмы? А за музыку? А за статьи готовы? Опрос «Медузы» про подписки]]></title>
+            <link>https://meduza.io/survey/skolko-vy-gotovy-platit-za-filmy-a-za-muzyku-a-za-stati-gotovy</link>
+            <guid>https://meduza.io/survey/skolko-vy-gotovy-platit-za-filmy-a-za-muzyku-a-za-stati-gotovy</guid>
+            <enclosure url="http://meduza.io/image/attachments/images/003/924/010/small/fjuVsIYpqLxeBhQa5IQvDQ.png"
+                       length="153645" type="image/png"/>
+            <description>
+                <![CDATA[На рынке стриминговых сервисов вот-вот появится новый крупный игрок — Apple TV+, со своими ток-шоу и сериалами. Для Apple их будут делать Стивен Спилберг, Опра Уинфри, Джей Джей Абрамс и другие знаменитости. Это значит, что скоро мы будем смотреть не только «Нетфликс» и «Амедиатеку» — и не только за них будем платить. «Медуза» решила узнать, какие подписки у вас уже есть и сколько вы готовы на них потратить. Речь не только про фильмы, музыку и игры!]]></description>
+            <pubDate>Tue, 26 Mar 2019 18:50:13 +0300</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[РФС проверит обвинения в домогательствах к футболисткам фарм-клуба женского ЦСКА]]></title>
+            <link>
+                https://meduza.io/news/2019/03/26/rfs-proverit-obvineniya-v-domogatelstvah-k-futbolistkam-farm-kluba-zhenskogo-tsska
+            </link>
+            <guid>
+                https://meduza.io/news/2019/03/26/rfs-proverit-obvineniya-v-domogatelstvah-k-futbolistkam-farm-kluba-zhenskogo-tsska
+            </guid>
+            <enclosure
+                    url="http://meduza.io/imgly/share/1553615175/news/2019/03/26/rfs-proverit-obvineniya-v-domogatelstvah-k-futbolistkam-farm-kluba-zhenskogo-tsska"
+                    length="83445" type="image/png"/>
+            <description>
+                <![CDATA[Российский футбольный союз (РФС) пообещал проверить информацию о домогательствах к футболисткам дубля женского ЦСКА — фарм-клуба СКА УОР. Об этом РБК заявили в пресс-службе РФС.]]></description>
+            <pubDate>Tue, 26 Mar 2019 18:46:14 +0300</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Медведев пообещал не повышать налоги ближайшие шесть лет]]></title>
+            <link>https://meduza.io/news/2019/03/26/medvedev-poobeschal-ne-povyshat-nalogi-blizhayshie-shest-let</link>
+            <guid>https://meduza.io/news/2019/03/26/medvedev-poobeschal-ne-povyshat-nalogi-blizhayshie-shest-let</guid>
+            <enclosure
+                    url="http://meduza.io/imgly/share/1553614091/news/2019/03/26/medvedev-poobeschal-ne-povyshat-nalogi-blizhayshie-shest-let"
+                    length="56793" type="image/png"/>
+            <description>
+                <![CDATA[В течение ближайших шести лет налоги в России корректироваться не будут, объявил глава правительства Дмитрий Медведев. «Вводится мораторий на изменения», — подчеркнул он.]]></description>
+            <pubDate>Tue, 26 Mar 2019 18:28:11 +0300</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[У тещи главы «Ростеха» нашли пентхаус стоимостью два миллиарда рублей]]></title>
+            <link>
+                https://meduza.io/news/2019/03/26/u-teschi-glavy-rosteha-nashli-penthaus-stoimostyu-v-dva-milliarda-rubley
+            </link>
+            <guid>
+                https://meduza.io/news/2019/03/26/u-teschi-glavy-rosteha-nashli-penthaus-stoimostyu-v-dva-milliarda-rubley
+            </guid>
+            <enclosure
+                    url="http://meduza.io/imgly/share/1553613893/news/2019/03/26/u-teschi-glavy-rosteha-nashli-penthaus-stoimostyu-v-dva-milliarda-rubley"
+                    length="65046" type="image/png"/>
+            <description>
+                <![CDATA[Теща главы «Ростеха» Сергея Чемезова, 73-летняя Людмила Рукавишникова владеет 700-метровым пентхаусом стоимостью около двух миллиардов рублей в историческом особняке на Малой Никитской улице в Москве. Об этом пишет «Собеседник». ]]></description>
+            <pubDate>Tue, 26 Mar 2019 18:15:29 +0300</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[В новом фильме про Джея и Молчаливого Боба появится «пасхалка» памяти Стэна Ли]]></title>
+            <link>
+                https://meduza.io/shapito/2019/03/26/v-novom-filme-pro-dzheya-i-molchalivogo-boba-poyavitsya-pashalka-pamyati-stena-li
+            </link>
+            <guid>
+                https://meduza.io/shapito/2019/03/26/v-novom-filme-pro-dzheya-i-molchalivogo-boba-poyavitsya-pashalka-pamyati-stena-li
+            </guid>
+            <enclosure url="http://meduza.io/image/attachments/images/003/925/133/small/2_SDEuNBH4NfIamqHvcsdQ.jpg"
+                       length="51041" type="image/jpeg"/>
+            <description>
+                <![CDATA[В новом фильме о Джее и Молчаливом Бобе, который выйдет на экраны в конце 2019 года, появится «пасхалка», связанная с создателем комиксов Стэном Ли и с вселенной Marvel. И она появится не просто так — это будет ответ на «пасхалку» из фильма «Капитан Марвел», которая отсылала к роли Стэна Ли в фильме про Джея и Молчаливого Боба «Тусовщики из супермаркета». ]]></description>
+            <pubDate>Tue, 26 Mar 2019 18:09:48 +0300</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Обвинение попросило для бывшего главы Коми Вячеслава Гайзера 21 год колонии]]></title>
+            <link>
+                https://meduza.io/news/2019/03/26/obvinenie-poprosilo-dlya-byvshego-glavy-komi-vyacheslava-gayzera-21-god-kolonii
+            </link>
+            <guid>
+                https://meduza.io/news/2019/03/26/obvinenie-poprosilo-dlya-byvshego-glavy-komi-vyacheslava-gayzera-21-god-kolonii
+            </guid>
+            <enclosure
+                    url="http://meduza.io/imgly/share/1553612381/news/2019/03/26/obvinenie-poprosilo-dlya-byvshego-glavy-komi-vyacheslava-gayzera-21-god-kolonii"
+                    length="65112" type="image/png"/>
+            <description>
+                <![CDATA[Гособвинитель попросил Замоскворецкий суд Москвы приговорить бывшего главу республики Коми Вячеслава Гайзера к 21 году колонии строгого режима и штрафу в 500 миллионов рублей по обвинению в коррупции, сообщает ТАСС.]]></description>
+            <pubDate>Tue, 26 Mar 2019 17:59:41 +0300</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Посмотреть, почитать, поиграть и потратить. Что показали на презентации Apple]]></title>
+            <link>
+                https://meduza.io/video/2019/03/26/posmotret-pochitat-poigrat-i-potratit-chto-pokazali-na-prezentatsii-apple
+            </link>
+            <guid>
+                https://meduza.io/video/2019/03/26/posmotret-pochitat-poigrat-i-potratit-chto-pokazali-na-prezentatsii-apple
+            </guid>
+            <enclosure url="http://meduza.io/image/attachments/images/003/925/275/small/W2QUiQefQ-8WviQE-6vsJQ.jpg"
+                       length="45916" type="image/jpeg"/>
+            <description>
+                <![CDATA[25 марта в Театре Стива Джобса в Купертино прошла презентация Apple. На этот раз компания не показывала ни новые устройства, ни обновленные операционные системы. Зато представила стриминговый сервис со Спилбергом и Джей Джей Абрамсом, подписку на журналы и игры, а также собственную кредитную карту. Заместитель главного редактора «Медузы» Султан Сулейманов, побывавший на презентации, рассказывает о новых сервисах Apple.]]></description>
+            <pubDate>Tue, 26 Mar 2019 17:45:49 +0300</pubDate>
+        </item>
+        <item>
+            <title>
+                <![CDATA[Сенатор Рауф Арашуков заявил, что за показания против него заплатили 65 миллионов рублей]]></title>
+            <link>
+                https://meduza.io/news/2019/03/26/senator-rauf-arashukov-zayavil-chto-za-pokazaniya-protiv-nego-zaplatili-65-millionov-rubley
+            </link>
+            <guid>
+                https://meduza.io/news/2019/03/26/senator-rauf-arashukov-zayavil-chto-za-pokazaniya-protiv-nego-zaplatili-65-millionov-rubley
+            </guid>
+            <enclosure
+                    url="http://meduza.io/imgly/share/1553610652/news/2019/03/26/senator-rauf-arashukov-zayavil-chto-za-pokazaniya-protiv-nego-zaplatili-65-millionov-rubley"
+                    length="79516" type="image/png"/>
+            <description>
+                <![CDATA[Член Совета Федерации Рауф Арашуков, обвиняемый в причастности к двум убийствам, заявил, что свидетелям заплатили за показания против него.]]></description>
+            <pubDate>Tue, 26 Mar 2019 17:24:04 +0300</pubDate>
+        </item>
+        <item>
+            <title>
+                <![CDATA[«Мы» Джордана Пила о нашествии двойников: хоррор, в котором самые страшные монстры — это люди]]></title>
+            <link>
+                https://meduza.io/feature/2019/03/26/my-dzhordana-pila-o-nashestvii-dvoynikov-horror-v-kotorom-samye-strashnye-monstry-eto-lyudi
+            </link>
+            <guid>
+                https://meduza.io/feature/2019/03/26/my-dzhordana-pila-o-nashestvii-dvoynikov-horror-v-kotorom-samye-strashnye-monstry-eto-lyudi
+            </guid>
+            <enclosure url="http://meduza.io/image/attachments/images/003/924/562/small/G-ST8ZTy0FEM0L2OScZgbg.jpg"
+                       length="37637" type="image/jpeg"/>
+            <description>
+                <![CDATA[28 марта в российский прокат выходит фильм «Мы» режиссера Джордана Пила — автора хоррора «Прочь», получившего в 2018 году «Оскар» за лучший сценарий. В новом фильме Пила герои противостоят собственным двойникам, а главную роль сыграла звезда «12 лет рабства» Лупита Нионго. Кинокритик Антон Долин объясняет, почему вторая работа режиссера ничуть не хуже первой, а самые страшные чудовища — это мы сами.]]></description>
+            <pubDate>Tue, 26 Mar 2019 17:17:54 +0300</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Нефтяники согласились продлить заморозку цен на бензин до июля]]></title>
+            <link>https://meduza.io/news/2019/03/26/neftyaniki-soglasilis-prodlit-zamorozku-tsen-na-benzin-do-iyulya
+            </link>
+            <guid>https://meduza.io/news/2019/03/26/neftyaniki-soglasilis-prodlit-zamorozku-tsen-na-benzin-do-iyulya
+            </guid>
+            <enclosure
+                    url="http://meduza.io/imgly/share/1553608790/news/2019/03/26/neftyaniki-soglasilis-prodlit-zamorozku-tsen-na-benzin-do-iyulya"
+                    length="60469" type="image/png"/>
+            <description>
+                <![CDATA[Нефтяники договорились с правительством продлить соглашение о заморозке цен на бензин до 1 июля. Об этом РБК сообщили чиновники и представители нефтяных компаний после совещания у вице-премьера Дмитрия Козака.]]></description>
+            <pubDate>Tue, 26 Mar 2019 16:59:48 +0300</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[«Открытая Россия» подала документы на регистрацию в Минюсте]]></title>
+            <link>https://meduza.io/news/2019/03/26/otkrytaya-rossiya-podala-dokumenty-na-registratsiyu-v-minyuste
+            </link>
+            <guid>https://meduza.io/news/2019/03/26/otkrytaya-rossiya-podala-dokumenty-na-registratsiyu-v-minyuste
+            </guid>
+            <enclosure
+                    url="http://meduza.io/imgly/share/1553606329/news/2019/03/26/otkrytaya-rossiya-podala-dokumenty-na-registratsiyu-v-minyuste"
+                    length="61318" type="image/png"/>
+            <description>
+                <![CDATA[«Открытая Россия» подала в министерство юстиции документы для официальной регистрации в качестве российской общественной организации, сообщил «МБХ медиа» председатель движения Андрей Пивоваров.]]></description>
+            <pubDate>Tue, 26 Mar 2019 16:18:49 +0300</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[ЦБ зарегистрировал первый банк с 2015 года]]></title>
+            <link>https://meduza.io/news/2019/03/26/tsb-zaregistriroval-pervyy-bank-s-2015-goda</link>
+            <guid>https://meduza.io/news/2019/03/26/tsb-zaregistriroval-pervyy-bank-s-2015-goda</guid>
+            <enclosure
+                    url="http://meduza.io/imgly/share/1553605662/news/2019/03/26/tsb-zaregistriroval-pervyy-bank-s-2015-goda"
+                    length="50782" type="image/png"/>
+            <description>
+                <![CDATA[Центробанк принял решение о государственной регистрации «Банка 131» из Казани, сообщается на сайте регулятора.]]></description>
+            <pubDate>Tue, 26 Mar 2019 16:07:42 +0300</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Следствие направит сенатора Рауфа Арашукова на психиатрическую экспертизу]]></title>
+            <link>
+                https://meduza.io/news/2019/03/26/sledstvie-napravit-raufa-arashukova-na-psihiatricheskuyu-ekspertizu
+            </link>
+            <guid>
+                https://meduza.io/news/2019/03/26/sledstvie-napravit-raufa-arashukova-na-psihiatricheskuyu-ekspertizu
+            </guid>
+            <enclosure
+                    url="http://meduza.io/imgly/share/1553609516/news/2019/03/26/sledstvie-napravit-raufa-arashukova-na-psihiatricheskuyu-ekspertizu"
+                    length="71950" type="image/png"/>
+            <description>
+                <![CDATA[Следственный комитет собирается отправить Рауфа Арашукова, обвиняемого в причастности к двум убийствам, на психиатрическую экспертизу. Об этом следователь сообщил на заседании суда, рассматривающего ходатайство о продлении ареста Арашукова.]]></description>
+            <pubDate>Tue, 26 Mar 2019 15:41:12 +0300</pubDate>
+        </item>
+        <item>
+            <title>
+                <![CDATA[Архиепископ РПЦ назвал установку скульптур домовых в Калининграде популяризацией идей неоязычества]]></title>
+            <link>
+                https://meduza.io/news/2019/03/26/arhiepiskop-rpts-nazval-ustanovku-skulptur-domovyh-v-kaliningrade-populyarizatsiey-idey-neoyazychestva
+            </link>
+            <guid>
+                https://meduza.io/news/2019/03/26/arhiepiskop-rpts-nazval-ustanovku-skulptur-domovyh-v-kaliningrade-populyarizatsiey-idey-neoyazychestva
+            </guid>
+            <enclosure
+                    url="http://meduza.io/imgly/share/1553611127/news/2019/03/26/arhiepiskop-rpts-nazval-ustanovku-skulptur-domovyh-v-kaliningrade-populyarizatsiey-idey-neoyazychestva"
+                    length="91991" type="image/png"/>
+            <description>
+                <![CDATA[Архиепископ Калининградский и Балтийский Серафим раскритиковал установку в Калининграде скульптур домовых (хомлинов) — персонажей языческой славянской мифологии. Соответствующее письмо он отправил губернатору Калининградской области Антону Алиханову. Копию письма обнародовала депутат областной думы от КПРФ Екатерина Королева, которая присоединилась к обращению.]]></description>
+            <pubDate>Tue, 26 Mar 2019 15:36:27 +0300</pubDate>
+        </item>
+        <item>
+            <title>
+                <![CDATA[Сбербанк разрешит менять PIN-код без перевыпуска карты. В месяц PIN-коды забывают 30 тысяч клиентов этого банка]]></title>
+            <link>
+                https://meduza.io/news/2019/03/26/sberbank-razreshit-vosstanavlivat-pin-kod-bez-perevypuska-karty-v-mesyats-pin-kody-zabyvayut-30-tysyach-klientov-etogo-banka
+            </link>
+            <guid>
+                https://meduza.io/news/2019/03/26/sberbank-razreshit-vosstanavlivat-pin-kod-bez-perevypuska-karty-v-mesyats-pin-kody-zabyvayut-30-tysyach-klientov-etogo-banka
+            </guid>
+            <enclosure
+                    url="http://meduza.io/imgly/share/1553606844/news/2019/03/26/sberbank-razreshit-vosstanavlivat-pin-kod-bez-perevypuska-karty-v-mesyats-pin-kody-zabyvayut-30-tysyach-klientov-etogo-banka"
+                    length="99814" type="image/png"/>
+            <description>
+                <![CDATA[Сбербанк в апреле предоставит всем своим клиентам возможность менять PIN-код карты в мобильном приложении.]]></description>
+            <pubDate>Tue, 26 Mar 2019 15:32:31 +0300</pubDate>
+        </item>
+        <item>
+            <title>
+                <![CDATA[Футболиста Павла Погребняка оштрафовали на 250 тысяч рублей за слова о темнокожих игроках в сборной России]]></title>
+            <link>
+                https://meduza.io/news/2019/03/26/futbolista-pavla-pogrebnyaka-oshtrafovali-na-250-tysyach-rubley-za-slova-o-temnokozhih-igrokah-v-sbornoy-rossii
+            </link>
+            <guid>
+                https://meduza.io/news/2019/03/26/futbolista-pavla-pogrebnyaka-oshtrafovali-na-250-tysyach-rubley-za-slova-o-temnokozhih-igrokah-v-sbornoy-rossii
+            </guid>
+            <enclosure
+                    url="http://meduza.io/imgly/share/1553603501/news/2019/03/26/futbolista-pavla-pogrebnyaka-oshtrafovali-na-250-tysyach-rubley-za-slova-o-temnokozhih-igrokah-v-sbornoy-rossii"
+                    length="100334" type="image/png"/>
+            <description>
+                <![CDATA[Комитет по этике Российского футбольного союза оштрафовал нападающего клуба «Урал» Павла Погребняка на 250 тысяч рублей за его высказывание о натурализации футболистов для сборной РФ.]]></description>
+            <pubDate>Tue, 26 Mar 2019 15:31:25 +0300</pubDate>
+        </item>
+    </channel>
+</rss>
