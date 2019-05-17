@@ -7,9 +7,9 @@ verify_ssl = true
 
 [packages]
 python-telegram-bot = "*"
-psycopg2 = "*"
 parse = "*"
 feedparser = "*"
+psycopg2-binary = "*"
 
 [requires]
 python_version = "3.6"
