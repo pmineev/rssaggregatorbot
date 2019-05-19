@@ -51,6 +51,16 @@ def _choose_sources(dispatcher):
     dispatcher.add_handler(handler)
 
 
+def _last(dispatcher):
+    handler = ConversationHandler(
+        entry_points=[CommandHandler('last', last.last)],
+        states={
+            0: [MessageHandler(Filters.all, last.enter)]
+            },
+        fallbacks=[])
+    dispatcher.add_handler(handler)
+
+
 def main():
     request = Request(con_pool_size=8, proxy_url=None if 'HEROKU' in environ else environ['PROXY_URL'])
     bot = rssbot.RssBot(token=environ['TOKEN'], request=request)
@@ -60,12 +70,12 @@ def main():
 
     dispatcher = updater.dispatcher
     dispatcher.add_handler(CommandHandler('stop', stop.stop, pass_job_queue=True))
-    dispatcher.add_handler(CommandHandler('last', last.last))
     dispatcher.add_handler(CallbackQueryHandler(restore.button, pattern='^restore', pass_job_queue=True))
 
     _start(dispatcher)
     _change_interval(dispatcher)
     _choose_sources(dispatcher)
+    _last(dispatcher)
 
     updater.start_polling()
 

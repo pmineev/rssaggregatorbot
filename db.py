@@ -147,7 +147,7 @@ class Database:
                             WHERE chat_id = %s''', (chat_id,))
         return self.cur.fetchone()[0]
 
-    def get_last_posts(self, chat_id, count=5):
+    def get_last_posts(self, chat_id, count):
         self.nt_cur.execute('''SELECT title, link, img_link, summary, date
                             FROM posts AS p
                             JOIN users_sources as us
