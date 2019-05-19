@@ -2,7 +2,6 @@ import logging
 import time
 
 import config
-import rssbot
 from keyboard_markups import yesno_keyboard
 
 log = logging.getLogger(__name__)
@@ -14,14 +13,14 @@ def button(bot, update, job_queue):
     chat_id = query.message.chat_id
     if answer == 'restore_yes':
         log.info(f'{chat_id} agreed')
-        job_queue.run_repeating(rssbot.send_new_posts,
+        job_queue.run_repeating(bot.send_new_posts,
                                 interval=config.DEFAULT_UPDATE_INTERVAL,
                                 first=0,
                                 context=chat_id,
                                 name=f'{chat_id}_sender')
     else:
         log.info(f'{chat_id} refused')
-        job_queue.run_repeating(rssbot.send_new_posts,
+        job_queue.run_repeating(bot.send_new_posts,
                                 interval=config.DEFAULT_UPDATE_INTERVAL,
                                 context=chat_id,
                                 name=f'{chat_id}_sender')
@@ -38,7 +37,7 @@ def restore_senders(bot, job_queue):
         log.info(f'Restoring sender for {user.chat_id}')
         next_update_date = user.last_updated_date + user.update_interval
         if next_update_date > current_time:
-            job_queue.run_repeating(rssbot.send_new_posts,
+            job_queue.run_repeating(bot.send_new_posts,
                                     interval=config.DEFAULT_UPDATE_INTERVAL,
                                     first=next_update_date - current_time,
                                     context=user.chat_id,
