@@ -16,12 +16,11 @@ def button(bot, update, job_queue):
         log.info(f'{chat_id} agreed')
         job_queue.run_repeating(rssbot.send_new_posts,
                                 interval=config.DEFAULT_UPDATE_INTERVAL,
+                                first=0,
                                 context=chat_id,
                                 name=f'{chat_id}_sender')
-        bot.database.set_last_updated_date(chat_id, int(time.time()))
     else:
         log.info(f'{chat_id} refused')
-        bot.database.set_last_updated_date(chat_id, int(time.time()))
         job_queue.run_repeating(rssbot.send_new_posts,
                                 interval=config.DEFAULT_UPDATE_INTERVAL,
                                 context=chat_id,
