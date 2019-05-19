@@ -31,7 +31,7 @@ def enter(bot, update, job_queue):
         update.message.reply_text('Интервал должен быть натуральным числом')
 
 
-def cancel(bot, update):
+def cancel(_, update):
     update.message.reply_text('Ввод интервала отменен')
     log.info(f'user {update.message.chat_id} calcelled changing interval')
     return -1
