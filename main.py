@@ -27,7 +27,7 @@ def _start(dispatcher):
             0: [CallbackQueryHandler(start.button, pattern='^start')],
             1: [CallbackQueryHandler(sources.button, pattern='^source')]
             },
-        fallbacks=[CallbackQueryHandler(sources.cancel, pattern='_source_cancel')])
+        fallbacks=[])
     dispatcher.add_handler(handler)
 
 
