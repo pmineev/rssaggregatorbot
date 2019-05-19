@@ -40,23 +40,33 @@ class RssBot(telegram.bot.Bot):
     def send_photo(self, *args, **kwargs):
         super().send_photo(*args, **kwargs)
 
-
-def send_new_messages_for_user(bot, job):
-    chat_id = job.context
-    posts = bot.database.get_new_posts_for_user(chat_id)
-    print(len(posts))
-    if posts:
-        log.info(f'Sending {len(posts)} messages to {chat_id}')
+    def send_posts(self, chat_id, posts):
+        log.info(f'Sending {len(posts)} posts to {chat_id}')
         for post in posts:
             text = '{}\n{}'.format(post.title, post.link)
             if post.img_link and len(text) < 200:
-                bot.send_photo(chat_id=chat_id,
-                               photo=post.img_link,
-                               caption=f'{post.title}\n{post.link}')
+                self.send_photo(chat_id=chat_id,
+                                photo=post.img_link,
+                                caption=f'{post.title}\n{post.link}')
             else:
-                bot.send_message(chat_id=chat_id,
-                                 text=f'{post.summary}\n{post.link}')
-        bot.database.set_last_updated_date_for_user(chat_id, int(time.time()))
+                self.send_message(chat_id=chat_id,
+                                  text=f'{post.summary}\n{post.link}')
+
+    def send_new_posts(self, job):
+        chat_id = job.context
+        log.info(f'Sending new posts to {chat_id}')
+        posts = self.database.get_new_posts(chat_id)
+        if posts:
+            self.send_posts(chat_id, posts)
+            self.database.set_last_updated_date(chat_id, int(time.time()))
+
+    def send_last_posts(self, chat_id):
+        log.info(f'Sending last posts to {chat_id}')
+        posts = self.database.get_last_posts(chat_id)
+        if posts:
+            self.send_posts(chat_id, posts)
+
+
 # TODO завести класс PostEntity для пересылки сообщений в базу и из базы
 
 #     def get_sorted_users(self):

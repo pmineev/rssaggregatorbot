@@ -121,33 +121,45 @@ class Database:
                             FROM users''')
         return self.nt_cur.fetchall()
 
-    def add_source_for_user(self, chat_id, source):
+    def add_source(self, chat_id, source):
         self.cur.execute('''INSERT INTO users_sources
                             VALUES (%s, %s)''', (chat_id, source))
 
-    def delete_source_for_user(self, chat_id, source):
+    def delete_source(self, chat_id, source):
         self.cur.execute('''DELETE FROM users_sources
                             WHERE chat_id = %s
                                 AND source = %s''', (chat_id, source))
 
-    def get_sources_for_user(self, chat_id):
+    def get_sources(self, chat_id):
         self.cur.execute('''SELECT source FROM users_sources
                             WHERE chat_id = %s''', (chat_id,))
         sources = self.cur.fetchall()
         return [source[0] for source in sources]
 
-    def set_update_interval_for_user(self, chat_id, interval):
+    def set_update_interval(self, chat_id, interval):
         self.cur.execute('''UPDATE users
                             SET update_interval = %s
                             WHERE chat_id = %s''', (interval, chat_id))
 
-    def get_update_interval_for_user(self, chat_id):
+    def get_update_interval(self, chat_id):
         self.cur.execute('''SELECT update_interval
                             FROM users
                             WHERE chat_id = %s''', (chat_id,))
         return self.cur.fetchone()[0]
 
-    def get_new_posts_for_user(self, chat_id):
+    def get_last_posts(self, chat_id, count=5):
+        self.nt_cur.execute('''SELECT title, link, img_link, summary, date
+                            FROM posts AS p
+                            JOIN users_sources as us
+                                ON p.source = us.source
+                            JOIN users AS u
+                                ON u.chat_id = us.chat_id
+                            WHERE u.chat_id = %s
+                            ORDER BY date DESC
+                            FETCH FIRST %s ROWS ONLY''', (chat_id, count))
+        return self.nt_cur.fetchall()
+
+    def get_new_posts(self, chat_id):
         self.nt_cur.execute('''SELECT title, link, img_link, summary, date
                                FROM posts AS p
                                JOIN users AS u
@@ -159,7 +171,7 @@ class Database:
                                ORDER BY date ASC''', (chat_id,))
         return self.nt_cur.fetchall()
 
-    def set_last_updated_date_for_user(self, chat_id, date):
+    def set_last_updated_date(self, chat_id, date):
         self.cur.execute('''UPDATE users
                             SET last_updated_date = %s
                             WHERE chat_id = %s''', (date, chat_id))
