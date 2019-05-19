@@ -41,7 +41,7 @@ class RssBot(telegram.bot.Bot):
         super().send_photo(*args, **kwargs)
 
 
-def send_new_posts_for_user(bot, job):
+def send_new_posts(bot, job):
     chat_id = job.context
     posts = bot.database.get_new_posts(chat_id)
     print(len(posts))

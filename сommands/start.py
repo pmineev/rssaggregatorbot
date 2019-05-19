@@ -12,7 +12,7 @@ def start(bot, update, job_queue):
     chat_id = update.message.chat.id
     bot.database.add_user(chat_id)
     log.info('new user {}'.format(chat_id))
-    job_queue.run_repeating(rssbot.send_new_posts_for_user,
+    job_queue.run_repeating(rssbot.send_new_posts,
                             interval=config.DEFAULT_UPDATE_INTERVAL,
                             context=chat_id,
                             name='{}_sender'.format(chat_id))
