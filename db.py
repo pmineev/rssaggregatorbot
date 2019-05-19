@@ -147,7 +147,7 @@ class Database:
                             WHERE chat_id = %s''', (chat_id,))
         return self.cur.fetchone()[0]
 
-    def get_last_posts(self, chat_id, count=5):
+    def get_last_posts(self, chat_id, count):
         self.nt_cur.execute('''SELECT title, link, img_link, summary, date
                             FROM posts AS p
                             JOIN users_sources as us
@@ -168,7 +168,7 @@ class Database:
                                    ON u.chat_id = us.chat_id
                                        AND p.source = us.source
                                WHERE u.chat_id = %s
-                               ORDER BY date ASC''', (chat_id,))
+                               ORDER BY date''', (chat_id,))
         return self.nt_cur.fetchall()
 
     def set_last_updated_date(self, chat_id, date):

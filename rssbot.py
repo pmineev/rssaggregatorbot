@@ -1,23 +1,30 @@
 import logging
 import time
+from os import environ
 
 import telegram
 from telegram.ext import MessageQueue
+from telegram.ext import Updater, CommandHandler, CallbackQueryHandler, ConversationHandler, MessageHandler, Filters
 from telegram.ext.messagequeue import queuedmessage
+from telegram.utils.request import Request
 
 import db
+import jobs.restore_senders as restore
 import rss_utils
 import sourceparsers
+import сommands.choose_sources as sources
+import сommands.interval as interval
+import сommands.last as last
+import сommands.start as start
+import сommands.stop as stop
 
 log = logging.getLogger(__name__)
 
 
-# TODO управление количеством сообщений в минуту
-
-
 class RssBot(telegram.bot.Bot):
-    def __init__(self, **kwargs):
-        super().__init__(**kwargs)
+    def __init__(self):
+        request = Request(con_pool_size=8, proxy_url=None if 'HEROKU' in environ else environ['PROXY_URL'])
+        super().__init__(token=environ['TOKEN'], request=request)
         log.info('Bot started')
         self._is_messages_queued_default = True
         self._msg_queue = MessageQueue(all_burst_limit=2, all_time_limit_ms=2000)
@@ -28,9 +35,60 @@ class RssBot(telegram.bot.Bot):
         for name, parser in sourceparsers.sources.items():
             threads.append(rss_utils.ParseThread(parser, self.database, name=name))
             log.info('created {} thread'.format(name))
-
         for t in threads:
             t.start()
+
+        self.updater = Updater(bot=self)
+        self.dispatcher = self.updater.dispatcher
+
+        restore.restore_senders(self, self.updater.job_queue)
+
+        self.dispatcher.add_handler(CommandHandler('stop', stop.stop, pass_job_queue=True))
+        self.dispatcher.add_handler(CallbackQueryHandler(restore.button, pattern='^restore', pass_job_queue=True))
+
+        self._start()
+        self._change_interval()
+        self._choose_sources()
+        self._last()
+
+        self.updater.start_polling()
+
+    def _start(self):
+        handler = ConversationHandler(
+            entry_points=[CommandHandler('start', start.start, pass_job_queue=True)],
+            states={
+                0: [CallbackQueryHandler(start.button, pattern='^start')],
+                1: [CallbackQueryHandler(sources.button, pattern='^source')]
+                },
+            fallbacks=[])
+        self.dispatcher.add_handler(handler)
+
+    def _change_interval(self):
+        handler = ConversationHandler(
+            entry_points=[CommandHandler('interval', interval.change)],
+            states={
+                0: [MessageHandler(Filters.text, interval.enter, pass_job_queue=True)]
+                },
+            fallbacks=[CommandHandler('cancel', interval.cancel)])
+        self.dispatcher.add_handler(handler)
+
+    def _choose_sources(self):
+        handler = ConversationHandler(
+            entry_points=[CommandHandler('choose', sources.choose)],
+            states={
+                0: [CallbackQueryHandler(sources.button, pattern='^source')]
+                },
+            fallbacks=[CallbackQueryHandler(sources.cancel, pattern='_source_cancel')])
+        self.dispatcher.add_handler(handler)
+
+    def _last(self):
+        handler = ConversationHandler(
+            entry_points=[CommandHandler('last', last.last)],
+            states={
+                0: [MessageHandler(Filters.all, last.enter)]
+                },
+            fallbacks=[])
+        self.dispatcher.add_handler(handler)
 
     @queuedmessage
     def send_message(self, *args, **kwargs):
@@ -52,20 +110,20 @@ class RssBot(telegram.bot.Bot):
                 self.send_message(chat_id=chat_id,
                                   text=f'{post.summary}\n{post.link}')
 
-    def send_new_posts(self, job):
+    def send_new_posts(self, _, job):
         chat_id = job.context
         log.info(f'Sending new posts to {chat_id}')
         posts = self.database.get_new_posts(chat_id)
+        print(len(posts))
         if posts:
             self.send_posts(chat_id, posts)
             self.database.set_last_updated_date(chat_id, int(time.time()))
 
-    def send_last_posts(self, chat_id):
+    def send_last_posts(self, chat_id, count):
         log.info(f'Sending last posts to {chat_id}')
-        posts = self.database.get_last_posts(chat_id)
+        posts = self.database.get_last_posts(chat_id, count)
         if posts:
             self.send_posts(chat_id, posts)
-
 
 # TODO завести класс PostEntity для пересылки сообщений в базу и из базы
 
