@@ -168,7 +168,7 @@ class Database:
                                    ON u.chat_id = us.chat_id
                                        AND p.source = us.source
                                WHERE u.chat_id = %s
-                               ORDER BY date ASC''', (chat_id,))
+                               ORDER BY date''', (chat_id,))
         return self.nt_cur.fetchall()
 
     def set_last_updated_date(self, chat_id, date):

@@ -18,7 +18,7 @@ def get_nplus1():
     bozo(feed)
     feed_parsed = []
     for entry in feed.entries:
-        post = {}
+        post = dict()
         post['title'] = entry['title'].replace('&nbsp;', ' ')
         post['link'] = entry['link']
         post['summary'] = ''.join(entry['summary']).replace('&nbsp;', ' ')
@@ -39,7 +39,7 @@ def get_postnauka():
     bozo(feed)
     feed_parsed = []
     for entry in feed.entries:
-        post = {}
+        post = dict()
         post['title'] = entry['title']
         post['link'] = entry['link']
 
@@ -67,7 +67,7 @@ def get_meduza():
     bozo(feed)
     feed_parsed = []
     for entry in feed.entries:
-        post = {}
+        post = dict()
         post['title'] = entry['title'].replace('\xa0', ' ')
         post['link'] = entry['link']
 

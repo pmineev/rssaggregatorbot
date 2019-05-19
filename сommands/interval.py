@@ -15,10 +15,9 @@ def change(bot, update):
 
 
 def enter(bot, update, job_queue):
-    # TODO интервал не меняется после ввода
     chat_id = update.message.chat.id
     user_input_interval = update.message.text
-    if user_input_interval.isdigit():
+    if user_input_interval.isdigit() and int(user_input_interval) > 0:
         interval = int(user_input_interval)
         bot.database.set_update_interval(chat_id, interval)
         print(list((j.name, j.interval) for j in job_queue.jobs()))
