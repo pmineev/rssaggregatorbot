@@ -43,7 +43,7 @@ class RssBot(telegram.bot.Bot):
 
 def send_new_posts_for_user(bot, job):
     chat_id = job.context
-    posts = bot.database.get_new_posts_for_user(chat_id)
+    posts = bot.database.get_new_posts(chat_id)
     print(len(posts))
     if posts:
         log.info(f'Sending {len(posts)} messages to {chat_id}')
@@ -56,7 +56,7 @@ def send_new_posts_for_user(bot, job):
             else:
                 bot.send_message(chat_id=chat_id,
                                  text=f'{post.summary}\n{post.link}')
-        bot.database.set_last_updated_date_for_user(chat_id, int(time.time()))
+        bot.database.set_last_updated_date(chat_id, int(time.time()))
 # TODO завести класс PostEntity для пересылки сообщений в базу и из базы
 
 #     def get_sorted_users(self):

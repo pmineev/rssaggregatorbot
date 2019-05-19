@@ -18,10 +18,10 @@ def button(bot, update, job_queue):
                                 interval=config.DEFAULT_UPDATE_INTERVAL,
                                 context=chat_id,
                                 name=f'{chat_id}_sender')
-        bot.database.set_last_updated_date_for_user(chat_id, int(time.time()))
+        bot.database.set_last_updated_date(chat_id, int(time.time()))
     else:
         log.info(f'{chat_id} refused')
-        bot.database.set_last_updated_date_for_user(chat_id, int(time.time()))
+        bot.database.set_last_updated_date(chat_id, int(time.time()))
         job_queue.run_repeating(rssbot.send_new_posts_for_user,
                                 interval=config.DEFAULT_UPDATE_INTERVAL,
                                 context=chat_id,
