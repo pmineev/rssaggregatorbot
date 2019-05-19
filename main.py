@@ -10,6 +10,7 @@ import сommands.choose_sources as sources
 import сommands.interval as interval
 import сommands.start as start
 import сommands.stop as stop
+import сommands.last as last
 
 logging.basicConfig(level=logging.INFO,
                     style='{',
@@ -59,6 +60,7 @@ def main():
 
     dispatcher = updater.dispatcher
     dispatcher.add_handler(CommandHandler('stop', stop.stop, pass_job_queue=True))
+    dispatcher.add_handler(CommandHandler('last', last.last))
     dispatcher.add_handler(CallbackQueryHandler(restore.button, pattern='^restore', pass_job_queue=True))
 
     _start(dispatcher)

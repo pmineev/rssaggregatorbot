@@ -60,6 +60,12 @@ class RssBot(telegram.bot.Bot):
             self.send_posts(chat_id, posts)
             self.database.set_last_updated_date(chat_id, int(time.time()))
 
+    def send_last_posts(self, chat_id):
+        log.info(f'Sending last posts to {chat_id}')
+        posts = self.database.get_last_posts(chat_id)
+        if posts:
+            self.send_posts(chat_id, posts)
+
 
 # TODO завести класс PostEntity для пересылки сообщений в базу и из базы
 
