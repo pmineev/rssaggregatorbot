@@ -36,8 +36,7 @@ class Database:
                                 img_link TEXT,
                                 summary TEXT,
                                 date INTEGER,
-                                source VARCHAR(20) REFERENCES sources,
-                                is_sent BOOLEAN DEFAULT FALSE)''')
+                                source VARCHAR(20) REFERENCES sources)''')
 
     def _create_users(self):
         self.cur.execute('''CREATE TABLE users (
@@ -97,9 +96,9 @@ class Database:
         for post in posts:
             post.update({'source': source})
             try:
-                self.cur.execute('''INSERT INTO posts (title, link, img_link, summary, date, source, is_sent)
+                self.cur.execute('''INSERT INTO posts (title, link, img_link, summary, date, source)
                                     VALUES
-                                    (%(title)s, %(link)s, %(img_link)s, %(summary)s, %(date)s, %(source)s, FALSE)''',
+                                    (%(title)s, %(link)s, %(img_link)s, %(summary)s, %(date)s, %(source)s)''',
                                  post)
             except Exception as e:
                 print(e, post)
