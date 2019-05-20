@@ -2,7 +2,7 @@ import logging
 import time
 
 import config
-from keyboard_markups import yesno_keyboard
+from jobs.check_interval import check_interval
 
 log = logging.getLogger(__name__)
 
@@ -35,14 +35,9 @@ def restore_senders(bot, job_queue):
     users = bot.database.get_users()
     for user in users:
         log.info(f'Restoring sender for {user.chat_id}')
-        next_update_date = user.last_updated_date + user.update_interval
-        if next_update_date > current_time:
+        if check_interval(bot, user, 'restore'):
             job_queue.run_repeating(bot.send_new_posts,
                                     interval=config.DEFAULT_UPDATE_INTERVAL,
-                                    first=next_update_date - current_time,
+                                    first=user.last_updated_date + user.update_interval - current_time,
                                     context=user.chat_id,
                                     name=f'{user.chat_id}_sender')
-        else:
-            bot.send_message(chat_id=user.chat_id,
-                             text='Бот не работал продолжительное время. Хотите получить неотправленные сообщения?',
-                             reply_markup=yesno_keyboard('restore'))

@@ -57,6 +57,12 @@ class Database:
                             FROM users''')
         return self.nt_cur.fetchall()
 
+    def get_user(self, chat_id):
+        self.nt_cur.execute('''SELECT *
+                            FROM users
+                            WHERE chat_id = %s''', (chat_id,))
+        return self.nt_cur.fetchone()
+
     def add_source(self, chat_id, source):
         self.cur.execute('''INSERT INTO users_sources
                             VALUES (%s, %s)''', (chat_id, source))

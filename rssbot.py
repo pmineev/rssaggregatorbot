@@ -17,6 +17,8 @@ import сommands.interval as interval
 import сommands.last as last
 import сommands.start as start
 import сommands.stop as stop
+import сommands.pause as pause
+import сommands.resume as resume
 
 log = logging.getLogger(__name__)
 
@@ -46,7 +48,11 @@ class RssBot(telegram.bot.Bot):
         restore.restore_senders(self, self.updater.job_queue)
 
         self.dispatcher.add_handler(CommandHandler('stop', stop.stop, pass_job_queue=True))
+        self.dispatcher.add_handler(CommandHandler('pause', pause.pause, pass_job_queue=True))
+        self.dispatcher.add_handler(CommandHandler('resume', resume.resume, pass_job_queue=True))
+
         self.dispatcher.add_handler(CallbackQueryHandler(restore.button, pattern='^restore', pass_job_queue=True))
+        self.dispatcher.add_handler(CallbackQueryHandler(resume.button, pattern='^resume'))
 
         self._start()
         self._change_interval()
