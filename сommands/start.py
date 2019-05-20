@@ -1,7 +1,7 @@
 import logging
 
 import config
-import сommands.choose_sources as sources
+import сommands.choose as sources
 from keyboard_markups import yesno_keyboard
 
 log = logging.getLogger(__name__)

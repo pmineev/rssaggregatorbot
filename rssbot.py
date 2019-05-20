@@ -12,7 +12,7 @@ import db
 import jobs.restore_senders as restore
 import rss_utils
 import sourceparsers
-import сommands.choose_sources as sources
+import сommands.choose as sources
 import сommands.interval as interval
 import сommands.last as last
 import сommands.start as start
