@@ -35,6 +35,7 @@ def button(bot, update):
                           chat_id=chat_id,
                           message_id=query.message.message_id,
                           reply_markup=choose_sources_keyboard(user_sources))
+    return 0
 
 
 def cancel(bot, update):
