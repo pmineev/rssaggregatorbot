@@ -83,6 +83,27 @@ def get_meduza():
     return feed_parsed
 
 
+def get_lenta():
+    feed = feedparser.parse('https://lenta.ru/rss')
+    bozo(feed)
+    feed_parsed = []
+    for entry in feed.entries:
+        post = dict()
+        post['title'] = entry['title']
+        post['link'] = entry['link']
+
+        post['summary'] = entry['summary']
+        post['img_link'] = entry['links'][1]['href']
+
+        post['date'] = int(time.mktime(entry['published_parsed']))
+        post['category'] = entry['tags'][0]['term']
+
+        feed_parsed.append(post)
+
+    return feed_parsed
+
+
 sources = {'nplus1': get_nplus1,
            'postnauka': get_postnauka,
-           'meduza': get_meduza}
+           'meduza': get_meduza,
+           'lenta': get_lenta}
