@@ -6,7 +6,6 @@ import psycopg2
 from psycopg2.extras import NamedTupleCursor
 
 import config
-import sourceparsers
 
 log = logging.getLogger(__name__)
 
@@ -17,68 +16,6 @@ class Database:
         self.conn.autocommit = True
         self.cur = self.conn.cursor()
         self.nt_cur = self.conn.cursor(cursor_factory=psycopg2.extras.NamedTupleCursor)
-
-    def _create_sources(self):
-        self.cur.execute('''CREATE TABLE sources (
-                                source VARCHAR(20) PRIMARY KEY,
-                                last_parsed_date INT DEFAULT 0)''')
-
-        for source in (sourceparsers.sources.keys()):
-            self.cur.execute('''INSERT INTO sources (source, last_parsed_date) VALUES
-                                (%s, 0)''', (source,))
-        self.conn.commit()
-
-    def _create_posts(self):
-        self.cur.execute('''CREATE TABLE posts (
-                                id SERIAL PRIMARY KEY,
-                                title TEXT,
-                                link TEXT,
-                                img_link TEXT,
-                                summary TEXT,
-                                date INTEGER,
-                                source VARCHAR(20) REFERENCES sources)''')
-
-    def _create_users(self):
-        self.cur.execute('''CREATE TABLE users (
-                                chat_id INTEGER PRIMARY KEY,
-                                update_interval INTEGER,
-                                last_updated_date INTEGER)''')
-
-    def _create_users_sources(self):
-        self.cur.execute('''CREATE TABLE users_sources (
-                                chat_id INTEGER
-                                    REFERENCES users
-                                    ON DELETE CASCADE,
-                                source VARCHAR(20) REFERENCES sources,
-                                UNIQUE (chat_id, source))''')
-
-    def _delete_posts(self):
-        self.cur.execute("DROP TABLE IF EXISTS posts")
-        self.conn.commit()
-
-    def _delete_sources(self):
-        self.cur.execute("DROP TABLE IF EXISTS sources")
-        self.conn.commit()
-
-    def _delete_users(self):
-        self.cur.execute("DROP TABLE IF EXISTS users")
-        self.conn.commit()
-
-    def _delete_users_sources(self):
-        self.cur.execute("DROP TABLE IF EXISTS users_sources")
-        self.conn.commit()
-
-    def create(self):
-        self._create_sources()
-        self._create_posts()
-        self._create_users()
-        self._create_users_sources()
-
-    def delete(self):
-        self._delete_users_sources()
-        self._delete_users()
-        self._delete_posts()
-        self._delete_sources()
 
     def get_last_parsed_date(self, source):
         self.cur.execute('''SELECT last_parsed_date
