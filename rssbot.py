@@ -23,24 +23,26 @@ log = logging.getLogger(__name__)
 
 class RssBot(telegram.bot.Bot):
     def __init__(self):
-        request = Request(con_pool_size=8, proxy_url=None if 'HEROKU' in environ else environ['PROXY_URL'])
+        request = Request(con_pool_size=8,
+                          proxy_url=None if 'HEROKU' in environ else environ['PROXY_URL'])
         super().__init__(token=environ['TOKEN'], request=request)
         log.info('Bot started')
+
         self._is_messages_queued_default = True
         self._msg_queue = MessageQueue(all_burst_limit=2, all_time_limit_ms=2000)
-
-        self.database = db.Database()
-
-        threads = []
-        for name, parser in sourceparsers.sources.items():
-            threads.append(rss_utils.ParseThread(parser, self.database, name=name))
-            log.info('created {} thread'.format(name))
-        for t in threads:
-            t.start()
 
         self.updater = Updater(bot=self)
         self.dispatcher = self.updater.dispatcher
 
+        self.database = db.Database()
+
+        self._add_handlers()
+
+        self._run_threads()
+
+        self.updater.start_polling()
+
+    def _add_handlers(self):
         restore.restore_senders(self, self.updater.job_queue)
 
         self.dispatcher.add_handler(CommandHandler('stop', stop.stop, pass_job_queue=True))
@@ -51,7 +53,13 @@ class RssBot(telegram.bot.Bot):
         self._choose_sources()
         self._last()
 
-        self.updater.start_polling()
+    def _run_threads(self):
+        threads = []
+        for name, parser in sourceparsers.sources.items():
+            threads.append(rss_utils.ParseThread(parser, self.database, name=name))
+            log.info('created {} thread'.format(name))
+        for t in threads:
+            t.start()
 
     def _start(self):
         handler = ConversationHandler(
