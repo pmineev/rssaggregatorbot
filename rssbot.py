@@ -130,15 +130,6 @@ class RssBot(telegram.bot.Bot):
                 self.send_message(chat_id=chat_id,
                                   text=f'{post.summary}\n{post.link}')
 
-    def send_new_posts(self, _, job):
-        chat_id = job.context
-        log.info(f'Sending new posts to {chat_id}')
-        posts = self.database.get_new_posts(chat_id)
-        print(len(posts))
-        if posts:
-            self.send_posts(chat_id, posts)
-            self.database.set_last_updated_date(chat_id, int(time.time()))
-
     def send_last_posts(self, chat_id, count):
         log.info(f'Sending last posts to {chat_id}')
         posts = self.database.get_last_posts(chat_id, count)

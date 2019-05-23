@@ -2,6 +2,7 @@ import logging
 import time
 
 from jobs.check_interval import check_interval
+from jobs.send_new_posts import send_new_posts
 
 log = logging.getLogger(__name__)
 
@@ -12,7 +13,7 @@ def button(bot, update):
     chat_id = query.message.chat_id
     if answer == 'resume_yes':
         log.info(f'{chat_id} agreed')
-        bot.send_new_posts(bot, update)
+        send_new_posts(bot, update)
     else:
         log.info(f'{chat_id} refused')
         bot.database.set_last_updated_date(chat_id, int(time.time()))
