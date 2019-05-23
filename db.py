@@ -51,6 +51,8 @@ class Database:
                             WHERE chat_id = %s''', (chat_id,))
         self.cur.execute('''DELETE FROM users_sources
                             WHERE chat_id = %s''', (chat_id,))
+        self.cur.execute('''DELETE FROM favourites
+                            WHERE chat_id = %s''', (chat_id,))
 
     def get_users(self):
         self.nt_cur.execute('''SELECT *
@@ -90,7 +92,7 @@ class Database:
         return self.cur.fetchone()[0]
 
     def get_last_posts(self, chat_id, count):
-        self.nt_cur.execute('''SELECT title, link, img_link, summary, date
+        self.nt_cur.execute('''SELECT id, title, link, img_link, summary, date
                             FROM posts AS p
                             JOIN users_sources as us
                                 ON p.source = us.source
@@ -102,7 +104,7 @@ class Database:
         return self.nt_cur.fetchall()
 
     def get_new_posts(self, chat_id):
-        self.nt_cur.execute('''SELECT title, link, img_link, summary, date
+        self.nt_cur.execute('''SELECT id, title, link, img_link, summary, date
                                FROM posts AS p
                                JOIN users AS u
                                    ON p.date > u.last_updated_date
@@ -118,3 +120,32 @@ class Database:
                             SET last_updated_date = %s
                             WHERE chat_id = %s''', (date, chat_id))
         self.conn.commit()
+
+    def get_favourite_posts(self, chat_id):
+        self.nt_cur.execute('''SELECT id, title, link, img_link, summary, date
+                               FROM posts AS p
+                               JOIN favourites AS f
+                                   ON p.id = f.post_id''', (chat_id,))
+        return self.nt_cur.fetchall()
+
+    def get_post_id(self, post_text):
+        self.cur.execute('''SELECT id
+                            FROM posts AS p
+                            WHERE p.title LIKE %s || '%%' ''', (post_text,))
+        return self.cur.fetchone()[0]
+
+    def add_to_favourites(self, chat_id, post_id):
+        self.cur.execute('''INSERT INTO favourites
+                            VALUES (%s, %s)''', (chat_id, post_id))
+
+    def delete_from_favourites(self, chat_id, post_id):
+        self.cur.execute('''DELETE FROM favourites
+                            WHERE chat_id = %s
+                                AND post_id = %s''', (chat_id, post_id))
+
+    def is_in_favourites(self, chat_id, post_id):
+        self.cur.execute('''SELECT COUNT(*) > 0
+                            FROM favourites
+                            WHERE chat_id = %s
+                                AND post_id = %s''', (chat_id, post_id))
+        return self.cur.fetchone()[0]

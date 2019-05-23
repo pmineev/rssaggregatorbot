@@ -13,12 +13,14 @@ import jobs.restore_senders as restore
 import rss_utils
 import sourceparsers
 import сommands.choose as sources
+import сommands.favourites as favourites
 import сommands.interval as interval
 import сommands.last as last
-import сommands.start as start
-import сommands.stop as stop
 import сommands.pause as pause
 import сommands.resume as resume
+import сommands.start as start
+import сommands.stop as stop
+from keyboard_markups import favourites_keyboard
 
 log = logging.getLogger(__name__)
 
@@ -50,9 +52,11 @@ class RssBot(telegram.bot.Bot):
         self.dispatcher.add_handler(CommandHandler('stop', stop.stop, pass_job_queue=True))
         self.dispatcher.add_handler(CommandHandler('pause', pause.pause, pass_job_queue=True))
         self.dispatcher.add_handler(CommandHandler('resume', resume.resume, pass_job_queue=True))
+        self.dispatcher.add_handler(CommandHandler('favourites', favourites.favourites))
 
         self.dispatcher.add_handler(CallbackQueryHandler(restore.button, pattern='^restore', pass_job_queue=True))
         self.dispatcher.add_handler(CallbackQueryHandler(resume.button, pattern='^resume'))
+        self.dispatcher.add_handler(CallbackQueryHandler(favourites.button, pattern='^favourites'))
 
         self._start()
         self._change_interval()
@@ -114,12 +118,14 @@ class RssBot(telegram.bot.Bot):
 
     def send_posts(self, chat_id, posts):
         log.info(f'Sending {len(posts)} posts to {chat_id}')
-        for post in posts:
+        favourites_map = [self.database.is_in_favourites(chat_id, post.id) for post in posts]
+        for post, is_fav in zip(posts, favourites_map):
             text = '{}\n{}'.format(post.title, post.link)
             if post.img_link and len(text) < 200:
                 self.send_photo(chat_id=chat_id,
                                 photo=post.img_link,
-                                caption=f'{post.title}\n{post.link}')
+                                caption=f'{post.title}\n{post.link}',
+                                reply_markup=favourites_keyboard(is_fav))
             else:
                 self.send_message(chat_id=chat_id,
                                   text=f'{post.summary}\n{post.link}')
@@ -138,6 +144,14 @@ class RssBot(telegram.bot.Bot):
         posts = self.database.get_last_posts(chat_id, count)
         if posts:
             self.send_posts(chat_id, posts)
+
+    def send_favourite_posts(self, chat_id):
+        log.info(f'Sending favourite posts to {chat_id}')
+        posts = self.database.get_favourite_posts(chat_id)
+        if posts:
+            self.send_posts(chat_id, posts)
+        else:
+            self.send_message(text='В избранном пусто')
 
 # TODO завести класс PostEntity для пересылки сообщений в базу и из базы
 

@@ -18,7 +18,12 @@ class DeleteDatabase(Database):
         self.cur.execute("DROP TABLE IF EXISTS users_sources")
         self.conn.commit()
 
+    def _delete_favourites(self):
+        self.cur.execute("DROP TABLE IF EXISTS favourites")
+        self.conn.commit()
+
     def delete(self):
+        self._delete_favourites()
         self._delete_users_sources()
         self._delete_users()
         self._delete_posts()

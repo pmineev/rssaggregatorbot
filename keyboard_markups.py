@@ -20,3 +20,10 @@ def yesno_keyboard(data):
     keyboard = [[InlineKeyboardButton(f'{text}', callback_data=f'{data}_{text_en}')]
                 for text, text_en in (('Да', 'yes'), ('Нет', 'no'))]
     return InlineKeyboardMarkup(keyboard)
+
+
+def favourites_keyboard(is_in_favourites):
+    icon, text, cb_data = ('\u2606', 'Удалить из избранного', 'delete') if is_in_favourites else\
+                          ('\u2b50', 'Добавить в избранное', 'add')
+    keyboard = [[InlineKeyboardButton(f'{icon} {text}', callback_data=f'favourites_{cb_data}')]]
+    return InlineKeyboardMarkup(keyboard)

@@ -38,11 +38,21 @@ class CreateDatabase(DeleteDatabase, Database):
                                 source VARCHAR(20) REFERENCES sources,
                                 UNIQUE (chat_id, source))''')
 
+    def _create_favourites(self):
+        self.cur.execute('''CREATE TABLE favourites (
+                                chat_id INTEGER
+                                    REFERENCES users
+                                    ON DELETE CASCADE,
+                                post_id INTEGER
+                                    REFERENCES posts(id),
+                                UNIQUE (chat_id, post_id))''')
+
     def create(self):
         self._create_sources()
         self._create_posts()
         self._create_users()
         self._create_users_sources()
+        self._create_favourites()
 
 
 d = CreateDatabase()
