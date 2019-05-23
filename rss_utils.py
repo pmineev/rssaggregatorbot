@@ -23,19 +23,19 @@ class ParseThread(threading.Thread):
     def get_new_posts(self):
         feed_parsed = self.get_feed()
         if feed_parsed:
-            log.info('{} posts in {} feed'.format(len(feed_parsed), self.name))
+            log.info(f'{len(feed_parsed)} posts in {self.name} feed')
 
             self.last_posted = feed_parsed[0]['date']
             new_posts = [post for post in feed_parsed if
                          self.last_parsed < post['date'] <= self.last_posted]
 
-            log.info('{} new posts in {} feed'.format(len(new_posts), self.name))
+            log.info(f'{len(new_posts)} new posts in {self.name} feed')
             if new_posts:
                 self.database.add_posts(new_posts, self.name)
                 self._set_last_parsed_date(new_posts)
                 self.last_parsed = int(time.time())
         else:
-            log.warning('{} feed is empty'.format(self.name))
+            log.warning(f'{self.name} feed is empty')
 
     def run(self):
         while True:

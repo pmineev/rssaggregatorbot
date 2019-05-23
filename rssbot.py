@@ -1,5 +1,4 @@
 import logging
-import time
 from os import environ
 
 import telegram
@@ -143,42 +142,3 @@ class RssBot(telegram.bot.Bot):
             self.send_posts(chat_id, posts)
         else:
             self.send_message(text='В избранном пусто')
-
-# TODO завести класс PostEntity для пересылки сообщений в базу и из базы
-
-#     def get_sorted_users(self):
-#         users_sources = self.database.get_users_sources()
-#         sorted_users = {}
-#         for user_source in users_sources:
-#             sorted_users.setdefault(user_source[1], []).append(user_source[0])
-#         return sorted_users
-#
-#     def get_new_posts(self, sources):
-#         sorted_posts = {}
-#         for source in sources:
-#             posts = self.database.get_new_posts_by_source(source)
-#             if posts:
-#                 sorted_posts[source] = posts
-#         return sorted_posts
-#
-#     def mark_as_sent_by_source(self, sources):
-#         self.database.mark_as_sent_by_source(sources)
-#
-#
-# def send_new_messages(bot, job):
-#     sorted_users = bot.get_sorted_users()
-#     posts = bot.get_new_posts(sorted_users.keys())
-#     log.info('Sending {} posts'.format(sum(len(posts[s]) for s in posts)))
-#     if posts:
-#         for source in posts:
-#             for chat_id in sorted_users[source]:
-#                 log.info('Sending {} messages from {} to {}'.format(len(posts[source]), source, chat_id))
-#                 for post in posts[source]:
-#                     if post['img_link'] and len('{}\n{}'.format(post['title'], post['link'])) < 200:
-#                         bot.send_photo(chat_id=chat_id,
-#                                        photo=post['img_link'],
-#                                        caption='{}\n{}'.format(post['title'], post['link']))
-#                     else:
-#                         bot.send_message(chat_id=chat_id,
-#                                          text='{}\n{}'.format(post['title'], post['link']))
-#             bot.mark_as_sent_by_source(source)
