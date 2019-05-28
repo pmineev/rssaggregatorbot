@@ -1,6 +1,6 @@
 import logging
-from keyboard_markups import favourites_keyboard
 
+from keyboard_markups import favourites_keyboard
 
 log = logging.getLogger(__name__)
 
@@ -11,7 +11,7 @@ def button(bot, update):
     message = query.message
     chat_id = message.chat_id
     post_text = message.text or message.caption
-    post_text = post_text[:post_text.find('\n')]
+    post_text = post_text[post_text.find('\n') + 1:post_text.rfind('\n')]
     post_id = bot.database.get_post_id(post_text)
     if answer == 'favourites_add':
         bot.database.add_to_favourites(chat_id, post_id)

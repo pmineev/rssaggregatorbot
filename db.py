@@ -33,9 +33,9 @@ class Database:
         for post in posts:
             post.update({'source': source})
             try:
-                self.cur.execute('''INSERT INTO posts (title, link, img_link, summary, date, source)
-                                    VALUES
-                                    (%(title)s, %(link)s, %(img_link)s, %(summary)s, %(date)s, %(source)s)''',
+                self.cur.execute('''INSERT INTO posts (title, link, img_link, summary, date, source, category)
+                                    VALUES (%(title)s, %(link)s, %(img_link)s, %(summary)s,
+                                            %(date)s, %(source)s, %(category)s)''',
                                  post)
             except Exception as e:
                 print(e, post)
@@ -45,11 +45,15 @@ class Database:
                             VALUES (%s, %s, %s)
                             ON CONFLICT (chat_id) DO NOTHING''',
                          (chat_id, config.DEFAULT_UPDATE_INTERVAL, int(time.time())))
+        self.cur.execute('''INSERT INTO users_categories
+                            VALUES (%s, %s)''', (chat_id, None))
 
     def delete_user(self, chat_id):
         self.cur.execute('''DELETE FROM users
                             WHERE chat_id = %s''', (chat_id,))
         self.cur.execute('''DELETE FROM users_sources
+                            WHERE chat_id = %s''', (chat_id,))
+        self.cur.execute('''DELETE FROM users_categories
                             WHERE chat_id = %s''', (chat_id,))
         self.cur.execute('''DELETE FROM favourites
                             WHERE chat_id = %s''', (chat_id,))
@@ -80,6 +84,29 @@ class Database:
         sources = self.cur.fetchall()
         return [source[0] for source in sources]
 
+    def get_categories(self, chat_id=None):
+        if chat_id:
+            self.cur.execute('''SELECT DISTINCT category
+                                FROM users_categories
+                                WHERE chat_id = %s
+                                    AND category NOTNULL''', (chat_id,))
+        else:
+            self.cur.execute('''SELECT DISTINCT category
+                                FROM posts
+                                WHERE category NOTNULL ''')
+
+        categories = self.cur.fetchall()
+        return [category[0] for category in categories]
+
+    def add_category(self, chat_id, category):
+        self.cur.execute('''INSERT INTO users_categories
+                            VALUES (%s, %s)''', (chat_id, category))
+
+    def delete_category(self, chat_id, category):
+        self.cur.execute('''DELETE FROM users_categories
+                            WHERE chat_id = %s
+                                AND category = %s''', (chat_id, category))
+
     def set_update_interval(self, chat_id, interval):
         self.cur.execute('''UPDATE users
                             SET update_interval = %s
@@ -92,25 +119,31 @@ class Database:
         return self.cur.fetchone()[0]
 
     def get_last_posts(self, chat_id, count):
-        self.nt_cur.execute('''SELECT id, title, link, img_link, summary, date
+        self.nt_cur.execute('''SELECT id, title, link, img_link, summary, date, p.category
                             FROM posts AS p
                             JOIN users_sources as us
                                 ON p.source = us.source
                             JOIN users AS u
                                 ON u.chat_id = us.chat_id
+                            JOIN users_categories AS uc
+                                ON u.chat_id = uc.chat_id
+                                    AND p.category = uc.category
                             WHERE u.chat_id = %s
                             ORDER BY date DESC
                             FETCH FIRST %s ROWS ONLY''', (chat_id, count))
         return self.nt_cur.fetchall()
 
     def get_new_posts(self, chat_id):
-        self.nt_cur.execute('''SELECT id, title, link, img_link, summary, date
+        self.nt_cur.execute('''SELECT id, title, link, img_link, summary, date, p.category
                                FROM posts AS p
                                JOIN users AS u
                                    ON p.date > u.last_updated_date
                                JOIN users_sources as us
                                    ON u.chat_id = us.chat_id
                                        AND p.source = us.source
+                               JOIN users_categories AS uc
+                                   ON u.chat_id = uc.chat_id
+                                       AND p.category = uc.category
                                WHERE u.chat_id = %s
                                ORDER BY date''', (chat_id,))
         return self.nt_cur.fetchall()

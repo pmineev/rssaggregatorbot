@@ -11,6 +11,7 @@ import db
 import jobs.restore_senders as restore
 import rss_utils
 import sourceparsers
+import сommands.categories as category
 import сommands.choose as sources
 import сommands.favourites as favourites
 import сommands.interval as interval
@@ -61,6 +62,7 @@ class RssBot(telegram.bot.Bot):
         self._change_interval()
         self._choose_sources()
         self._last()
+        self._categories()
 
     def _run_threads(self):
         threads = []
@@ -107,6 +109,15 @@ class RssBot(telegram.bot.Bot):
             fallbacks=[])
         self.dispatcher.add_handler(handler)
 
+    def _categories(self):
+        handler = ConversationHandler(
+            entry_points=[CommandHandler('categories', category.category)],
+            states={
+                0: [CallbackQueryHandler(category.button, pattern='^categories')]
+                },
+            fallbacks=[CallbackQueryHandler(category.cancel, pattern='_categories_cancel')])
+        self.dispatcher.add_handler(handler)
+
     @queuedmessage
     def send_message(self, *args, **kwargs):
         super().send_message(*args, **kwargs)
@@ -115,6 +126,9 @@ class RssBot(telegram.bot.Bot):
     def send_photo(self, *args, **kwargs):
         super().send_photo(*args, **kwargs)
 
+    # TODO отключить превью
+    # TODO выделять категории
+    # TODO красивое составление текста сообщений
     def send_posts(self, chat_id, posts):
         log.info(f'Sending {len(posts)} posts to {chat_id}')
         favourites_map = [self.database.is_in_favourites(chat_id, post.id) for post in posts]
@@ -123,11 +137,11 @@ class RssBot(telegram.bot.Bot):
             if post.img_link and len(text) < 200:
                 self.send_photo(chat_id=chat_id,
                                 photo=post.img_link,
-                                caption=f'{post.title}\n{post.link}',
+                                caption=f'{post.category}\n{post.title}\n{post.link}',
                                 reply_markup=favourites_keyboard(is_fav))
             else:
                 self.send_message(chat_id=chat_id,
-                                  text=f'{post.summary}\n{post.link}')
+                                  text=f'{post.category}\n{post.summary}\n{post.link}')
 
     def send_last_posts(self, chat_id, count):
         log.info(f'Sending last posts to {chat_id}')

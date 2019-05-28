@@ -22,7 +22,8 @@ class CreateDatabase(DeleteDatabase, Database):
                                 img_link TEXT,
                                 summary TEXT,
                                 date INTEGER,
-                                source VARCHAR(20) REFERENCES sources)''')
+                                source VARCHAR(20) REFERENCES sources,
+                                category VARCHAR(20))''')
 
     def _create_users(self):
         self.cur.execute('''CREATE TABLE users (
@@ -38,6 +39,14 @@ class CreateDatabase(DeleteDatabase, Database):
                                 source VARCHAR(20) REFERENCES sources,
                                 UNIQUE (chat_id, source))''')
 
+    def _create_users_categories(self):
+        self.cur.execute('''CREATE TABLE users_categories (
+                                chat_id INTEGER
+                                    REFERENCES users
+                                    ON DELETE CASCADE,
+                                category VARCHAR(20),
+                                UNIQUE (chat_id, category))''')
+
     def _create_favourites(self):
         self.cur.execute('''CREATE TABLE favourites (
                                 chat_id INTEGER
@@ -52,6 +61,7 @@ class CreateDatabase(DeleteDatabase, Database):
         self._create_posts()
         self._create_users()
         self._create_users_sources()
+        self._create_users_categories()
         self._create_favourites()
 
 

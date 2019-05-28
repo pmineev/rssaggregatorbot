@@ -28,6 +28,7 @@ def get_nplus1():
             post['img_link'] = None
 
         post['date'] = int(time.mktime(entry['published_parsed']))
+        post['category'] = None
 
         feed_parsed.append(post)
 
@@ -48,6 +49,7 @@ def get_postnauka():
         post['img_link'] = summary_parsed[0]
 
         post['date'] = int(time.mktime(entry['published_parsed']))
+        post['category'] = None
 
         feed_parsed.append(post)
 
@@ -77,6 +79,7 @@ def get_meduza():
 
         post['img_link'] = entry['links'][1]['href']
         post['date'] = int(time.mktime(entry['published_parsed']))
+        post['category'] = None
 
         feed_parsed.append(post)
 
