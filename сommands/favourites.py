@@ -1,5 +1,7 @@
 import logging
 
+from telegram.parsemode import ParseMode
+
 from keyboard_markups import favourites_keyboard
 
 log = logging.getLogger(__name__)
@@ -21,14 +23,16 @@ def button(bot, update):
         log.info(f'{chat_id} removed from favourites {post_id}')
 
     if message.text:
-        bot.edit_message_text(text=message.text,
+        bot.edit_message_text(text=message.text_markdown,
                               chat_id=chat_id,
                               message_id=query.message.message_id,
+                              parse_mode=ParseMode.MARKDOWN,
                               reply_markup=favourites_keyboard(answer == 'favourites_add'))
     else:
-        bot.edit_message_caption(caption=message.caption,
+        bot.edit_message_caption(caption=message.caption_markdown,
                                  chat_id=chat_id,
                                  message_id=query.message.message_id,
+                                 parse_mode=ParseMode.MARKDOWN,
                                  reply_markup=favourites_keyboard(answer == 'favourites_add'))
 
 

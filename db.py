@@ -155,7 +155,7 @@ class Database:
         self.conn.commit()
 
     def get_favourite_posts(self, chat_id):
-        self.nt_cur.execute('''SELECT id, title, link, img_link, summary, date
+        self.nt_cur.execute('''SELECT id, title, link, img_link, summary, date, category
                                FROM posts AS p
                                JOIN favourites AS f
                                    ON p.id = f.post_id''', (chat_id,))
