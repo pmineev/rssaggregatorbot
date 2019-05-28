@@ -12,13 +12,12 @@ def choose(bot, update):
     sources = bot.database.get_sources(chat_id)
     message.reply_text('Выберите источники:',
                        reply_markup=choose_sources_keyboard(sources))
-    return 0
+    return 1
 
 
 def button(bot, update):
     query = update.callback_query
     source = query.data.replace('source_', '')
-    print(__name__, source)
     chat_id = query.message.chat_id
     user_sources = bot.database.get_sources(chat_id)
     # TODO пользователь может попытаться выбрать источники до команды /start
@@ -31,11 +30,11 @@ def button(bot, update):
         user_sources.append(source)
         log.info(f'user {chat_id} subscribed to {source}')
 
-    bot.edit_message_text(text='Выберите источники:',
+    bot.edit_message_text(text=query.message.text,
                           chat_id=chat_id,
                           message_id=query.message.message_id,
                           reply_markup=choose_sources_keyboard(user_sources))
-    return 0
+    return 1
 
 
 def cancel(bot, update):
