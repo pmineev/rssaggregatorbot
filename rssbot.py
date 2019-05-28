@@ -11,8 +11,6 @@ from telegram.utils.request import Request
 import config
 import db
 import jobs.restore_senders as restore
-import rss_utils
-import sourceparsers
 import сommands.categories as category
 import сommands.choose as sources
 import сommands.favourites as favourites
@@ -24,6 +22,8 @@ import сommands.resume as resume
 import сommands.start as start
 import сommands.stop as stop
 from keyboard_markups import favourites_keyboard
+from parsethread import ParseThread
+from sourceparsers import sources as sources_dict
 
 log = logging.getLogger(__name__)
 
@@ -69,11 +69,9 @@ class RssBot(telegram.bot.Bot):
         self._response()
 
     def _run_threads(self):
-        threads = []
-        for name, parser in sourceparsers.sources.items():
-            threads.append(rss_utils.ParseThread(parser, self.database, name=name))
-            log.info('created {} thread'.format(name))
-        for t in threads:
+        self._threads = [ParseThread(parser, self.database, name=name) for name, parser in sources_dict.items()]
+        for t in self._threads:
+            log.info(f'created {t.name} thread')
             t.start()
 
     def _start(self):
