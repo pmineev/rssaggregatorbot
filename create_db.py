@@ -56,6 +56,14 @@ class CreateDatabase(DeleteDatabase, Database):
                                     REFERENCES posts(id),
                                 UNIQUE (chat_id, post_id))''')
 
+    def _create_responses(self):
+        self.cur.execute('''CREATE TABLE responses (
+                                chat_id INTEGER
+                                    REFERENCES users
+                                    ON DELETE CASCADE,
+                                text TEXT,
+                                date INTEGER)''')
+
     def create(self):
         self._create_sources()
         self._create_posts()
@@ -63,6 +71,7 @@ class CreateDatabase(DeleteDatabase, Database):
         self._create_users_sources()
         self._create_users_categories()
         self._create_favourites()
+        self._create_responses()
 
 
 d = CreateDatabase()

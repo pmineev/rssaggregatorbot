@@ -17,6 +17,7 @@ import сommands.favourites as favourites
 import сommands.interval as interval
 import сommands.last as last
 import сommands.pause as pause
+import сommands.response as response
 import сommands.resume as resume
 import сommands.start as start
 import сommands.stop as stop
@@ -63,6 +64,7 @@ class RssBot(telegram.bot.Bot):
         self._choose_sources()
         self._last()
         self._categories()
+        self._response()
 
     def _run_threads(self):
         threads = []
@@ -116,6 +118,15 @@ class RssBot(telegram.bot.Bot):
                 0: [CallbackQueryHandler(category.button, pattern='^categories')]
                 },
             fallbacks=[CallbackQueryHandler(category.cancel, pattern='_categories_cancel')])
+        self.dispatcher.add_handler(handler)
+
+    def _response(self):
+        handler = ConversationHandler(
+            entry_points=[CommandHandler('response', response.response)],
+            states={
+                0: [MessageHandler(Filters.text, response.enter)]
+                },
+            fallbacks=[])
         self.dispatcher.add_handler(handler)
 
     @queuedmessage

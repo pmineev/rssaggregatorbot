@@ -182,3 +182,7 @@ class Database:
                             WHERE chat_id = %s
                                 AND post_id = %s''', (chat_id, post_id))
         return self.cur.fetchone()[0]
+
+    def add_response(self, chat_id, text, date):
+        self.cur.execute('''INSERT INTO responses
+                            VALUES (%s, %s, %s)''', (chat_id, text, date))
