@@ -1,5 +1,4 @@
 import logging
-import time
 from os import environ
 
 import telegram
@@ -12,13 +11,17 @@ import db
 import jobs.restore_senders as restore
 import rss_utils
 import sourceparsers
+import сommands.categories as category
 import сommands.choose as sources
+import сommands.favourites as favourites
 import сommands.interval as interval
 import сommands.last as last
+import сommands.pause as pause
+import сommands.response as response
+import сommands.resume as resume
 import сommands.start as start
 import сommands.stop as stop
-import сommands.pause as pause
-import сommands.resume as resume
+from keyboard_markups import favourites_keyboard
 
 log = logging.getLogger(__name__)
 
@@ -50,14 +53,18 @@ class RssBot(telegram.bot.Bot):
         self.dispatcher.add_handler(CommandHandler('stop', stop.stop, pass_job_queue=True))
         self.dispatcher.add_handler(CommandHandler('pause', pause.pause, pass_job_queue=True))
         self.dispatcher.add_handler(CommandHandler('resume', resume.resume, pass_job_queue=True))
+        self.dispatcher.add_handler(CommandHandler('favourites', favourites.favourites))
 
         self.dispatcher.add_handler(CallbackQueryHandler(restore.button, pattern='^restore', pass_job_queue=True))
         self.dispatcher.add_handler(CallbackQueryHandler(resume.button, pattern='^resume'))
+        self.dispatcher.add_handler(CallbackQueryHandler(favourites.button, pattern='^favourites'))
 
         self._start()
         self._change_interval()
         self._choose_sources()
         self._last()
+        self._categories()
+        self._response()
 
     def _run_threads(self):
         threads = []
@@ -74,7 +81,7 @@ class RssBot(telegram.bot.Bot):
                 0: [CallbackQueryHandler(start.button, pattern='^start')],
                 1: [CallbackQueryHandler(sources.button, pattern='^source')]
                 },
-            fallbacks=[])
+            fallbacks=[CallbackQueryHandler(sources.cancel, pattern='_source_cancel')])
         self.dispatcher.add_handler(handler)
 
     def _change_interval(self):
@@ -90,7 +97,7 @@ class RssBot(telegram.bot.Bot):
         handler = ConversationHandler(
             entry_points=[CommandHandler('choose', sources.choose)],
             states={
-                0: [CallbackQueryHandler(sources.button, pattern='^source')]
+                1: [CallbackQueryHandler(sources.button, pattern='^source')]
                 },
             fallbacks=[CallbackQueryHandler(sources.cancel, pattern='_source_cancel')])
         self.dispatcher.add_handler(handler)
@@ -104,6 +111,24 @@ class RssBot(telegram.bot.Bot):
             fallbacks=[])
         self.dispatcher.add_handler(handler)
 
+    def _categories(self):
+        handler = ConversationHandler(
+            entry_points=[CommandHandler('categories', category.category)],
+            states={
+                0: [CallbackQueryHandler(category.button, pattern='^categories')]
+                },
+            fallbacks=[CallbackQueryHandler(category.cancel, pattern='_categories_cancel')])
+        self.dispatcher.add_handler(handler)
+
+    def _response(self):
+        handler = ConversationHandler(
+            entry_points=[CommandHandler('response', response.response)],
+            states={
+                0: [MessageHandler(Filters.text, response.enter)]
+                },
+            fallbacks=[])
+        self.dispatcher.add_handler(handler)
+
     @queuedmessage
     def send_message(self, *args, **kwargs):
         super().send_message(*args, **kwargs)
@@ -112,26 +137,22 @@ class RssBot(telegram.bot.Bot):
     def send_photo(self, *args, **kwargs):
         super().send_photo(*args, **kwargs)
 
+    # TODO отключить превью
+    # TODO выделять категории
+    # TODO красивое составление текста сообщений
     def send_posts(self, chat_id, posts):
         log.info(f'Sending {len(posts)} posts to {chat_id}')
-        for post in posts:
+        favourites_map = [self.database.is_in_favourites(chat_id, post.id) for post in posts]
+        for post, is_fav in zip(posts, favourites_map):
             text = '{}\n{}'.format(post.title, post.link)
             if post.img_link and len(text) < 200:
                 self.send_photo(chat_id=chat_id,
                                 photo=post.img_link,
-                                caption=f'{post.title}\n{post.link}')
+                                caption=f'{post.category}\n{post.title}\n{post.link}',
+                                reply_markup=favourites_keyboard(is_fav))
             else:
                 self.send_message(chat_id=chat_id,
-                                  text=f'{post.summary}\n{post.link}')
-
-    def send_new_posts(self, _, job):
-        chat_id = job.context
-        log.info(f'Sending new posts to {chat_id}')
-        posts = self.database.get_new_posts(chat_id)
-        print(len(posts))
-        if posts:
-            self.send_posts(chat_id, posts)
-            self.database.set_last_updated_date(chat_id, int(time.time()))
+                                  text=f'{post.category}\n{post.summary}\n{post.link}')
 
     def send_last_posts(self, chat_id, count):
         log.info(f'Sending last posts to {chat_id}')
@@ -139,41 +160,10 @@ class RssBot(telegram.bot.Bot):
         if posts:
             self.send_posts(chat_id, posts)
 
-# TODO завести класс PostEntity для пересылки сообщений в базу и из базы
-
-#     def get_sorted_users(self):
-#         users_sources = self.database.get_users_sources()
-#         sorted_users = {}
-#         for user_source in users_sources:
-#             sorted_users.setdefault(user_source[1], []).append(user_source[0])
-#         return sorted_users
-#
-#     def get_new_posts(self, sources):
-#         sorted_posts = {}
-#         for source in sources:
-#             posts = self.database.get_new_posts_by_source(source)
-#             if posts:
-#                 sorted_posts[source] = posts
-#         return sorted_posts
-#
-#     def mark_as_sent_by_source(self, sources):
-#         self.database.mark_as_sent_by_source(sources)
-#
-#
-# def send_new_messages(bot, job):
-#     sorted_users = bot.get_sorted_users()
-#     posts = bot.get_new_posts(sorted_users.keys())
-#     log.info('Sending {} posts'.format(sum(len(posts[s]) for s in posts)))
-#     if posts:
-#         for source in posts:
-#             for chat_id in sorted_users[source]:
-#                 log.info('Sending {} messages from {} to {}'.format(len(posts[source]), source, chat_id))
-#                 for post in posts[source]:
-#                     if post['img_link'] and len('{}\n{}'.format(post['title'], post['link'])) < 200:
-#                         bot.send_photo(chat_id=chat_id,
-#                                        photo=post['img_link'],
-#                                        caption='{}\n{}'.format(post['title'], post['link']))
-#                     else:
-#                         bot.send_message(chat_id=chat_id,
-#                                          text='{}\n{}'.format(post['title'], post['link']))
-#             bot.mark_as_sent_by_source(source)
+    def send_favourite_posts(self, chat_id):
+        log.info(f'Sending favourite posts to {chat_id}')
+        posts = self.database.get_favourite_posts(chat_id)
+        if posts:
+            self.send_posts(chat_id, posts)
+        else:
+            self.send_message(text='В избранном пусто')

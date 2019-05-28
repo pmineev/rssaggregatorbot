@@ -4,7 +4,7 @@ from rssbot import RssBot
 
 logging.basicConfig(level=logging.INFO,
                     style='{',
-                    format='{asctime}|{levelname:<8}|{name:<10}|{message}',
+                    format='{asctime}|{levelname:<8}|{name:<20}|{message}',
                     datefmt='%H:%M:%S')
 
 log = logging.getLogger(__name__)
