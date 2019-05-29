@@ -5,12 +5,12 @@ import telegram
 from telegram.ext import MessageQueue
 from telegram.ext import Updater, CommandHandler, CallbackQueryHandler, ConversationHandler, MessageHandler, Filters
 from telegram.ext.messagequeue import queuedmessage
+from telegram.parsemode import ParseMode
 from telegram.utils.request import Request
 
+import config
 import db
 import jobs.restore_senders as restore
-import rss_utils
-import sourceparsers
 import сommands.categories as category
 import сommands.choose as sources
 import сommands.favourites as favourites
@@ -21,7 +21,10 @@ import сommands.response as response
 import сommands.resume as resume
 import сommands.start as start
 import сommands.stop as stop
+from intervalthread import IntervalThread
 from keyboard_markups import favourites_keyboard
+from parsethread import ParseThread
+from sourceparsers import sources as sources_dict
 
 log = logging.getLogger(__name__)
 
@@ -67,12 +70,14 @@ class RssBot(telegram.bot.Bot):
         self._response()
 
     def _run_threads(self):
-        threads = []
-        for name, parser in sourceparsers.sources.items():
-            threads.append(rss_utils.ParseThread(parser, self.database, name=name))
-            log.info('created {} thread'.format(name))
-        for t in threads:
+        self.parse_threads = [ParseThread(parser, self.database, name=name) for name, parser in sources_dict.items()]
+        for t in self.parse_threads:
+            log.info(f'created {t.name} thread')
             t.start()
+
+        self._interval_thread = IntervalThread(self.parse_threads, self.database, name='_interval')
+        log.info(f'created {t.name} thread')
+        self._interval_thread.start()
 
     def _start(self):
         handler = ConversationHandler(
@@ -137,22 +142,29 @@ class RssBot(telegram.bot.Bot):
     def send_photo(self, *args, **kwargs):
         super().send_photo(*args, **kwargs)
 
-    # TODO отключить превью
-    # TODO выделять категории
-    # TODO красивое составление текста сообщений
     def send_posts(self, chat_id, posts):
         log.info(f'Sending {len(posts)} posts to {chat_id}')
         favourites_map = [self.database.is_in_favourites(chat_id, post.id) for post in posts]
         for post, is_fav in zip(posts, favourites_map):
-            text = '{}\n{}'.format(post.title, post.link)
-            if post.img_link and len(text) < 200:
+            text = f'*{post.category}*\n[{post.title}]({post.link})\n{post.summary}'
+            if post.img_link:
+                if len(text) > config.MAX_CAPTION_LENGTH:
+                    text = text[:text.rfind('\n')]
+                if len(text) > config.MAX_CAPTION_LENGTH:
+                    text = f'*{post.category}*\n' \
+                        f'[{post.title[:config.MAX_CAPTION_LENGTH - len(post.category) - len(post.link) - 15]}...]' \
+                        f'({post.link})'
                 self.send_photo(chat_id=chat_id,
                                 photo=post.img_link,
-                                caption=f'{post.category}\n{post.title}\n{post.link}',
+                                caption=text,
+                                parse_mode=ParseMode.MARKDOWN,
                                 reply_markup=favourites_keyboard(is_fav))
             else:
                 self.send_message(chat_id=chat_id,
-                                  text=f'{post.category}\n{post.summary}\n{post.link}')
+                                  text=text,
+                                  disable_web_page_preview=True,
+                                  parse_mode=ParseMode.MARKDOWN,
+                                  reply_markup=favourites_keyboard(is_fav))
 
     def send_last_posts(self, chat_id, count):
         log.info(f'Sending last posts to {chat_id}')
@@ -166,4 +178,5 @@ class RssBot(telegram.bot.Bot):
         if posts:
             self.send_posts(chat_id, posts)
         else:
-            self.send_message(text='В избранном пусто')
+            self.send_message(chat_id=chat_id,
+                              text='В избранном пусто')
