@@ -21,6 +21,7 @@ import сommands.response as response
 import сommands.resume as resume
 import сommands.start as start
 import сommands.stop as stop
+from intervalthread import IntervalThread
 from keyboard_markups import favourites_keyboard
 from parsethread import ParseThread
 from sourceparsers import sources as sources_dict
@@ -69,10 +70,14 @@ class RssBot(telegram.bot.Bot):
         self._response()
 
     def _run_threads(self):
-        self._threads = [ParseThread(parser, self.database, name=name) for name, parser in sources_dict.items()]
-        for t in self._threads:
+        self.parse_threads = [ParseThread(parser, self.database, name=name) for name, parser in sources_dict.items()]
+        for t in self.parse_threads:
             log.info(f'created {t.name} thread')
             t.start()
+
+        self._interval_thread = IntervalThread(self.parse_threads, self.database, name='_interval')
+        log.info(f'created {t.name} thread')
+        self._interval_thread.start()
 
     def _start(self):
         handler = ConversationHandler(

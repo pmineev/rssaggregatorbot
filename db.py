@@ -133,6 +133,13 @@ class Database:
                             FETCH FIRST %s ROWS ONLY''', (chat_id, count))
         return self.nt_cur.fetchall()
 
+    def get_last_posts_count(self, source, from_date):
+        self.cur.execute('''SELECT COUNT(*)
+                               FROM posts
+                               WHERE source = %s
+                                   AND date > %s''', (source, from_date))
+        return self.cur.fetchone()[0]
+
     def get_new_posts(self, chat_id):
         self.nt_cur.execute('''SELECT id, title, link, img_link, summary, date, p.category
                                FROM posts AS p

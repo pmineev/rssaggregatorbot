@@ -15,6 +15,7 @@ class ParseThread(threading.Thread):
         self.name = kwargs['name']
         self.last_posted = 0
         self.last_parsed = self.database.get_last_parsed_date(self.name)
+        self.sleep_time = config.DEFAULT_THREAD_SLEEP_TIME
 
     def _set_last_parsed_date(self, posts):
         last_date = max([post['date'] for post in posts])
@@ -40,4 +41,4 @@ class ParseThread(threading.Thread):
     def run(self):
         while True:
             self.get_new_posts()
-            time.sleep(config.PARSERS_RESTART_INTERVAL)
+            time.sleep(self.sleep_time)
