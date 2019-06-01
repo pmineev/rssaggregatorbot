@@ -21,10 +21,10 @@ import сommands.resume as resume
 import сommands.sources as sources
 import сommands.start as start
 import сommands.stop as stop
-from intervalthread import IntervalThread
 from keyboard_markups import favourites_keyboard
-from parsethread import ParseThread
 from sourceparsers import sources as sources_dict
+from threads.intervalthread import IntervalThread
+from threads.parsethread import ParseThread
 
 log = logging.getLogger(__name__)
 
