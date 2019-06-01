@@ -12,13 +12,13 @@ import config
 import db
 import jobs.restore_senders as restore
 import сommands.categories as category
-import сommands.choose as sources
 import сommands.favourites as favourites
 import сommands.interval as interval
 import сommands.last as last
 import сommands.pause as pause
 import сommands.response as response
 import сommands.resume as resume
+import сommands.sources as sources
 import сommands.start as start
 import сommands.stop as stop
 from intervalthread import IntervalThread
@@ -84,7 +84,7 @@ class RssBot(telegram.bot.Bot):
             entry_points=[CommandHandler('start', start.start, pass_job_queue=True)],
             states={
                 0: [CallbackQueryHandler(start.button, pattern='^start')],
-                1: [CallbackQueryHandler(sources.button, pattern='^source')]
+                1: [CallbackQueryHandler(sources.button, pattern='^sources')]
                 },
             fallbacks=[CallbackQueryHandler(sources.cancel, pattern='_source_cancel')])
         self.dispatcher.add_handler(handler)
@@ -100,11 +100,11 @@ class RssBot(telegram.bot.Bot):
 
     def _choose_sources(self):
         handler = ConversationHandler(
-            entry_points=[CommandHandler('choose', sources.choose)],
+            entry_points=[CommandHandler('sources', sources.choose)],
             states={
-                1: [CallbackQueryHandler(sources.button, pattern='^source')]
+                1: [CallbackQueryHandler(sources.button, pattern='^sources')]
                 },
-            fallbacks=[CallbackQueryHandler(sources.cancel, pattern='_source_cancel')])
+            fallbacks=[CallbackQueryHandler(sources.cancel, pattern='_sources_cancel')])
         self.dispatcher.add_handler(handler)
 
     def _last(self):

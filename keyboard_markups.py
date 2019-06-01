@@ -11,9 +11,9 @@ def choose_sources_keyboard(user_sources):
     # TODO вынести sources в вызывающий модуль
     icons = ['✔' if source in user_sources else '❌' for source in sources]
     keyboard = [[InlineKeyboardButton(f'{icon} {source}',
-                                      callback_data=f'source_{source}')]
+                                      callback_data=f'sources_{source}')]
                 for icon, source in zip(icons, sources)]
-    keyboard.append([InlineKeyboardButton('Готово', callback_data='_source_cancel')])
+    keyboard.append([InlineKeyboardButton('Готово', callback_data='_sources_cancel')])
     return InlineKeyboardMarkup(keyboard)
 
 

@@ -1,7 +1,7 @@
 import logging
 
 import config
-import сommands.choose as sources
+import сommands.sources as sources
 from jobs.send_new_posts import send_new_posts
 from keyboard_markups import yesno_keyboard
 
