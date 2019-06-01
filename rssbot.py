@@ -146,13 +146,14 @@ class RssBot(telegram.bot.Bot):
         log.info(f'Sending {len(posts)} posts to {chat_id}')
         favourites_map = [self.database.is_in_favourites(chat_id, post.id) for post in posts]
         for post, is_fav in zip(posts, favourites_map):
-            text = f'*{post.category}*\n[{post.title}]({post.link})\n{post.summary}'
+            post_category = post.category + '\n' if post.category else ''
+            text = f'*{post_category}*[{post.title}]({post.link})\n{post.summary}'
             if post.img_link:
                 if len(text) > config.MAX_CAPTION_LENGTH:
                     text = text[:text.rfind('\n')]
                 if len(text) > config.MAX_CAPTION_LENGTH:
-                    text = f'*{post.category}*\n' \
-                        f'[{post.title[:config.MAX_CAPTION_LENGTH - len(post.category) - len(post.link) - 15]}...]' \
+                    text = f'*{post_category}*' \
+                        f'[{post.title[:config.MAX_CAPTION_LENGTH - len(post_category) - len(post.link) - 15]}...]' \
                         f'({post.link})'
                 self.send_photo(chat_id=chat_id,
                                 photo=post.img_link,

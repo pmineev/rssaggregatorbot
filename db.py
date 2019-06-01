@@ -45,8 +45,6 @@ class Database:
                             VALUES (%s, %s, %s)
                             ON CONFLICT (chat_id) DO NOTHING''',
                          (chat_id, config.DEFAULT_UPDATE_INTERVAL, int(time.time())))
-        self.cur.execute('''INSERT INTO users_categories
-                            VALUES (%s, %s)''', (chat_id, None))
 
     def delete_user(self, chat_id):
         self.cur.execute('''DELETE FROM users
@@ -88,8 +86,7 @@ class Database:
         if chat_id:
             self.cur.execute('''SELECT DISTINCT category
                                 FROM users_categories
-                                WHERE chat_id = %s
-                                    AND category NOTNULL''', (chat_id,))
+                                WHERE chat_id = %s''', (chat_id,))
         else:
             self.cur.execute('''SELECT DISTINCT category
                                 FROM posts
@@ -125,7 +122,7 @@ class Database:
                                 ON p.source = us.source
                             JOIN users AS u
                                 ON u.chat_id = us.chat_id
-                            JOIN users_categories AS uc
+                            LEFT JOIN users_categories AS uc
                                 ON u.chat_id = uc.chat_id
                                     AND p.category = uc.category
                             WHERE u.chat_id = %s
@@ -148,7 +145,7 @@ class Database:
                                JOIN users_sources as us
                                    ON u.chat_id = us.chat_id
                                        AND p.source = us.source
-                               JOIN users_categories AS uc
+                               LEFT JOIN users_categories AS uc
                                    ON u.chat_id = uc.chat_id
                                        AND p.category = uc.category
                                WHERE u.chat_id = %s
