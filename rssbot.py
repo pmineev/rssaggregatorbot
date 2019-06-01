@@ -76,7 +76,7 @@ class RssBot(telegram.bot.Bot):
             t.start()
 
         self._interval_thread = IntervalThread(self.parse_threads, self.database, name='_interval')
-        log.info(f'created {t.name} thread')
+        log.info('created _interval thread')
         self._interval_thread.start()
 
     def _start(self):
