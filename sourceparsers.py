@@ -99,7 +99,7 @@ def get_lenta():
         post['img_link'] = entry['links'][1]['href']
 
         post['date'] = int(time.mktime(entry['published_parsed']))
-        post['category'] = entry['tags'][0]['term']
+        post['category'] = entry['tags'][0]['term'] if 'tags' in entry else None
 
         feed_parsed.append(post)
 
