@@ -22,6 +22,6 @@ class IntervalThread(threading.Thread):
 
     def run(self):
         while True:
+            time.sleep(config.INTERVAL_THREAD_SLEEP_TIME)
             for t in self._threads:
                 self.recalculate_interval(t)
-            time.sleep(config.INTERVAL_THREAD_SLEEP_TIME)
