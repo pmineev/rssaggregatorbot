@@ -20,7 +20,6 @@ def button(bot, update):
     source = query.data.replace('sources_', '')
     chat_id = query.message.chat_id
     user_sources = bot.database.get_sources(chat_id)
-    # TODO пользователь может попытаться выбрать источники до команды /start
     if source in user_sources:
         bot.database.delete_source(chat_id, source)
         user_sources.remove(source)

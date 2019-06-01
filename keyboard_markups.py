@@ -8,7 +8,6 @@ log = logging.getLogger(__name__)
 
 
 def choose_sources_keyboard(user_sources):
-    # TODO вынести sources в вызывающий модуль
     icons = ['✔' if source in user_sources else '❌' for source in sources]
     keyboard = [[InlineKeyboardButton(f'{icon} {source}',
                                       callback_data=f'sources_{source}')]

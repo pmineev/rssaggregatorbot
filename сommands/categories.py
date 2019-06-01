@@ -22,7 +22,6 @@ def button(bot, update):
     chat_id = query.message.chat_id
     categories = bot.database.get_categories()
     user_categories = bot.database.get_categories(chat_id)
-    # TODO пользователь может попытаться выбрать источники до команды /start
     if category in user_categories:
         bot.database.delete_category(chat_id, category)
         user_categories.remove(category)

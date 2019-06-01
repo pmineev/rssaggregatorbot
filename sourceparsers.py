@@ -12,7 +12,6 @@ def bozo(feed):
         log.warning(feed['bozo_exception'])
 
 
-# TODO сделать красиво и без повторений
 def get_nplus1():
     feed = feedparser.parse('https://nplus1.ru/rss')
     bozo(feed)
