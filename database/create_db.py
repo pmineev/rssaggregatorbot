@@ -1,5 +1,5 @@
-from db import Database
-from delete_db import DeleteDatabase
+from database.db import Database
+from database.delete_db import DeleteDatabase
 from sourceparsers import sources
 
 

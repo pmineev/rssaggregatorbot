@@ -1,4 +1,4 @@
-from db import Database
+from database.db import Database
 
 
 class DeleteDatabase(Database):

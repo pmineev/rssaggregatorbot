@@ -9,7 +9,6 @@ from telegram.parsemode import ParseMode
 from telegram.utils.request import Request
 
 import config
-import db
 import jobs.restore_senders as restore
 import сommands.categories as category
 import сommands.favourites as favourites
@@ -21,6 +20,7 @@ import сommands.resume as resume
 import сommands.sources as sources
 import сommands.start as start
 import сommands.stop as stop
+from database.db import Database
 from keyboard_markups import favourites_keyboard
 from sourceparsers import sources as sources_dict
 from threads.intervalthread import IntervalThread
@@ -42,7 +42,7 @@ class RssBot(telegram.bot.Bot):
         self.updater = Updater(bot=self)
         self.dispatcher = self.updater.dispatcher
 
-        self.database = db.Database()
+        self.database = Database()
 
         self._add_handlers()
 
