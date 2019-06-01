@@ -25,6 +25,7 @@ def button(bot, update, job_queue):
                                 interval=config.DEFAULT_UPDATE_INTERVAL,
                                 context=chat_id,
                                 name=f'{chat_id}_sender')
+        bot.database.set_last_updated_date(chat_id, time.time())
 
     bot.delete_message(chat_id=chat_id,
                        message_id=query.message.message_id)
