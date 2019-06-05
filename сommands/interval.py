@@ -21,7 +21,7 @@ def enter(bot, update, job_queue):
         interval = int(user_input_interval)
         bot.database.set_update_interval(chat_id, interval)
         print(list((j.name, j.interval) for j in job_queue.jobs()))
-        job, = job_queue.get_jobs_by_name('{}_sender'.format(chat_id))
+        job, = job_queue.get_jobs_by_name('{}_sender'.format(chat_id))[0]
         job.interval = interval
         update.message.reply_text(f'Новый интервал: {interval}')
         log.info(f'user {chat_id} changed interval to {interval}')
