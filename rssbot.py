@@ -86,7 +86,7 @@ class RssBot(telegram.bot.Bot):
                 0: [CallbackQueryHandler(start.button, pattern='^start')],
                 1: [CallbackQueryHandler(sources.button, pattern='^sources')]
                 },
-            fallbacks=[CallbackQueryHandler(sources.cancel, pattern='_source_cancel')])
+            fallbacks=[CallbackQueryHandler(sources.cancel, pattern='_sources_cancel')])
         self.dispatcher.add_handler(handler)
 
     def _change_interval(self):
